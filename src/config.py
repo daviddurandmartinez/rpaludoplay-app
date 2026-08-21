@@ -1,3 +1,4 @@
+from pathlib import Path
 from selenium.webdriver.common.by import By
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import Field, SecretStr
@@ -21,6 +22,40 @@ class SQLServerSettings(BaseSettings):
         extra="ignore"  # Ignora otras variables del .env que no estén definidas aquí
     )
 
+class NotificacionSettings(BaseSettings):
+    """
+    Configuración SMTP para el envío de notificaciones a los administradores.
+    """
+    smtp_host: str = ""
+    smtp_port: int = 587
+    smtp_user: str = ""
+    smtp_password: SecretStr = SecretStr("")
+    admin_emails: str = ""
+    smtp_use_ssl: bool = False
+
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        extra="ignore",
+    )
+
+    def obtener_destinatarios(self) -> list[str]:
+        return [email.strip() for email in self.admin_emails.split(",") if email.strip()]
+
+
+class AppSettings(BaseSettings):
+    """
+    Configuración general de la aplicación (rutas de salida).
+    """
+    path_fotos_salida: str = "/home/ddurand/fotos"
+
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        extra="ignore",
+    )
+
+
 def get_sql_server_configs() -> Optional[dict]:
     """
     Carga y valida las configuraciones de SQL Server usando Pydantic.
@@ -28,7 +63,7 @@ def get_sql_server_configs() -> Optional[dict]:
     """
     try:
         settings = SQLServerSettings()
-        
+
         # Retornamos en formato diccionario (usamos .get_secret_value() para extraer la contraseña al conectar)
         return {
             "DRIVER": settings.driver,
@@ -44,13 +79,17 @@ def get_sql_server_configs() -> Optional[dict]:
 # Cargar la configuración principal validada
 SQL_SERVER_CONFIG = get_sql_server_configs()
 
-# Validar y extraer configuraciones individuales de forma segura
-if SQL_SERVER_CONFIG and all(SQL_SERVER_CONFIG.values()):
-    TARGET_TABLE = "dbo.players_player" 
-    KEY_COLUMN = "id_card" 
-else:
-    TARGET_TABLE = "ERROR_TABLE_CHECK_CONFIG"
-    KEY_COLUMN = "ERROR_ID_CHECK_CONFIG"
+TARGET_TABLE = "dbo.players_player"
+KEY_COLUMN = "id_card"
+
+NOTIFICACION_SETTINGS = NotificacionSettings()
+APP_SETTINGS = AppSettings()
+
+# Rutas del proyecto basadas en la ubicación de este archivo (independientes del CWD)
+SRC_DIR = Path(__file__).resolve().parent
+STATIC_IMAGES_DIR = SRC_DIR / "static" / "images"
+STATIC_FILES_DIR = SRC_DIR / "static" / "files"
+LOGS_DIR = SRC_DIR.parent / "logs"
 
 URL_EXTRANET = "https://extranet.mincetur.gob.pe/extranet2/Home/Inicio"
 TIEMPO_ESPERA = 20

@@ -225,8 +225,8 @@ class Scraper:
                         'fec_publicacion': fila[6],
                     })
 
-        df = pd.DataFrame(datos_completos)  
-        print(df)
+        df_scraper = pd.DataFrame(datos_completos)  
+        return df_scraper
 
     def limpiar_carpetas(self) -> None:
         carpetas_a_limpiar = [
