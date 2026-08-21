@@ -1,0 +1,33 @@
+2026-08-17 15:17:38 | INFO     | __main__ | === Inicio del proceso de scraping Extranet MINCETUR ===
+2026-08-17 15:17:38 | INFO     | database | Esquema de base de datos verificado
+2026-08-17 15:17:53 | ERROR    | __main__ | Error fatal en el proceso de scraping
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/rpaludoplay-app/main.py", line 70, in main
+    with ExtranetScraper() as scraper:
+         ~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/rpaludoplay-app/scraper.py", line 85, in __init__
+    self.driver: WebDriver = _create_driver()
+                             ~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/rpaludoplay-app/scraper.py", line 74, in _create_driver
+    return webdriver.Chrome(options=options)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        browser_name=DesiredCapabilities.CHROME["browserName"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        keep_alive=keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/chromium/webdriver.py", line 55, in __init__
+    self.service.start()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/common/service.py", line 113, in start
+    self.assert_process_still_running()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/common/service.py", line 132, in assert_process_still_running
+    raise WebDriverException(f"Service {self._path} unexpectedly exited. Status code was: {return_code}")
+selenium.common.exceptions.WebDriverException: Message: Service /home/ddurand/.cache/selenium/chromedriver/linux64/152.0.7977.42/chromedriver unexpectedly exited. Status code was: 127
+

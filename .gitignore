@@ -15,14 +15,3 @@ __pycache__/
 
 # Credenciales y configuracion sensible
 .env
-
-# Logs, screenshots y archivos generados en runtime
-logs/
-*.log
-*.png
-
-# IDEs y SO
-.idea/
-.vscode/
-.DS_Store
-Thumbs.db
