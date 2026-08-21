@@ -1,0 +1,27 @@
+# Entorno virtual
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Credenciales y configuracion sensible
+.env
+
+# Logs, screenshots y archivos generados en runtime
+logs/
+*.log
+*.png
+
+# IDEs y SO
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

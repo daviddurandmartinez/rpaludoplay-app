@@ -1,0 +1,21 @@
+# Automatizacion web (Selenium)
+selenium>=4.25,<5
+
+# Configuracion y variables de entorno
+# pydantic>=2.12 es la primera con soporte oficial para Python 3.14.
+pydantic>=2.12,<3
+pydantic-settings>=2.10,<3
+python-dotenv>=1.0,<2
+
+# Base de datos SQL Server
+# pyodbc>=5.2 aporta soporte para Python 3.13/3.14.
+sqlalchemy>=2.0.45,<3
+pyodbc>=5.2,<6
+
+# Tipado adicional
+typing-extensions>=4.12
+
+beautifulsoup4
+pandas
+pdfplumber
+PyMuPDF
