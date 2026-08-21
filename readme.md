@@ -1,7 +1,5 @@
 ## scraper.py
 
-##
-
 El script está diseñado usando buenas prácticas de programación (como el patrón de diseño Context Manager con **enter** y **exit**) para interactuar con la extranet del MINCETUR, específicamente para navegar, hacer clic en la opción de Clave SOL y rellenar un formulario de acceso.
 
 1. Importación de librerías y constantes globales

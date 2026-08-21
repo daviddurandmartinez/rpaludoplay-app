@@ -19,5 +19,3 @@ __pycache__/
 # IDEs y SO
 .idea/
 .vscode/
-.DS_Store
-Thumbs.db
