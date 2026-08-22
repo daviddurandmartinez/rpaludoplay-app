@@ -2,20 +2,20 @@
 selenium>=4.25,<5
 
 # Configuracion y variables de entorno
-# pydantic>=2.12 es la primera con soporte oficial para Python 3.14.
 pydantic>=2.12,<3
 pydantic-settings>=2.10,<3
 python-dotenv>=1.0,<2
 
-# Base de datos SQL Server
-# pyodbc>=5.2 aporta soporte para Python 3.13/3.14.
+# Base de datos SQL Server (conexion futura)
 sqlalchemy>=2.0.45,<3
 pyodbc>=5.2,<6
 
+# Datos y extraccion PDF
+pandas>=2.2,<3
+numpy>=1.26
+pdfplumber>=0.11,<0.12
+PyMuPDF>=1.24,<2
+openpyxl>=3.1,<4
+
 # Tipado adicional
 typing-extensions>=4.12
-
-beautifulsoup4
-pandas
-pdfplumber
-PyMuPDF

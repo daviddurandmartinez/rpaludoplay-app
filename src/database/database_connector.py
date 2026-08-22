@@ -4,12 +4,25 @@ from typing import Optional
 import urllib.parse
 from config import SQL_SERVER_CONFIG,TARGET_TABLE  # Asegúrate de importar tu configuración validada
 import pandas as pd
+import sqlite3
+import openpyxl
+import os
 
 #############################################
 ## CONEXION A SQL SERVER USANDO SQLALCHEMY ##
 #############################################
 
-def create_sqlalchemy_engine():
+def fetch_sqlite_dataframe():
+    nombre_archivo = os.path.join("src", "static", "files","ludoplay.xlsx")
+    df_excel = pd.read_excel(nombre_archivo)
+    conn = sqlite3.connect(':memory:')
+    df_excel.to_sql('ludoplay', conn, if_exists='replace', index=False)
+    consulta_sql = "SELECT * FROM ludoplay"
+    df_desde_sqlite = pd.read_sql(consulta_sql, conn)
+    conn.close()
+    return df_desde_sqlite
+
+'''def create_sqlalchemy_engine():
     """
     Crea un motor de SQLAlchemy para SQL Server aplicando buenas prácticas
     de conexión, codificación de credenciales y manejo de errores.
@@ -72,4 +85,4 @@ def fetch_sql_dataframe(table_name=TARGET_TABLE):
     finally:
         # Aseguramos que el motor se deseche al finalizar la operación de descarga.
         if engine:
-            engine.dispose()
+            engine.dispose()'''

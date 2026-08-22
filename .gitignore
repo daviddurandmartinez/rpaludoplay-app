@@ -2,7 +2,6 @@
 .venv/
 venv/
 env/
-readme.md
 
 # Python
 __pycache__/
