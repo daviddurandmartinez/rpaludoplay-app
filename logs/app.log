@@ -5760,3 +5760,136 @@ Stacktrace:
 2026-08-26 01:33:11,080 INFO __main__ - Tareas adicionales de scraping en sistema inhouse finalizadas.
 2026-08-26 01:33:11,080 INFO __main__ - No hay registros recurrentes para actualizar (df_update_recurrent vacío).
 2026-08-26 01:33:11,080 INFO __main__ - Sincronización finalizada
+2026-08-26 11:37:31,851 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 11:37:39,814 ERROR __main__ - Error durante la automatización LUDOPLAY
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 49, in scraper_ludoplay
+    estado: EstadoPagina = parsear_estado_pagina(*scraper.capturar_estado())
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Scraper_Ludoplay' object has no attribute 'capturar_estado'
+2026-08-26 11:37:39,881 ERROR __main__ - Proceso abortado al obtener datos del scraper: 'Scraper_Ludoplay' object has no attribute 'capturar_estado'
+2026-08-26 11:38:24,649 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 11:49:22,914 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 11:49:24,645 ERROR __main__ - Error durante la automatización LUDOPLAY
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 49, in scraper_ludoplay
+    scraper.llenar_formulario(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+            credenciales.ludoplay_usuario,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            credenciales.ludoplay_clave,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 277, in llenar_formulario
+    WebDriverWait(self.driver, TIEMPO_ESPERA).until(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EC.presence_of_element_located(XPATH_USUARIO_LUDOPLAY)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/support/expected_conditions.py", line 96, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: WebDriver.find_element() takes from 1 to 3 positional arguments but 55 were given
+2026-08-26 11:49:24,714 ERROR __main__ - Proceso abortado al obtener datos del scraper: WebDriver.find_element() takes from 1 to 3 positional arguments but 55 were given
+2026-08-26 11:56:03,798 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 11:56:05,852 ERROR __main__ - Error durante la automatización LUDOPLAY
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 49, in scraper_ludoplay
+    scraper.llenar_formulario(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+            credenciales.ludoplay_usuario,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            credenciales.ludoplay_clave,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 274, in llenar_formulario
+    self._esperar_y_clic((By.XPATH, XPATH_BOTON_ENTRAR_LUDOPLAY))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Scraper_Ludoplay' object has no attribute '_esperar_y_clic'
+2026-08-26 11:56:05,933 ERROR __main__ - Proceso abortado al obtener datos del scraper: 'Scraper_Ludoplay' object has no attribute '_esperar_y_clic'
+2026-08-26 11:57:10,994 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 11:57:12,640 ERROR __main__ - Error durante la automatización LUDOPLAY
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 49, in scraper_ludoplay
+    scraper.llenar_formulario(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        credenciales.ludoplay_usuario,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        credenciales.ludoplay_clave,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 274, in llenar_formulario
+    self._esperar_y_clic((By.XPATH, XPATH_BOTON_ENTRAR_LUDOPLAY))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Scraper_Ludoplay' object has no attribute '_esperar_y_clic'
+2026-08-26 11:57:12,713 ERROR __main__ - Proceso abortado al obtener datos del scraper: 'Scraper_Ludoplay' object has no attribute '_esperar_y_clic'
+2026-08-26 12:17:13,864 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 12:17:17,754 ERROR __main__ - Error durante la automatización LUDOPLAY
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 49, in scraper_ludoplay
+    scraper.llenar_formulario(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        credenciales.ludoplay_usuario,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        credenciales.ludoplay_clave,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 274, in llenar_formulario
+    self._esperar_y_clic((By.XPATH, XPATH_BOTON_ENTRAR_LUDOPLAY))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Scraper_Ludoplay' object has no attribute '_esperar_y_clic'
+2026-08-26 12:17:17,816 ERROR __main__ - Proceso abortado al obtener datos del scraper: 'Scraper_Ludoplay' object has no attribute '_esperar_y_clic'
+2026-08-26 12:18:14,290 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 12:18:15,228 ERROR __main__ - Proceso abortado al obtener datos del scraper: 'scraper.Scraper_Ludoplay' object does not support the context manager protocol (missed __exit__ method)
+2026-08-26 12:19:01,156 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 12:19:02,437 ERROR __main__ - Error durante la automatización LUDOPLAY
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 49, in scraper_ludoplay
+    scraper.llenar_formulario(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        credenciales.ludoplay_usuario,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        credenciales.ludoplay_clave,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 274, in llenar_formulario
+    self._esperar_y_clic((By.XPATH, XPATH_BOTON_ENTRAR_LUDOPLAY))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Scraper_Ludoplay' object has no attribute '_esperar_y_clic'
+2026-08-26 12:19:02,500 ERROR __main__ - Proceso abortado al obtener datos del scraper: 'Scraper_Ludoplay' object has no attribute '_esperar_y_clic'
+2026-08-26 12:21:29,338 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 12:21:54,132 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 12:27:19,658 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 12:28:30,751 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 12:28:46,948 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 12:29:27,186 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 12:33:20,338 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 12:33:21,918 ERROR __main__ - Error durante la automatización LUDOPLAY
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 53, in scraper_ludoplay
+    scraper.clic_personas_nuevo()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 285, in clic_personas_nuevo
+    WebDriverWait(self.driver, TIEMPO_ESPERA).until(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EC.presence_of_element_located(XPATH_MENU_PERSONAS_LUDOPLAY)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/support/expected_conditions.py", line 96, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: WebDriver.find_element() takes from 1 to 3 positional arguments but 48 were given
+2026-08-26 12:33:21,986 ERROR __main__ - Proceso abortado al obtener datos del scraper: WebDriver.find_element() takes from 1 to 3 positional arguments but 48 were given
+2026-08-26 12:34:18,153 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 12:38:49,279 INFO __main__ - Iniciando sincronización Ludoplay

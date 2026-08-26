@@ -24,7 +24,14 @@ from config import (
     INPUT_RUC, 
     INPUT_CLAVE, 
     INPUT_USUARIO,
-    PATH_DOWNLOADS
+    PATH_DOWNLOADS,
+    URL_LUDOPLAY,
+    XPATH_USUARIO_LUDOPLAY,
+    XPATH_CLAVE_LUDOPLAY,
+    XPATH_BOTON_ENTRAR_LUDOPLAY,
+    XPATH_MENU_PERSONAS_LUDOPLAY,
+    XPATH_MENU_PERSONAS_LISTA_LUDOPLAY,
+    XPATH_MENU_PERSONAS_NUEVO_LUDOPLAY
 )
 
 def _build_options(headless: bool = False) -> Options:
@@ -38,22 +45,16 @@ def _build_options(headless: bool = False) -> Options:
     options.add_argument("--start-maximized")
     options.add_argument("--disable-extensions")
     options.add_argument("--disable-popup-blocking")
-    
-    # NUEVO: Argumento clave para que Chromium imprima/guarde automáticamente sin mostrar la ventana de diálogo
-    options.add_argument("--kiosk-printing")
-    
-    options.binary_location = "/snap/bin/chromium"   
-    
+    options.add_argument("--kiosk-printing")  
+    options.binary_location = "/snap/bin/chromium"     
     download_dir = PATH_DOWNLOADS
-    os.makedirs(download_dir, exist_ok=True)
-    
+    os.makedirs(download_dir, exist_ok=True) 
     import json
     app_state = {
         "recent_destinations": [{"id": "Save as PDF", "origin": "local", "account": ""}],
         "selected_destination_id": "Save as PDF",
         "version": 2
-    }  
-    
+    }   
     prefs = {
         'download.default_directory': download_dir,
         'savefile.default_directory': download_dir, # Forzar carpeta de guardado de impresión
@@ -64,11 +65,9 @@ def _build_options(headless: bool = False) -> Options:
         'plugins.always_open_pdf_externally': True,
         "printing.print_preview_sticky_settings.app_state": json.dumps(app_state)
     }
-    
     options.add_experimental_option("prefs", prefs)
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    options.add_experimental_option('useAutomationExtension', False)
-    
+    options.add_experimental_option('useAutomationExtension', False)  
     if headless:
         options.add_argument("--headless")
         
@@ -96,7 +95,6 @@ class Scraper:
 
     def clic_clave_sol(self) -> None:
         self._esperar_y_clic((By.XPATH, XPATH_CLAVE_SOL))
-        print("¡Clic realizado con éxito en CLAVE SOL!")
 
     def clic_formulario(self) -> None:
         self._esperar_y_clic((By.XPATH, XPATH_FORMULARIO))
@@ -255,3 +253,84 @@ class Scraper:
             self.driver.current_url,
             self.driver.find_element(By.TAG_NAME, "body").text,
         )
+
+class Scraper_Ludoplay:
+    def __init__(self, headless: bool = False):
+        self.headless = headless
+        self.driver = webdriver.Chrome(options=_build_options(headless))
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.driver.quit()
+
+    def navegar(self) -> None:
+        self.driver.get(URL_LUDOPLAY)
+
+    def _esperar_y_clic(self, selector: tuple) -> None:
+        boton = WebDriverWait(self.driver, TIEMPO_ESPERA).until(
+            EC.element_to_be_clickable(selector)
+        )
+        boton.click()
+
+    def _esperar_y_escribir(self, selector: tuple, texto: str) -> None:
+        """Método auxiliar para limpiar un campo e ingresar texto de forma segura."""
+        campo = WebDriverWait(self.driver, TIEMPO_ESPERA).until(
+            EC.presence_of_element_located(selector)
+        )
+        campo.clear()
+        campo.send_keys(str(texto))
+
+    def llenar_formulario(self, usuario: str, clave: str) -> None:
+        WebDriverWait(self.driver, TIEMPO_ESPERA).until(
+            EC.presence_of_element_located(XPATH_USUARIO_LUDOPLAY)
+        )
+        self.driver.find_element(*XPATH_USUARIO_LUDOPLAY).send_keys(usuario)
+        self.driver.find_element(*XPATH_CLAVE_LUDOPLAY).send_keys(clave)
+        self._esperar_y_clic((By.XPATH, XPATH_BOTON_ENTRAR_LUDOPLAY))
+
+    def clic_insert(
+                    self,
+                    documento: str = "",
+                    persona: str = "",
+                    ubigeo: str = "",
+                    fecha_publicacion: str = "",
+                    **kwargs,
+                    ) -> None:
+        self._esperar_y_clic((By.XPATH, XPATH_MENU_PERSONAS_LUDOPLAY))
+        self._esperar_y_clic((By.XPATH, XPATH_MENU_PERSONAS_NUEVO_LUDOPLAY))
+        # 2. Llenado de campos del formulario (reemplaza los XPATH con los reales)
+        self._esperar_y_escribir((By.XPATH, "//input[@id='documento']"), documento)
+        self._esperar_y_escribir((By.XPATH, "//input[@id='persona']"), persona)
+        self._esperar_y_escribir((By.XPATH, "//input[@id='ubigeo']"), ubigeo)
+        self._esperar_y_escribir((By.XPATH, "//input[@id='fecha_pub']"), fecha_publicacion)
+
+        # 3. Guardar cambios
+        # self._esperar_y_clic((By.XPATH, "//button[@id='btn_guardar']"))
+
+    def clic_update(
+                    self,
+                    documento: str = "",
+                    **kwargs,
+                    ) -> None:
+        self._esperar_y_clic((By.XPATH, XPATH_MENU_PERSONAS_LUDOPLAY))
+        self._esperar_y_clic((By.XPATH, XPATH_MENU_PERSONAS_LISTA_LUDOPLAY))
+        # Lógica para buscar el registro existente por documento y actualizar sus datos...
+        self._esperar_y_escribir((By.XPATH, "//input[@id='documento_buscar']"), documento)
+        # self._esperar_y_clic((By.XPATH, "//button[@id='btn_buscar']"))
+
+    def clic_update_recurrent(
+                            self,
+                            documento: str = "",
+                            **kwargs,
+                            ) -> None:
+        self._esperar_y_clic((By.XPATH, XPATH_MENU_PERSONAS_LUDOPLAY))
+        self._esperar_y_clic((By.XPATH, XPATH_MENU_PERSONAS_LISTA_LUDOPLAY))
+
+    def capturar_estado(self) -> tuple[str, str, str]:
+            return (
+                self.driver.title,
+                self.driver.current_url,
+                self.driver.find_element(By.TAG_NAME, "body").text,
+            )

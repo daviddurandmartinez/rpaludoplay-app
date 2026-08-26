@@ -43,8 +43,6 @@ def construir_dataframes_sync(
       - df_update: en base con is_active=1 y NO en scraper (salieron del registro oficial)
       - df_update_recurrent: en ambos y is_active=0 en base (reaparecieron)
     """
-    #db = df_desde_sqlite.copy()
-    #sc = df_scraper.copy()
     # 1. Limpieza de saltos de línea y espacios en blanco en todo el DataFrame
     db = _limpiar_texto(df_desde_sqlite)
     sc = _limpiar_texto(df_scraper)

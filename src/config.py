@@ -12,6 +12,9 @@ class CredencialesSettings(BaseSettings):
     mincetur_usuario: str = ""
     mincetur_clave: str = ""
     mincetur_headless: bool = False
+    ludoplay_usuario: str = ""
+    ludoplay_clave: str = ""
+    ludopplay_headless: bool = False
     # Configuración para apuntar al archivo .env
     model_config = SettingsConfigDict(
         env_file=".env",
@@ -84,3 +87,24 @@ PATH_DOWNLOADS = "/home/ddurand/Downloads/" #Ruta de descarga
 # MERGE: GENERACION DE df_insert, df_update, df_update_recurrent
 # -------------------------------------------------------------------------
 CODIGOS_EXCLUIDOS = [10010, 99999999, 88888888]
+
+# ---------------------------------------------------------------------------------------
+# SCRAPER A SISTEMA LUDOPLAY
+# ---------------------------------------------------------------------------------------
+URL_LUDOPLAY="http://ludoplay.gruposam.com.pe/accounts/login/"
+INPUT_USUARIO_LUDOPLAY = (By.NAME, "username")
+INPUT_CLAVE_LUDOPLAY = (By.NAME, "password")
+XPATH_BOTON_ENTRAR_LUDOPLAY = "/html/body/section/div/div[1]/form/div[2]/button"
+XPATH_MENU_PERSONAS_LUDOPLAY = "/html/body/aside/section[1]/ul/li[1]/ul/li[3]/a"
+XPATH_MENU_PERSONAS_LISTA_LUDOPLAY = "/html/body/section/div[1]/a[1]"
+XPATH_MENU_PERSONAS_NUEVO_LUDOPLAY = "/html/body/section/div[1]/a[2]"
+XPATH_MENU_PERSONAS_NUEVO_REGISTRO = (By.ID, "id_code")
+INPUT_MENU_PERSONAS_NUEVO_UBIGEO = (By.ID, "id_ubigeo")
+INPUT_MENU_PERSONAS_NUEVO_NOMBRE = (By.ID, "id_first_name")
+INPUT_MENU_PERSONAS_NUEVO_APELLIDO = (By.ID, "id_last_name")
+INPUT_MENU_PERSONAS_NUEVO_TIPO = (By.ID, "id_card_type")
+INPUT_MENU_PERSONAS_NUEVO_DOCUMENTO = (By.ID, "id_id_card")
+INPUT_MENU_PERSONAS_NUEVO_CONTACTO = (By.ID, "id_contact")
+INPUT_MENU_PERSONAS_NUEVO_PUBLICADO = (By.ID, "id_published_at")
+INPUT_MENU_PERSONAS_NUEVO_FOTO = (By.ID, "id_photo")
+XPATH_MENU_PERSONAS_NUEVO_BOTON = "/html/body/section/div[2]/form/div[2]/div/button"
