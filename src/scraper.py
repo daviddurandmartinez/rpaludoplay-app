@@ -124,7 +124,7 @@ class Scraper:
         self._esperar_y_clic((By.XPATH, XPATH_REGISTRO_LUDOPATIA_BUSCAR))
         print("BUSCAR registros de ludopatia")
         
-        time.sleep(60) 
+        time.sleep(100) 
         
         self._esperar_y_clic((By.XPATH, XPATH_REGISTRO_LUDOPATIA_EXPORTAR))
         print("EXPORTAR registros de ludopatia - Guardando PDF automáticamente...")

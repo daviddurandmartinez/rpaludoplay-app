@@ -1,13 +1,12 @@
 import logging
 from dataclasses import dataclass
-
+from config import STATIC_IMAGES_DIR,EXTENSION_FOTO,CODIGOS_EXCLUIDOS
 import pandas as pd
 
 logger = logging.getLogger(__name__)
 
 LLAVE_DB = "id_card"
 LLAVE_SCRAPER = "documento"
-
 
 @dataclass
 class ResultadoSync:
@@ -16,6 +15,19 @@ class ResultadoSync:
     df_update: pd.DataFrame
     df_update_recurrent: pd.DataFrame
 
+def _limpiar_texto(df: pd.DataFrame) -> pd.DataFrame:
+    """Elimina saltos de línea y espacios extras en todas las columnas de tipo string."""
+    df_clean = df.copy()
+    col_texto = df_clean.select_dtypes(include=["object", "string"]).columns
+    
+    for col in col_texto:
+        df_clean[col] = (
+            df_clean[col]
+            .astype(str)
+            .str.replace(r"[\r\n]+", " ", regex=True) # Reemplaza saltos de línea por un espacio
+            .str.strip()
+        )
+    return df_clean
 
 def _normalizar_llave(valores: pd.Series) -> pd.Series:
     return valores.astype(str).str.strip()
@@ -31,45 +43,78 @@ def construir_dataframes_sync(
       - df_update: en base con is_active=1 y NO en scraper (salieron del registro oficial)
       - df_update_recurrent: en ambos y is_active=0 en base (reaparecieron)
     """
-    db = df_desde_sqlite.copy()
-    sc = df_scraper.copy()
+    #db = df_desde_sqlite.copy()
+    #sc = df_scraper.copy()
+    # 1. Limpieza de saltos de línea y espacios en blanco en todo el DataFrame
+    db = _limpiar_texto(df_desde_sqlite)
+    sc = _limpiar_texto(df_scraper)
 
     db["_key"] = _normalizar_llave(db[LLAVE_DB])
     sc["_key"] = _normalizar_llave(sc[LLAVE_SCRAPER])
 
+    #Esa instrucción elimina todas las filas que tengan una llave vacía ("") tanto en el DataFrame de la base de datos (db) como en el del scraper (sc).
     db = db[db["_key"].ne("")]
     sc = sc[sc["_key"].ne("")]
 
+    #Comprueba si la tabla de la base de datos incluye una columna de fecha/hora de actualización.
     if "updated_at" in db.columns:
         db = db.sort_values("updated_at", ascending=False)
+    #Busca registros que compartan el mismo documento/ID (_key).
+    #Gracias al keep="first", se queda con la primera fila que encuentra (que es la más reciente por el ordenamiento previo) y elimina las versiones antiguas de ese mismo documento.    
     db = db.drop_duplicates(subset="_key", keep="first")
+    #Si el scraper por error extrajo varias veces a la misma persona con el mismo documento, se queda solo con el primer registro hallado y descarta las repeticiones.
     sc = sc.drop_duplicates(subset="_key", keep="first")
 
+    #Extrae los documentos/IDs de cada DataFrame y los convierte en conjuntos (set) de Python.¿Por qué un set? En Python, buscar un elemento en un set 
+    #toma tiempo constante $O(1)$, mientras que en una lista o Series toma $O(n)$. Esto optimiza la velocidad de filtrado cuando hay miles de filas.
     claves_sc = set(sc["_key"])
     claves_db = set(db["_key"])
 
+    # -------------------------------------------------------------------------
+    # df_insert (Registros a insertar)
+    # -------------------------------------------------------------------------
     df_insert = (
-        sc[~sc["_key"].isin(claves_db)]
-        .drop(columns=["_key"])
-        .reset_index(drop=True)
+        #Compara cada registro del scraper contra las llaves de la base de datos. Devuelve True si el documento ya existe en la base de datos y False si es nuevo.
+        sc[~sc["_key"].isin(claves_db)] # "~" Transforma los False (los que no están en la DB) en True. Esto selecciona únicamente a las personas que el scraper encontró pero que la base de datos nunca ha visto.
+        .drop(columns=["_key"]) #Elimina la columna auxiliar _key que se creó al inicio para normalizar los textos, devolviendo el DataFrame con su estructura original.
+        .reset_index(drop=True) #Reorganiza los índices del nuevo DataFrame de 0 a N-1 para eliminar los saltos de índice que quedaron tras el filtrado.
     )
 
-    mascara_update = (~db["_key"].isin(claves_sc)) & (db["is_active"] == 1)
+    # -------------------------------------------------------------------------
+    # df_update (Registros a desactivar)
+    # -------------------------------------------------------------------------
+    # Condición: NO está en scraper AND is_active == 1 AND code NOT IN excluidos
+    mascara_update = (
+        (~db["_key"].isin(claves_sc)) 
+        & (db["is_active"] == 1) 
+        & (~db["code"].isin(CODIGOS_EXCLUIDOS))
+    )
+    #Extrae esas filas, elimina la columna auxiliar _key y limpia los índices.
     df_update = (
         db[mascara_update]
         .drop(columns=["_key"])
         .reset_index(drop=True)
     )
 
-    estado_db = db.set_index("_key")["is_active"]
-    en_ambos = sc[sc["_key"].isin(claves_db)].copy()
-    en_ambos["_is_active"] = en_ambos["_key"].map(estado_db)
+    # -------------------------------------------------------------------------
+    # df_update_recurrent (Registros a reactivar)
+    # -------------------------------------------------------------------------
+    # Mapeamos tanto el estado (is_active) como el código (code) desde la DB
+    estado_db = db.set_index("_key")["is_active"] #Crea una serie de consulta rápida donde el índice es el número de documento y el valor es su estado actual (0 o 1).
+    codigo_db = db.set_index("_key")["code"]
+    en_ambos = sc[sc["_key"].isin(claves_db)].copy() #Filtra las filas del scraper que SÍ existen en la base de datos.
+    en_ambos["_is_active"] = en_ambos["_key"].map(estado_db) #Utiliza el .map() para "traer" el estado que tenía esa persona en la DB y colocarlo al lado del registro del scraper.
+    en_ambos["_code"] = en_ambos["_key"].map(codigo_db)
     df_update_recurrent = (
-        en_ambos[en_ambos["_is_active"] == 0]
-        .drop(columns=["_key", "_is_active"])
-        .reset_index(drop=True)
+        en_ambos[
+            (en_ambos["_is_active"] == 0) & 
+            (~en_ambos["_code"].isin(CODIGOS_EXCLUIDOS))
+        ]
+        .drop(columns=["_key", "_is_active"]) #Remueve las columnas temporales _key y _is_active.
+        .reset_index(drop=True) #Estos registros deben actualizarse en la DB a is_active = 1 (volvieron a figurar en MINCETUR/Scraper).
     )
 
+    #Muestra un mensaje informativo en la consola o archivo de registro de tu aplicación.
     logger.info(
         "Merge completado: insert=%d | update=%d | recurrent=%d",
         len(df_insert),
@@ -77,21 +122,10 @@ def construir_dataframes_sync(
         len(df_update_recurrent),
     )
 
+    #Instancia y retorna la dataclass que se definió al inicio del script.
+    #Asigna cada DataFrame procesado a su respectivo atributo (df_insert, df_update, df_update_recurrent).
     return ResultadoSync(
         df_insert=df_insert,
         df_update=df_update,
         df_update_recurrent=df_update_recurrent,
     )
-
-
-def _descripcion_fila(fila: dict) -> str:
-    documento = fila.get(LLAVE_SCRAPER, fila.get(LLAVE_DB, ""))
-    persona = fila.get("persona") or f"{fila.get('first_name', '')} {fila.get('last_name', '')}".strip()
-    return f"doc={documento} | persona={persona} | ubigeo={fila.get('ubigeo', '')}"
-
-
-def recorrer_e_imprimir(nombre: str, df: pd.DataFrame) -> None:
-    """Recorre el dataframe imprimiendo cada registro (punto de enganche para la automatización)."""
-    print(f"\n=== {nombre}: {len(df)} registro(s) ===")
-    for _, fila in df.iterrows():
-        print(f"  - {_descripcion_fila(fila.to_dict())}")

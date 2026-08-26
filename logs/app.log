@@ -4800,3 +4800,963 @@ Stacktrace:
 2026-08-21 18:43:11,451 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/03653450.png -> /home/ddurand/fotos/03653450.png
 2026-08-21 18:43:11,451 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/40707410.png -> /home/ddurand/fotos/40707410.png
 2026-08-21 18:43:11,452 INFO __main__ - Sincronización finalizada
+2026-08-24 11:39:17,589 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-24 11:40:51,811 ERROR __main__ - Error durante la automatización MINCETUR
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 39, in obtener_df_scraper
+    scraper.clic_registro_ludopatia()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 129, in clic_registro_ludopatia
+    self._esperar_y_clic((By.XPATH, XPATH_REGISTRO_LUDOPATIA_EXPORTAR))
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 92, in _esperar_y_clic
+    boton = WebDriverWait(self.driver, TIEMPO_ESPERA).until(
+        EC.element_to_be_clickable(selector)
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-08-24 11:40:51,922 ERROR __main__ - Proceso abortado al obtener datos del scraper: Message: 
+
+2026-08-24 11:42:43,668 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-24 11:46:47,072 INFO sync_merger - Merge completado: insert=739 | update=719 | recurrent=1
+2026-08-24 11:46:47,242 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/17934713.png -> /home/ddurand/fotos/17934713.png
+2026-08-24 11:46:47,243 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73041642.png -> /home/ddurand/fotos/73041642.png
+2026-08-24 11:46:47,244 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74702145.png -> /home/ddurand/fotos/74702145.png
+2026-08-24 11:46:47,245 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/70533867.png -> /home/ddurand/fotos/70533867.png
+2026-08-24 11:46:47,245 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41053338.png -> /home/ddurand/fotos/41053338.png
+2026-08-24 11:46:47,246 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45289735.png -> /home/ddurand/fotos/45289735.png
+2026-08-24 11:46:47,247 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72689110.png -> /home/ddurand/fotos/72689110.png
+2026-08-24 11:46:47,247 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/70472820.png -> /home/ddurand/fotos/70472820.png
+2026-08-24 11:46:47,248 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/42846032.png -> /home/ddurand/fotos/42846032.png
+2026-08-24 11:46:47,249 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45119503.png -> /home/ddurand/fotos/45119503.png
+2026-08-24 11:46:47,250 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74922767.png -> /home/ddurand/fotos/74922767.png
+2026-08-24 11:46:47,251 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/42401990.png -> /home/ddurand/fotos/42401990.png
+2026-08-24 11:46:47,251 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45471472.png -> /home/ddurand/fotos/45471472.png
+2026-08-24 11:46:47,252 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74916891.png -> /home/ddurand/fotos/74916891.png
+2026-08-24 11:46:47,252 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001848543.png -> /home/ddurand/fotos/001848543.png
+2026-08-24 11:46:47,253 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75453230.png -> /home/ddurand/fotos/75453230.png
+2026-08-24 11:46:47,253 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47083542.png -> /home/ddurand/fotos/47083542.png
+2026-08-24 11:46:47,254 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/42071627.png -> /home/ddurand/fotos/42071627.png
+2026-08-24 11:46:47,254 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/70483451.png -> /home/ddurand/fotos/70483451.png
+2026-08-24 11:46:47,254 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71404342.png -> /home/ddurand/fotos/71404342.png
+2026-08-24 11:46:47,255 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07749813.png -> /home/ddurand/fotos/07749813.png
+2026-08-24 11:46:47,256 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/70452159.png -> /home/ddurand/fotos/70452159.png
+2026-08-24 11:46:47,256 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/70657892.png -> /home/ddurand/fotos/70657892.png
+2026-08-24 11:46:47,256 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71558779.png -> /home/ddurand/fotos/71558779.png
+2026-08-24 11:46:47,257 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43729553.png -> /home/ddurand/fotos/43729553.png
+2026-08-24 11:46:47,257 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08417112.png -> /home/ddurand/fotos/08417112.png
+2026-08-24 11:46:47,257 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000060375.png -> /home/ddurand/fotos/000060375.png
+2026-08-24 11:46:47,258 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09292781.png -> /home/ddurand/fotos/09292781.png
+2026-08-24 11:46:47,258 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09364500.png -> /home/ddurand/fotos/09364500.png
+2026-08-24 11:46:47,259 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/007556250.png -> /home/ddurand/fotos/007556250.png
+2026-08-24 11:46:47,260 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09784854.png -> /home/ddurand/fotos/09784854.png
+2026-08-24 11:46:47,260 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09413024.png -> /home/ddurand/fotos/09413024.png
+2026-08-24 11:46:47,260 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07903628.png -> /home/ddurand/fotos/07903628.png
+2026-08-24 11:46:47,261 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/002330054.png -> /home/ddurand/fotos/002330054.png
+2026-08-24 11:46:47,261 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09924103.png -> /home/ddurand/fotos/09924103.png
+2026-08-24 11:46:47,261 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06959157.png -> /home/ddurand/fotos/06959157.png
+2026-08-24 11:46:47,262 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06621384.png -> /home/ddurand/fotos/06621384.png
+2026-08-24 11:46:47,262 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000792767.png -> /home/ddurand/fotos/000792767.png
+2026-08-24 11:46:47,263 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00516295.png -> /home/ddurand/fotos/00516295.png
+2026-08-24 11:46:47,264 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06273964.png -> /home/ddurand/fotos/06273964.png
+2026-08-24 11:46:47,265 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02668052.png -> /home/ddurand/fotos/02668052.png
+2026-08-24 11:46:47,266 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08227791.png -> /home/ddurand/fotos/08227791.png
+2026-08-24 11:46:47,267 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09905608.png -> /home/ddurand/fotos/09905608.png
+2026-08-24 11:46:47,267 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07882659.png -> /home/ddurand/fotos/07882659.png
+2026-08-24 11:46:47,267 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09855614.png -> /home/ddurand/fotos/09855614.png
+2026-08-24 11:46:47,268 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001376961.png -> /home/ddurand/fotos/001376961.png
+2026-08-24 11:46:47,268 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07469438.png -> /home/ddurand/fotos/07469438.png
+2026-08-24 11:46:47,268 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06676322.png -> /home/ddurand/fotos/06676322.png
+2026-08-24 11:46:47,269 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001066447.png -> /home/ddurand/fotos/001066447.png
+2026-08-24 11:46:47,269 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09316232.png -> /home/ddurand/fotos/09316232.png
+2026-08-24 11:46:47,269 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/01072889.png -> /home/ddurand/fotos/01072889.png
+2026-08-24 11:46:47,270 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/005645926.png -> /home/ddurand/fotos/005645926.png
+2026-08-24 11:46:47,271 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/03699921.png -> /home/ddurand/fotos/03699921.png
+2026-08-24 11:46:47,271 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07238387.png -> /home/ddurand/fotos/07238387.png
+2026-08-24 11:46:47,272 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009714957.png -> /home/ddurand/fotos/009714957.png
+2026-08-24 11:46:47,272 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000544470.png -> /home/ddurand/fotos/000544470.png
+2026-08-24 11:46:47,272 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07758276.png -> /home/ddurand/fotos/07758276.png
+2026-08-24 11:46:47,273 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09802035.png -> /home/ddurand/fotos/09802035.png
+2026-08-24 11:46:47,273 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009837132.png -> /home/ddurand/fotos/009837132.png
+2026-08-24 11:46:47,274 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09564866.png -> /home/ddurand/fotos/09564866.png
+2026-08-24 11:46:47,275 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08866522.png -> /home/ddurand/fotos/08866522.png
+2026-08-24 11:46:47,275 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09907890.png -> /home/ddurand/fotos/09907890.png
+2026-08-24 11:46:47,276 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07878753.png -> /home/ddurand/fotos/07878753.png
+2026-08-24 11:46:47,276 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09441597.png -> /home/ddurand/fotos/09441597.png
+2026-08-24 11:46:47,277 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07730470.png -> /home/ddurand/fotos/07730470.png
+2026-08-24 11:46:47,277 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000177264.png -> /home/ddurand/fotos/000177264.png
+2026-08-24 11:46:47,277 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07634544.png -> /home/ddurand/fotos/07634544.png
+2026-08-24 11:46:47,278 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/005414062.png -> /home/ddurand/fotos/005414062.png
+2026-08-24 11:46:47,279 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/05644577.png -> /home/ddurand/fotos/05644577.png
+2026-08-24 11:46:47,280 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06175247.png -> /home/ddurand/fotos/06175247.png
+2026-08-24 11:46:47,280 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009559318.png -> /home/ddurand/fotos/009559318.png
+2026-08-24 11:46:47,281 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/005305427.png -> /home/ddurand/fotos/005305427.png
+2026-08-24 11:46:47,282 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/008541486.png -> /home/ddurand/fotos/008541486.png
+2026-08-24 11:46:47,282 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009507146.png -> /home/ddurand/fotos/009507146.png
+2026-08-24 11:46:47,283 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/005845994.png -> /home/ddurand/fotos/005845994.png
+2026-08-24 11:46:47,283 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/006028612.png -> /home/ddurand/fotos/006028612.png
+2026-08-24 11:46:47,284 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/008580635.png -> /home/ddurand/fotos/008580635.png
+2026-08-24 11:46:47,284 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009553551.png -> /home/ddurand/fotos/009553551.png
+2026-08-24 11:46:47,284 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/005878322.png -> /home/ddurand/fotos/005878322.png
+2026-08-24 11:46:47,285 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009079994.png -> /home/ddurand/fotos/009079994.png
+2026-08-24 11:46:47,285 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009704496.png -> /home/ddurand/fotos/009704496.png
+2026-08-24 11:46:47,286 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/006957586.png -> /home/ddurand/fotos/006957586.png
+2026-08-24 11:46:47,286 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/006050552.png -> /home/ddurand/fotos/006050552.png
+2026-08-24 11:46:47,286 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009341462.png -> /home/ddurand/fotos/009341462.png
+2026-08-24 11:46:47,286 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009488116.png -> /home/ddurand/fotos/009488116.png
+2026-08-24 11:46:47,287 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/003888882.png -> /home/ddurand/fotos/003888882.png
+2026-08-24 11:46:47,287 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009552893.png -> /home/ddurand/fotos/009552893.png
+2026-08-24 11:46:47,287 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/006047753.png -> /home/ddurand/fotos/006047753.png
+2026-08-24 11:46:47,288 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001975748.png -> /home/ddurand/fotos/001975748.png
+2026-08-24 11:46:47,288 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07265902.png -> /home/ddurand/fotos/07265902.png
+2026-08-24 11:46:47,289 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00504825.png -> /home/ddurand/fotos/00504825.png
+2026-08-24 11:46:47,290 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/003598076.png -> /home/ddurand/fotos/003598076.png
+2026-08-24 11:46:47,290 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/002573273.png -> /home/ddurand/fotos/002573273.png
+2026-08-24 11:46:47,290 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06666629.png -> /home/ddurand/fotos/06666629.png
+2026-08-24 11:46:47,291 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001914587.png -> /home/ddurand/fotos/001914587.png
+2026-08-24 11:46:47,292 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07445176.png -> /home/ddurand/fotos/07445176.png
+2026-08-24 11:46:47,293 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07750569.png -> /home/ddurand/fotos/07750569.png
+2026-08-24 11:46:47,293 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/006169131.png -> /home/ddurand/fotos/006169131.png
+2026-08-24 11:46:47,294 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09138428.png -> /home/ddurand/fotos/09138428.png
+2026-08-24 11:46:47,294 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08860707.png -> /home/ddurand/fotos/08860707.png
+2026-08-24 11:46:47,295 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000323236.png -> /home/ddurand/fotos/000323236.png
+2026-08-24 11:46:47,295 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009396632.png -> /home/ddurand/fotos/009396632.png
+2026-08-24 11:46:47,296 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09159457.png -> /home/ddurand/fotos/09159457.png
+2026-08-24 11:46:47,296 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000063439.png -> /home/ddurand/fotos/000063439.png
+2026-08-24 11:46:47,296 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09540247.png -> /home/ddurand/fotos/09540247.png
+2026-08-24 11:46:47,297 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06699452.png -> /home/ddurand/fotos/06699452.png
+2026-08-24 11:46:47,297 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06109203.png -> /home/ddurand/fotos/06109203.png
+2026-08-24 11:46:47,298 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06776437.png -> /home/ddurand/fotos/06776437.png
+2026-08-24 11:46:47,298 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09770487.png -> /home/ddurand/fotos/09770487.png
+2026-08-24 11:46:47,299 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07505802.png -> /home/ddurand/fotos/07505802.png
+2026-08-24 11:46:47,300 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000146644.png -> /home/ddurand/fotos/000146644.png
+2026-08-24 11:46:47,301 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09693571.png -> /home/ddurand/fotos/09693571.png
+2026-08-24 11:46:47,302 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08663418.png -> /home/ddurand/fotos/08663418.png
+2026-08-24 11:46:47,302 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02887937.png -> /home/ddurand/fotos/02887937.png
+2026-08-24 11:46:47,303 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/003376496.png -> /home/ddurand/fotos/003376496.png
+2026-08-24 11:46:47,303 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02642793.png -> /home/ddurand/fotos/02642793.png
+2026-08-24 11:46:47,304 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08171200.png -> /home/ddurand/fotos/08171200.png
+2026-08-24 11:46:47,304 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/04815373.png -> /home/ddurand/fotos/04815373.png
+2026-08-24 11:46:47,304 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001225202.png -> /home/ddurand/fotos/001225202.png
+2026-08-24 11:46:47,305 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001042557.png -> /home/ddurand/fotos/001042557.png
+2026-08-24 11:46:47,305 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/01131695.png -> /home/ddurand/fotos/01131695.png
+2026-08-24 11:46:47,306 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06680860.png -> /home/ddurand/fotos/06680860.png
+2026-08-24 11:46:47,306 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06290518.png -> /home/ddurand/fotos/06290518.png
+2026-08-24 11:46:47,306 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09715354.png -> /home/ddurand/fotos/09715354.png
+2026-08-24 11:46:47,307 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09796271.png -> /home/ddurand/fotos/09796271.png
+2026-08-24 11:46:47,307 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09220880.png -> /home/ddurand/fotos/09220880.png
+2026-08-24 11:46:47,308 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09455867.png -> /home/ddurand/fotos/09455867.png
+2026-08-24 11:46:47,308 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09995951.png -> /home/ddurand/fotos/09995951.png
+2026-08-24 11:46:47,308 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/002501996.png -> /home/ddurand/fotos/002501996.png
+2026-08-24 11:46:47,309 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06766658.png -> /home/ddurand/fotos/06766658.png
+2026-08-24 11:46:47,309 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09930734.png -> /home/ddurand/fotos/09930734.png
+2026-08-24 11:46:47,310 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/002354811.png -> /home/ddurand/fotos/002354811.png
+2026-08-24 11:46:47,310 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02657226.png -> /home/ddurand/fotos/02657226.png
+2026-08-24 11:46:47,311 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000120173.png -> /home/ddurand/fotos/000120173.png
+2026-08-24 11:46:47,311 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07589998.png -> /home/ddurand/fotos/07589998.png
+2026-08-24 11:46:47,311 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08588036.png -> /home/ddurand/fotos/08588036.png
+2026-08-24 11:46:47,312 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08131734.png -> /home/ddurand/fotos/08131734.png
+2026-08-24 11:46:47,312 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09823717.png -> /home/ddurand/fotos/09823717.png
+2026-08-24 11:46:47,313 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09675555.png -> /home/ddurand/fotos/09675555.png
+2026-08-24 11:46:47,313 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09881606.png -> /home/ddurand/fotos/09881606.png
+2026-08-24 11:46:47,314 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09558054.png -> /home/ddurand/fotos/09558054.png
+2026-08-24 11:46:47,314 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09850736.png -> /home/ddurand/fotos/09850736.png
+2026-08-24 11:46:47,314 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09497082.png -> /home/ddurand/fotos/09497082.png
+2026-08-24 11:46:47,315 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08890435.png -> /home/ddurand/fotos/08890435.png
+2026-08-24 11:46:47,315 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001528477.png -> /home/ddurand/fotos/001528477.png
+2026-08-24 11:46:47,316 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06138889.png -> /home/ddurand/fotos/06138889.png
+2026-08-24 11:46:47,316 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00246132.png -> /home/ddurand/fotos/00246132.png
+2026-08-24 11:46:47,317 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/008491501.png -> /home/ddurand/fotos/008491501.png
+2026-08-24 11:46:47,317 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/005982608.png -> /home/ddurand/fotos/005982608.png
+2026-08-24 11:46:47,317 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08056952.png -> /home/ddurand/fotos/08056952.png
+2026-08-24 11:46:47,318 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07920306.png -> /home/ddurand/fotos/07920306.png
+2026-08-24 11:46:47,318 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000469478.png -> /home/ddurand/fotos/000469478.png
+2026-08-24 11:46:47,318 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06141249.png -> /home/ddurand/fotos/06141249.png
+2026-08-24 11:46:47,318 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001766136.png -> /home/ddurand/fotos/001766136.png
+2026-08-24 11:46:47,319 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/005934446.png -> /home/ddurand/fotos/005934446.png
+2026-08-24 11:46:47,319 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009594588.png -> /home/ddurand/fotos/009594588.png
+2026-08-24 11:46:47,319 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000436138.png -> /home/ddurand/fotos/000436138.png
+2026-08-24 11:46:47,320 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000432647.png -> /home/ddurand/fotos/000432647.png
+2026-08-24 11:46:47,320 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000345086.png -> /home/ddurand/fotos/000345086.png
+2026-08-24 11:46:47,320 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06450926.png -> /home/ddurand/fotos/06450926.png
+2026-08-24 11:46:47,321 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07720586.png -> /home/ddurand/fotos/07720586.png
+2026-08-24 11:46:47,321 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06256936.png -> /home/ddurand/fotos/06256936.png
+2026-08-24 11:46:47,321 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/006319917.png -> /home/ddurand/fotos/006319917.png
+2026-08-24 11:46:47,321 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000471031.png -> /home/ddurand/fotos/000471031.png
+2026-08-24 11:46:47,322 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06045412.png -> /home/ddurand/fotos/06045412.png
+2026-08-24 11:46:47,322 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09650628.png -> /home/ddurand/fotos/09650628.png
+2026-08-24 11:46:47,322 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009422517.png -> /home/ddurand/fotos/009422517.png
+2026-08-24 11:46:47,323 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09181686.png -> /home/ddurand/fotos/09181686.png
+2026-08-24 11:46:47,323 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/007976593.png -> /home/ddurand/fotos/007976593.png
+2026-08-24 11:46:47,323 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/005206445.png -> /home/ddurand/fotos/005206445.png
+2026-08-24 11:46:47,323 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/003505651.png -> /home/ddurand/fotos/003505651.png
+2026-08-24 11:46:47,324 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07854584.png -> /home/ddurand/fotos/07854584.png
+2026-08-24 11:46:47,324 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06767870.png -> /home/ddurand/fotos/06767870.png
+2026-08-24 11:46:47,324 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/05404904.png -> /home/ddurand/fotos/05404904.png
+2026-08-24 11:46:47,324 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09335702.png -> /home/ddurand/fotos/09335702.png
+2026-08-24 11:46:47,325 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/002197827.png -> /home/ddurand/fotos/002197827.png
+2026-08-24 11:46:47,325 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09617636.png -> /home/ddurand/fotos/09617636.png
+2026-08-24 11:46:47,326 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09276262.png -> /home/ddurand/fotos/09276262.png
+2026-08-24 11:46:47,326 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/002479003.png -> /home/ddurand/fotos/002479003.png
+2026-08-24 11:46:47,326 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08498003.png -> /home/ddurand/fotos/08498003.png
+2026-08-24 11:46:47,327 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02265009.png -> /home/ddurand/fotos/02265009.png
+2026-08-24 11:46:47,327 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000362665.png -> /home/ddurand/fotos/000362665.png
+2026-08-24 11:46:47,327 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001171292.png -> /home/ddurand/fotos/001171292.png
+2026-08-24 11:46:47,328 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08208318.png -> /home/ddurand/fotos/08208318.png
+2026-08-24 11:46:47,328 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00517808.png -> /home/ddurand/fotos/00517808.png
+2026-08-24 11:46:47,328 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08313319.png -> /home/ddurand/fotos/08313319.png
+2026-08-24 11:46:47,329 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07922095.png -> /home/ddurand/fotos/07922095.png
+2026-08-24 11:46:47,329 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08188752.png -> /home/ddurand/fotos/08188752.png
+2026-08-24 11:46:47,329 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06792928.png -> /home/ddurand/fotos/06792928.png
+2026-08-24 11:46:47,330 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/03507296.png -> /home/ddurand/fotos/03507296.png
+2026-08-24 11:46:47,330 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08207807.png -> /home/ddurand/fotos/08207807.png
+2026-08-24 11:46:47,331 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09730012.png -> /home/ddurand/fotos/09730012.png
+2026-08-24 11:46:47,331 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09985044.png -> /home/ddurand/fotos/09985044.png
+2026-08-24 11:46:47,332 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06593736.png -> /home/ddurand/fotos/06593736.png
+2026-08-24 11:46:47,332 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09613058.png -> /home/ddurand/fotos/09613058.png
+2026-08-24 11:46:47,333 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09960832.png -> /home/ddurand/fotos/09960832.png
+2026-08-24 11:46:47,333 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09286903.png -> /home/ddurand/fotos/09286903.png
+2026-08-24 11:46:47,334 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02885408.png -> /home/ddurand/fotos/02885408.png
+2026-08-24 11:46:47,334 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06805650.png -> /home/ddurand/fotos/06805650.png
+2026-08-24 11:46:47,334 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06155059.png -> /home/ddurand/fotos/06155059.png
+2026-08-24 11:46:47,335 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09482159.png -> /home/ddurand/fotos/09482159.png
+2026-08-24 11:46:47,335 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06200812.png -> /home/ddurand/fotos/06200812.png
+2026-08-24 11:46:47,335 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09842768.png -> /home/ddurand/fotos/09842768.png
+2026-08-24 11:46:47,336 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09078861.png -> /home/ddurand/fotos/09078861.png
+2026-08-24 11:46:47,336 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001266044.png -> /home/ddurand/fotos/001266044.png
+2026-08-24 11:46:47,336 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001298491.png -> /home/ddurand/fotos/001298491.png
+2026-08-24 11:46:47,336 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02884715.png -> /home/ddurand/fotos/02884715.png
+2026-08-24 11:46:47,337 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02794831.png -> /home/ddurand/fotos/02794831.png
+2026-08-24 11:46:47,337 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/04642113.png -> /home/ddurand/fotos/04642113.png
+2026-08-24 11:46:47,337 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07885488.png -> /home/ddurand/fotos/07885488.png
+2026-08-24 11:46:47,338 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08627193.png -> /home/ddurand/fotos/08627193.png
+2026-08-24 11:46:47,338 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07836607.png -> /home/ddurand/fotos/07836607.png
+2026-08-24 11:46:47,338 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08887957.png -> /home/ddurand/fotos/08887957.png
+2026-08-24 11:46:47,338 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09536047.png -> /home/ddurand/fotos/09536047.png
+2026-08-24 11:46:47,339 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06673948.png -> /home/ddurand/fotos/06673948.png
+2026-08-24 11:46:47,339 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/007449710.png -> /home/ddurand/fotos/007449710.png
+2026-08-24 11:46:47,339 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/01342343.png -> /home/ddurand/fotos/01342343.png
+2026-08-24 11:46:47,340 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000373624.png -> /home/ddurand/fotos/000373624.png
+2026-08-24 11:46:47,340 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07549138.png -> /home/ddurand/fotos/07549138.png
+2026-08-24 11:46:47,340 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08662719.png -> /home/ddurand/fotos/08662719.png
+2026-08-24 11:46:47,340 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08811163.png -> /home/ddurand/fotos/08811163.png
+2026-08-24 11:46:47,341 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001084607.png -> /home/ddurand/fotos/001084607.png
+2026-08-24 11:46:47,341 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/003605211.png -> /home/ddurand/fotos/003605211.png
+2026-08-24 11:46:47,341 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/005180011.png -> /home/ddurand/fotos/005180011.png
+2026-08-24 11:46:47,342 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000172793.png -> /home/ddurand/fotos/000172793.png
+2026-08-24 11:46:47,342 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07628246.png -> /home/ddurand/fotos/07628246.png
+2026-08-24 11:46:47,342 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07881601.png -> /home/ddurand/fotos/07881601.png
+2026-08-24 11:46:47,343 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08163775.png -> /home/ddurand/fotos/08163775.png
+2026-08-24 11:46:47,343 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09742349.png -> /home/ddurand/fotos/09742349.png
+2026-08-24 11:46:47,344 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00245143.png -> /home/ddurand/fotos/00245143.png
+2026-08-24 11:46:47,344 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/03672323.png -> /home/ddurand/fotos/03672323.png
+2026-08-24 11:46:47,344 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/03369078.png -> /home/ddurand/fotos/03369078.png
+2026-08-24 11:46:47,345 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08652057.png -> /home/ddurand/fotos/08652057.png
+2026-08-24 11:46:47,345 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07510064.png -> /home/ddurand/fotos/07510064.png
+2026-08-24 11:46:47,346 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09832565.png -> /home/ddurand/fotos/09832565.png
+2026-08-24 11:46:47,346 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09250005.png -> /home/ddurand/fotos/09250005.png
+2026-08-24 11:46:47,346 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09240223.png -> /home/ddurand/fotos/09240223.png
+2026-08-24 11:46:47,347 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07508570.png -> /home/ddurand/fotos/07508570.png
+2026-08-24 11:46:47,348 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08156676.png -> /home/ddurand/fotos/08156676.png
+2026-08-24 11:46:47,349 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/01325502.png -> /home/ddurand/fotos/01325502.png
+2026-08-24 11:46:47,349 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02811275.png -> /home/ddurand/fotos/02811275.png
+2026-08-24 11:46:47,350 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06122351.png -> /home/ddurand/fotos/06122351.png
+2026-08-24 11:46:47,350 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/01227065.png -> /home/ddurand/fotos/01227065.png
+2026-08-24 11:46:47,351 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00497227.png -> /home/ddurand/fotos/00497227.png
+2026-08-24 11:46:47,351 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06116600.png -> /home/ddurand/fotos/06116600.png
+2026-08-24 11:46:47,351 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09584546.png -> /home/ddurand/fotos/09584546.png
+2026-08-24 11:46:47,352 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08888636.png -> /home/ddurand/fotos/08888636.png
+2026-08-24 11:46:47,352 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/004595242.png -> /home/ddurand/fotos/004595242.png
+2026-08-24 11:46:47,352 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07538130.png -> /home/ddurand/fotos/07538130.png
+2026-08-24 11:46:47,353 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07752349.png -> /home/ddurand/fotos/07752349.png
+2026-08-24 11:46:47,354 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07523847.png -> /home/ddurand/fotos/07523847.png
+2026-08-24 11:46:47,354 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/002195310.png -> /home/ddurand/fotos/002195310.png
+2026-08-24 11:46:47,355 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001949092.png -> /home/ddurand/fotos/001949092.png
+2026-08-24 11:46:47,355 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/04416791.png -> /home/ddurand/fotos/04416791.png
+2026-08-24 11:46:47,355 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06767693.png -> /home/ddurand/fotos/06767693.png
+2026-08-24 11:46:47,356 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07878318.png -> /home/ddurand/fotos/07878318.png
+2026-08-24 11:46:47,356 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08520296.png -> /home/ddurand/fotos/08520296.png
+2026-08-24 11:46:47,356 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09473626.png -> /home/ddurand/fotos/09473626.png
+2026-08-24 11:46:47,357 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08677497.png -> /home/ddurand/fotos/08677497.png
+2026-08-24 11:46:47,357 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001565626.png -> /home/ddurand/fotos/001565626.png
+2026-08-24 11:46:47,358 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/01187815.png -> /home/ddurand/fotos/01187815.png
+2026-08-24 11:46:47,358 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07712635.png -> /home/ddurand/fotos/07712635.png
+2026-08-24 11:46:47,358 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08144147.png -> /home/ddurand/fotos/08144147.png
+2026-08-24 11:46:47,358 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08538679.png -> /home/ddurand/fotos/08538679.png
+2026-08-24 11:46:47,359 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/008298507.png -> /home/ddurand/fotos/008298507.png
+2026-08-24 11:46:47,359 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08327067.png -> /home/ddurand/fotos/08327067.png
+2026-08-24 11:46:47,359 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06674670.png -> /home/ddurand/fotos/06674670.png
+2026-08-24 11:46:47,360 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001627743.png -> /home/ddurand/fotos/001627743.png
+2026-08-24 11:46:47,360 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07866263.png -> /home/ddurand/fotos/07866263.png
+2026-08-24 11:46:47,361 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07485595.png -> /home/ddurand/fotos/07485595.png
+2026-08-24 11:46:47,361 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09903936.png -> /home/ddurand/fotos/09903936.png
+2026-08-24 11:46:47,362 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07971644.png -> /home/ddurand/fotos/07971644.png
+2026-08-24 11:46:47,362 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/005786894.png -> /home/ddurand/fotos/005786894.png
+2026-08-24 11:46:47,362 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07495921.png -> /home/ddurand/fotos/07495921.png
+2026-08-24 11:46:47,363 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06777819.png -> /home/ddurand/fotos/06777819.png
+2026-08-24 11:46:47,364 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07667987.png -> /home/ddurand/fotos/07667987.png
+2026-08-24 11:46:47,364 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06774757.png -> /home/ddurand/fotos/06774757.png
+2026-08-24 11:46:47,365 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09860234.png -> /home/ddurand/fotos/09860234.png
+2026-08-24 11:46:47,365 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07616629.png -> /home/ddurand/fotos/07616629.png
+2026-08-24 11:46:47,366 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06786488.png -> /home/ddurand/fotos/06786488.png
+2026-08-24 11:46:47,367 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/004339785.png -> /home/ddurand/fotos/004339785.png
+2026-08-24 11:46:47,367 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/006304856.png -> /home/ddurand/fotos/006304856.png
+2026-08-24 11:46:47,367 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08522218.png -> /home/ddurand/fotos/08522218.png
+2026-08-24 11:46:47,368 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09855017.png -> /home/ddurand/fotos/09855017.png
+2026-08-24 11:46:47,368 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09975854.png -> /home/ddurand/fotos/09975854.png
+2026-08-24 11:46:47,368 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07523224.png -> /home/ddurand/fotos/07523224.png
+2026-08-24 11:46:47,369 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000163298.png -> /home/ddurand/fotos/000163298.png
+2026-08-24 11:46:47,369 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/04643601.png -> /home/ddurand/fotos/04643601.png
+2026-08-24 11:46:47,370 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000150331.png -> /home/ddurand/fotos/000150331.png
+2026-08-24 11:46:47,370 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08358570.png -> /home/ddurand/fotos/08358570.png
+2026-08-24 11:46:47,370 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09271084.png -> /home/ddurand/fotos/09271084.png
+2026-08-24 11:46:47,370 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02794948.png -> /home/ddurand/fotos/02794948.png
+2026-08-24 11:46:47,371 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09485768.png -> /home/ddurand/fotos/09485768.png
+2026-08-24 11:46:47,371 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09732020.png -> /home/ddurand/fotos/09732020.png
+2026-08-24 11:46:47,371 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/005671612.png -> /home/ddurand/fotos/005671612.png
+2026-08-24 11:46:47,371 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06144960.png -> /home/ddurand/fotos/06144960.png
+2026-08-24 11:46:47,372 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/05643847.png -> /home/ddurand/fotos/05643847.png
+2026-08-24 11:46:47,372 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09774222.png -> /home/ddurand/fotos/09774222.png
+2026-08-24 11:46:47,372 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/05339257.png -> /home/ddurand/fotos/05339257.png
+2026-08-24 11:46:47,373 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06283561.png -> /home/ddurand/fotos/06283561.png
+2026-08-24 11:46:47,373 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06767304.png -> /home/ddurand/fotos/06767304.png
+2026-08-24 11:46:47,373 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06690772.png -> /home/ddurand/fotos/06690772.png
+2026-08-24 11:46:47,374 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09675643.png -> /home/ddurand/fotos/09675643.png
+2026-08-24 11:46:47,374 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07424728.png -> /home/ddurand/fotos/07424728.png
+2026-08-24 11:46:47,374 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06067059.png -> /home/ddurand/fotos/06067059.png
+2026-08-24 11:46:47,375 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09709735.png -> /home/ddurand/fotos/09709735.png
+2026-08-24 11:46:47,375 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08242316.png -> /home/ddurand/fotos/08242316.png
+2026-08-24 11:46:47,375 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09580456.png -> /home/ddurand/fotos/09580456.png
+2026-08-24 11:46:47,375 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09982404.png -> /home/ddurand/fotos/09982404.png
+2026-08-24 11:46:47,376 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07566771.png -> /home/ddurand/fotos/07566771.png
+2026-08-24 11:46:47,376 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08652337.png -> /home/ddurand/fotos/08652337.png
+2026-08-24 11:46:47,377 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09875652.png -> /home/ddurand/fotos/09875652.png
+2026-08-24 11:46:47,377 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000269983.png -> /home/ddurand/fotos/000269983.png
+2026-08-24 11:46:47,377 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08161383.png -> /home/ddurand/fotos/08161383.png
+2026-08-24 11:46:47,378 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09126753.png -> /home/ddurand/fotos/09126753.png
+2026-08-24 11:46:47,378 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09368961.png -> /home/ddurand/fotos/09368961.png
+2026-08-24 11:46:47,378 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07935307.png -> /home/ddurand/fotos/07935307.png
+2026-08-24 11:46:47,379 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09640463.png -> /home/ddurand/fotos/09640463.png
+2026-08-24 11:46:47,379 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009105918.png -> /home/ddurand/fotos/009105918.png
+2026-08-24 11:46:47,379 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/03836408.png -> /home/ddurand/fotos/03836408.png
+2026-08-24 11:46:47,380 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06630048.png -> /home/ddurand/fotos/06630048.png
+2026-08-24 11:46:47,380 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07502008.png -> /home/ddurand/fotos/07502008.png
+2026-08-24 11:46:47,380 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08589165.png -> /home/ddurand/fotos/08589165.png
+2026-08-24 11:46:47,381 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07286581.png -> /home/ddurand/fotos/07286581.png
+2026-08-24 11:46:47,381 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09642927.png -> /home/ddurand/fotos/09642927.png
+2026-08-24 11:46:47,382 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/004107180.png -> /home/ddurand/fotos/004107180.png
+2026-08-24 11:46:47,382 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00515310.png -> /home/ddurand/fotos/00515310.png
+2026-08-24 11:46:47,383 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000360239.png -> /home/ddurand/fotos/000360239.png
+2026-08-24 11:46:47,383 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06320816.png -> /home/ddurand/fotos/06320816.png
+2026-08-24 11:46:47,384 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09978968.png -> /home/ddurand/fotos/09978968.png
+2026-08-24 11:46:47,384 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07648306.png -> /home/ddurand/fotos/07648306.png
+2026-08-24 11:46:47,385 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001350390.png -> /home/ddurand/fotos/001350390.png
+2026-08-24 11:46:47,385 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06768738.png -> /home/ddurand/fotos/06768738.png
+2026-08-24 11:46:47,386 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00504139.png -> /home/ddurand/fotos/00504139.png
+2026-08-24 11:46:47,386 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09628081.png -> /home/ddurand/fotos/09628081.png
+2026-08-24 11:46:47,387 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09954784.png -> /home/ddurand/fotos/09954784.png
+2026-08-24 11:46:47,387 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08343112.png -> /home/ddurand/fotos/08343112.png
+2026-08-24 11:46:47,387 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000084002.png -> /home/ddurand/fotos/000084002.png
+2026-08-24 11:46:47,387 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07503288.png -> /home/ddurand/fotos/07503288.png
+2026-08-24 11:46:47,388 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09586210.png -> /home/ddurand/fotos/09586210.png
+2026-08-24 11:46:47,388 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08311670.png -> /home/ddurand/fotos/08311670.png
+2026-08-24 11:46:47,388 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08248803.png -> /home/ddurand/fotos/08248803.png
+2026-08-24 11:46:47,389 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00414196.png -> /home/ddurand/fotos/00414196.png
+2026-08-24 11:46:47,389 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000363548.png -> /home/ddurand/fotos/000363548.png
+2026-08-24 11:46:47,389 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08475271.png -> /home/ddurand/fotos/08475271.png
+2026-08-24 11:46:47,389 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09544836.png -> /home/ddurand/fotos/09544836.png
+2026-08-24 11:46:47,390 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07511850.png -> /home/ddurand/fotos/07511850.png
+2026-08-24 11:46:47,390 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000176055.png -> /home/ddurand/fotos/000176055.png
+2026-08-24 11:46:47,390 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06103825.png -> /home/ddurand/fotos/06103825.png
+2026-08-24 11:46:47,390 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07975669.png -> /home/ddurand/fotos/07975669.png
+2026-08-24 11:46:47,391 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07499950.png -> /home/ddurand/fotos/07499950.png
+2026-08-24 11:46:47,391 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09672024.png -> /home/ddurand/fotos/09672024.png
+2026-08-24 11:46:47,391 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09855209.png -> /home/ddurand/fotos/09855209.png
+2026-08-24 11:46:47,392 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/03846451.png -> /home/ddurand/fotos/03846451.png
+2026-08-24 11:46:47,392 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09336817.png -> /home/ddurand/fotos/09336817.png
+2026-08-24 11:46:47,393 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000149236.png -> /home/ddurand/fotos/000149236.png
+2026-08-24 11:46:47,393 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/005637347.png -> /home/ddurand/fotos/005637347.png
+2026-08-24 11:46:47,393 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/01343284.png -> /home/ddurand/fotos/01343284.png
+2026-08-24 11:46:47,394 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08164766.png -> /home/ddurand/fotos/08164766.png
+2026-08-24 11:46:47,394 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07522640.png -> /home/ddurand/fotos/07522640.png
+2026-08-24 11:46:47,395 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06714741.png -> /home/ddurand/fotos/06714741.png
+2026-08-24 11:46:47,395 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/005816521.png -> /home/ddurand/fotos/005816521.png
+2026-08-24 11:46:47,395 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07967928.png -> /home/ddurand/fotos/07967928.png
+2026-08-24 11:46:47,396 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02447053.png -> /home/ddurand/fotos/02447053.png
+2026-08-24 11:46:47,396 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000095331.png -> /home/ddurand/fotos/000095331.png
+2026-08-24 11:46:47,397 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09937566.png -> /home/ddurand/fotos/09937566.png
+2026-08-24 11:46:47,397 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07971998.png -> /home/ddurand/fotos/07971998.png
+2026-08-24 11:46:47,397 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001141816.png -> /home/ddurand/fotos/001141816.png
+2026-08-24 11:46:47,398 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09653169.png -> /home/ddurand/fotos/09653169.png
+2026-08-24 11:46:47,398 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09467127.png -> /home/ddurand/fotos/09467127.png
+2026-08-24 11:46:47,399 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001107890.png -> /home/ddurand/fotos/001107890.png
+2026-08-24 11:46:47,399 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09361443.png -> /home/ddurand/fotos/09361443.png
+2026-08-24 11:46:47,400 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/002023593.png -> /home/ddurand/fotos/002023593.png
+2026-08-24 11:46:47,400 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09550567.png -> /home/ddurand/fotos/09550567.png
+2026-08-24 11:46:47,400 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09830255.png -> /home/ddurand/fotos/09830255.png
+2026-08-24 11:46:47,401 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09489438.png -> /home/ddurand/fotos/09489438.png
+2026-08-24 11:46:47,401 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08835621.png -> /home/ddurand/fotos/08835621.png
+2026-08-24 11:46:47,401 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001195074.png -> /home/ddurand/fotos/001195074.png
+2026-08-24 11:46:47,402 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07751392.png -> /home/ddurand/fotos/07751392.png
+2026-08-24 11:46:47,402 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000477055.png -> /home/ddurand/fotos/000477055.png
+2026-08-24 11:46:47,403 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09553622.png -> /home/ddurand/fotos/09553622.png
+2026-08-24 11:46:47,403 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09394342.png -> /home/ddurand/fotos/09394342.png
+2026-08-24 11:46:47,403 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09221391.png -> /home/ddurand/fotos/09221391.png
+2026-08-24 11:46:47,403 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09346453.png -> /home/ddurand/fotos/09346453.png
+2026-08-24 11:46:47,404 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00249031.png -> /home/ddurand/fotos/00249031.png
+2026-08-24 11:46:47,404 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08975261.png -> /home/ddurand/fotos/08975261.png
+2026-08-24 11:46:47,404 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07485533.png -> /home/ddurand/fotos/07485533.png
+2026-08-24 11:46:47,405 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09872397.png -> /home/ddurand/fotos/09872397.png
+2026-08-24 11:46:47,405 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09452457.png -> /home/ddurand/fotos/09452457.png
+2026-08-24 11:46:47,406 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09730868.png -> /home/ddurand/fotos/09730868.png
+2026-08-24 11:46:47,406 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/01544413.png -> /home/ddurand/fotos/01544413.png
+2026-08-24 11:46:47,406 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02306730.png -> /home/ddurand/fotos/02306730.png
+2026-08-24 11:46:47,407 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/04647150.png -> /home/ddurand/fotos/04647150.png
+2026-08-24 11:46:47,407 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06293951.png -> /home/ddurand/fotos/06293951.png
+2026-08-24 11:46:47,407 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09917857.png -> /home/ddurand/fotos/09917857.png
+2026-08-24 11:46:47,408 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000586075.png -> /home/ddurand/fotos/000586075.png
+2026-08-24 11:46:47,408 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06677677.png -> /home/ddurand/fotos/06677677.png
+2026-08-24 11:46:47,408 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/04426381.png -> /home/ddurand/fotos/04426381.png
+2026-08-24 11:46:47,409 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09397901.png -> /home/ddurand/fotos/09397901.png
+2026-08-24 11:46:47,409 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001205702.png -> /home/ddurand/fotos/001205702.png
+2026-08-24 11:46:47,410 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07420704.png -> /home/ddurand/fotos/07420704.png
+2026-08-24 11:46:47,410 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07459921.png -> /home/ddurand/fotos/07459921.png
+2026-08-24 11:46:47,410 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000843795.png -> /home/ddurand/fotos/000843795.png
+2026-08-24 11:46:47,410 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07591433.png -> /home/ddurand/fotos/07591433.png
+2026-08-24 11:46:47,411 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00489715.png -> /home/ddurand/fotos/00489715.png
+2026-08-24 11:46:47,411 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/04430998.png -> /home/ddurand/fotos/04430998.png
+2026-08-24 11:46:47,411 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08661213.png -> /home/ddurand/fotos/08661213.png
+2026-08-24 11:46:47,412 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/002117160.png -> /home/ddurand/fotos/002117160.png
+2026-08-24 11:46:47,412 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07805970.png -> /home/ddurand/fotos/07805970.png
+2026-08-24 11:46:47,412 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09343413.png -> /home/ddurand/fotos/09343413.png
+2026-08-24 11:46:47,413 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02161575.png -> /home/ddurand/fotos/02161575.png
+2026-08-24 11:46:47,413 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001741275.png -> /home/ddurand/fotos/001741275.png
+2026-08-24 11:46:47,413 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001057885.png -> /home/ddurand/fotos/001057885.png
+2026-08-24 11:46:47,414 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09651210.png -> /home/ddurand/fotos/09651210.png
+2026-08-24 11:46:47,414 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08883772.png -> /home/ddurand/fotos/08883772.png
+2026-08-24 11:46:47,414 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/005681450.png -> /home/ddurand/fotos/005681450.png
+2026-08-24 11:46:47,415 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09370686.png -> /home/ddurand/fotos/09370686.png
+2026-08-24 11:46:47,415 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06708594.png -> /home/ddurand/fotos/06708594.png
+2026-08-24 11:46:47,416 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/002343296.png -> /home/ddurand/fotos/002343296.png
+2026-08-24 11:46:47,416 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08740423.png -> /home/ddurand/fotos/08740423.png
+2026-08-24 11:46:47,416 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00827985.png -> /home/ddurand/fotos/00827985.png
+2026-08-24 11:46:47,417 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09585580.png -> /home/ddurand/fotos/09585580.png
+2026-08-24 11:46:47,417 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08287296.png -> /home/ddurand/fotos/08287296.png
+2026-08-24 11:46:47,418 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/005982912.png -> /home/ddurand/fotos/005982912.png
+2026-08-24 11:46:47,418 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/03503228.png -> /home/ddurand/fotos/03503228.png
+2026-08-24 11:46:47,419 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/01296679.png -> /home/ddurand/fotos/01296679.png
+2026-08-24 11:46:47,419 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09937108.png -> /home/ddurand/fotos/09937108.png
+2026-08-24 11:46:47,419 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02892120.png -> /home/ddurand/fotos/02892120.png
+2026-08-24 11:46:47,420 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07431321.png -> /home/ddurand/fotos/07431321.png
+2026-08-24 11:46:47,420 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08886996.png -> /home/ddurand/fotos/08886996.png
+2026-08-24 11:46:47,420 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08228246.png -> /home/ddurand/fotos/08228246.png
+2026-08-24 11:46:47,421 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09568724.png -> /home/ddurand/fotos/09568724.png
+2026-08-24 11:46:47,421 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/03125062.png -> /home/ddurand/fotos/03125062.png
+2026-08-24 11:46:47,421 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07181093.png -> /home/ddurand/fotos/07181093.png
+2026-08-24 11:46:47,422 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00496329.png -> /home/ddurand/fotos/00496329.png
+2026-08-24 11:46:47,422 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09683192.png -> /home/ddurand/fotos/09683192.png
+2026-08-24 11:46:47,422 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07850971.png -> /home/ddurand/fotos/07850971.png
+2026-08-24 11:46:47,423 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08188942.png -> /home/ddurand/fotos/08188942.png
+2026-08-24 11:46:47,423 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09628851.png -> /home/ddurand/fotos/09628851.png
+2026-08-24 11:46:47,423 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06671598.png -> /home/ddurand/fotos/06671598.png
+2026-08-24 11:46:47,424 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00442263.png -> /home/ddurand/fotos/00442263.png
+2026-08-24 11:46:47,424 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09153733.png -> /home/ddurand/fotos/09153733.png
+2026-08-24 11:46:47,424 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07548697.png -> /home/ddurand/fotos/07548697.png
+2026-08-24 11:46:47,425 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09886952.png -> /home/ddurand/fotos/09886952.png
+2026-08-24 11:46:47,425 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09467256.png -> /home/ddurand/fotos/09467256.png
+2026-08-24 11:46:47,425 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07469142.png -> /home/ddurand/fotos/07469142.png
+2026-08-24 11:46:47,426 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07621272.png -> /home/ddurand/fotos/07621272.png
+2026-08-24 11:46:47,426 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00246052.png -> /home/ddurand/fotos/00246052.png
+2026-08-24 11:46:47,426 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07963962.png -> /home/ddurand/fotos/07963962.png
+2026-08-24 11:46:47,427 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09946489.png -> /home/ddurand/fotos/09946489.png
+2026-08-24 11:46:47,427 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02168355.png -> /home/ddurand/fotos/02168355.png
+2026-08-24 11:46:47,427 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07646752.png -> /home/ddurand/fotos/07646752.png
+2026-08-24 11:46:47,427 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09021034.png -> /home/ddurand/fotos/09021034.png
+2026-08-24 11:46:47,428 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07798830.png -> /home/ddurand/fotos/07798830.png
+2026-08-24 11:46:47,428 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09724088.png -> /home/ddurand/fotos/09724088.png
+2026-08-24 11:46:47,428 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02863973.png -> /home/ddurand/fotos/02863973.png
+2026-08-24 11:46:47,428 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06217547.png -> /home/ddurand/fotos/06217547.png
+2026-08-24 11:46:47,429 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09784584.png -> /home/ddurand/fotos/09784584.png
+2026-08-24 11:46:47,429 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00125503.png -> /home/ddurand/fotos/00125503.png
+2026-08-24 11:46:47,429 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/05367318.png -> /home/ddurand/fotos/05367318.png
+2026-08-24 11:46:47,430 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001434593.png -> /home/ddurand/fotos/001434593.png
+2026-08-24 11:46:47,430 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09419604.png -> /home/ddurand/fotos/09419604.png
+2026-08-24 11:46:47,430 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06107842.png -> /home/ddurand/fotos/06107842.png
+2026-08-24 11:46:47,431 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09276964.png -> /home/ddurand/fotos/09276964.png
+2026-08-24 11:46:47,431 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08956428.png -> /home/ddurand/fotos/08956428.png
+2026-08-24 11:46:47,432 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07590309.png -> /home/ddurand/fotos/07590309.png
+2026-08-24 11:46:47,432 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09624482.png -> /home/ddurand/fotos/09624482.png
+2026-08-24 11:46:47,433 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08626873.png -> /home/ddurand/fotos/08626873.png
+2026-08-24 11:46:47,433 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08887495.png -> /home/ddurand/fotos/08887495.png
+2026-08-24 11:46:47,434 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000134689.png -> /home/ddurand/fotos/000134689.png
+2026-08-24 11:46:47,434 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09080130.png -> /home/ddurand/fotos/09080130.png
+2026-08-24 11:46:47,434 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08241648.png -> /home/ddurand/fotos/08241648.png
+2026-08-24 11:46:47,435 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/05251408.png -> /home/ddurand/fotos/05251408.png
+2026-08-24 11:46:47,435 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08713916.png -> /home/ddurand/fotos/08713916.png
+2026-08-24 11:46:47,435 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001449727.png -> /home/ddurand/fotos/001449727.png
+2026-08-24 11:46:47,436 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07778335.png -> /home/ddurand/fotos/07778335.png
+2026-08-24 11:46:47,436 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09394320.png -> /home/ddurand/fotos/09394320.png
+2026-08-24 11:46:47,436 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06703116.png -> /home/ddurand/fotos/06703116.png
+2026-08-24 11:46:47,437 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00430776.png -> /home/ddurand/fotos/00430776.png
+2026-08-24 11:46:47,437 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00113182.png -> /home/ddurand/fotos/00113182.png
+2026-08-24 11:46:47,437 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/01343506.png -> /home/ddurand/fotos/01343506.png
+2026-08-24 11:46:47,438 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07765707.png -> /home/ddurand/fotos/07765707.png
+2026-08-24 11:46:47,438 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06645312.png -> /home/ddurand/fotos/06645312.png
+2026-08-24 11:46:47,438 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09635007.png -> /home/ddurand/fotos/09635007.png
+2026-08-24 11:46:47,438 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/03695850.png -> /home/ddurand/fotos/03695850.png
+2026-08-24 11:46:47,439 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09971818.png -> /home/ddurand/fotos/09971818.png
+2026-08-24 11:46:47,439 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06794842.png -> /home/ddurand/fotos/06794842.png
+2026-08-24 11:46:47,439 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08030712.png -> /home/ddurand/fotos/08030712.png
+2026-08-24 11:46:47,439 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09860151.png -> /home/ddurand/fotos/09860151.png
+2026-08-24 11:46:47,440 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07618453.png -> /home/ddurand/fotos/07618453.png
+2026-08-24 11:46:47,440 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09712997.png -> /home/ddurand/fotos/09712997.png
+2026-08-24 11:46:47,440 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06173102.png -> /home/ddurand/fotos/06173102.png
+2026-08-24 11:46:47,441 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09378114.png -> /home/ddurand/fotos/09378114.png
+2026-08-24 11:46:47,441 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/01777233.png -> /home/ddurand/fotos/01777233.png
+2026-08-24 11:46:47,442 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07204899.png -> /home/ddurand/fotos/07204899.png
+2026-08-24 11:46:47,442 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000077812.png -> /home/ddurand/fotos/000077812.png
+2026-08-24 11:46:47,442 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07970933.png -> /home/ddurand/fotos/07970933.png
+2026-08-24 11:46:47,442 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09455768.png -> /home/ddurand/fotos/09455768.png
+2026-08-24 11:46:47,443 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000223916.png -> /home/ddurand/fotos/000223916.png
+2026-08-24 11:46:47,443 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001764260.png -> /home/ddurand/fotos/001764260.png
+2026-08-24 11:46:47,443 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/002315047.png -> /home/ddurand/fotos/002315047.png
+2026-08-24 11:46:47,443 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001506918.png -> /home/ddurand/fotos/001506918.png
+2026-08-24 11:46:47,444 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09689525.png -> /home/ddurand/fotos/09689525.png
+2026-08-24 11:46:47,444 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02064156.png -> /home/ddurand/fotos/02064156.png
+2026-08-24 11:46:47,444 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07765146.png -> /home/ddurand/fotos/07765146.png
+2026-08-24 11:46:47,444 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06776072.png -> /home/ddurand/fotos/06776072.png
+2026-08-24 11:46:47,445 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08743826.png -> /home/ddurand/fotos/08743826.png
+2026-08-24 11:46:47,445 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08295763.png -> /home/ddurand/fotos/08295763.png
+2026-08-24 11:46:47,445 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06960439.png -> /home/ddurand/fotos/06960439.png
+2026-08-24 11:46:47,445 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09954354.png -> /home/ddurand/fotos/09954354.png
+2026-08-24 11:46:47,446 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00444594.png -> /home/ddurand/fotos/00444594.png
+2026-08-24 11:46:47,446 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07702733.png -> /home/ddurand/fotos/07702733.png
+2026-08-24 11:46:47,446 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00505961.png -> /home/ddurand/fotos/00505961.png
+2026-08-24 11:46:47,447 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08840160.png -> /home/ddurand/fotos/08840160.png
+2026-08-24 11:46:47,447 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07442966.png -> /home/ddurand/fotos/07442966.png
+2026-08-24 11:46:47,447 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09083392.png -> /home/ddurand/fotos/09083392.png
+2026-08-24 11:46:47,447 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06783794.png -> /home/ddurand/fotos/06783794.png
+2026-08-24 11:46:47,448 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00436072.png -> /home/ddurand/fotos/00436072.png
+2026-08-24 11:46:47,448 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09132725.png -> /home/ddurand/fotos/09132725.png
+2026-08-24 11:46:47,448 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06890284.png -> /home/ddurand/fotos/06890284.png
+2026-08-24 11:46:47,449 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07502013.png -> /home/ddurand/fotos/07502013.png
+2026-08-24 11:46:47,450 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07297567.png -> /home/ddurand/fotos/07297567.png
+2026-08-24 11:46:47,450 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/005227805.png -> /home/ddurand/fotos/005227805.png
+2026-08-24 11:46:47,451 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07766437.png -> /home/ddurand/fotos/07766437.png
+2026-08-24 11:46:47,451 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09611338.png -> /home/ddurand/fotos/09611338.png
+2026-08-24 11:46:47,451 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02830112.png -> /home/ddurand/fotos/02830112.png
+2026-08-24 11:46:47,452 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09548962.png -> /home/ddurand/fotos/09548962.png
+2026-08-24 11:46:47,452 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09865515.png -> /home/ddurand/fotos/09865515.png
+2026-08-24 11:46:47,453 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001984628.png -> /home/ddurand/fotos/001984628.png
+2026-08-24 11:46:47,453 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02774691.png -> /home/ddurand/fotos/02774691.png
+2026-08-24 11:46:47,453 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09850078.png -> /home/ddurand/fotos/09850078.png
+2026-08-24 11:46:47,454 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00466262.png -> /home/ddurand/fotos/00466262.png
+2026-08-24 11:46:47,454 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09747085.png -> /home/ddurand/fotos/09747085.png
+2026-08-24 11:46:47,454 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09637224.png -> /home/ddurand/fotos/09637224.png
+2026-08-24 11:46:47,455 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09259970.png -> /home/ddurand/fotos/09259970.png
+2026-08-24 11:46:47,455 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/002473100.png -> /home/ddurand/fotos/002473100.png
+2026-08-24 11:46:47,456 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07511529.png -> /home/ddurand/fotos/07511529.png
+2026-08-24 11:46:47,456 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09646153.png -> /home/ddurand/fotos/09646153.png
+2026-08-24 11:46:47,457 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07492300.png -> /home/ddurand/fotos/07492300.png
+2026-08-24 11:46:47,457 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07850872.png -> /home/ddurand/fotos/07850872.png
+2026-08-24 11:46:47,457 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02824074.png -> /home/ddurand/fotos/02824074.png
+2026-08-24 11:46:47,458 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09590279.png -> /home/ddurand/fotos/09590279.png
+2026-08-24 11:46:47,458 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07743632.png -> /home/ddurand/fotos/07743632.png
+2026-08-24 11:46:47,458 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09484083.png -> /home/ddurand/fotos/09484083.png
+2026-08-24 11:46:47,459 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09699322.png -> /home/ddurand/fotos/09699322.png
+2026-08-24 11:46:47,459 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00493147.png -> /home/ddurand/fotos/00493147.png
+2026-08-24 11:46:47,459 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09428134.png -> /home/ddurand/fotos/09428134.png
+2026-08-24 11:46:47,460 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00069529.png -> /home/ddurand/fotos/00069529.png
+2026-08-24 11:46:47,460 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02424015.png -> /home/ddurand/fotos/02424015.png
+2026-08-24 11:46:47,460 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/05243450.png -> /home/ddurand/fotos/05243450.png
+2026-08-24 11:46:47,461 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06099384.png -> /home/ddurand/fotos/06099384.png
+2026-08-24 11:46:47,461 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001681792.png -> /home/ddurand/fotos/001681792.png
+2026-08-24 11:46:47,462 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08430039.png -> /home/ddurand/fotos/08430039.png
+2026-08-24 11:46:47,462 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09838457.png -> /home/ddurand/fotos/09838457.png
+2026-08-24 11:46:47,462 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07252227.png -> /home/ddurand/fotos/07252227.png
+2026-08-24 11:46:47,463 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07403020.png -> /home/ddurand/fotos/07403020.png
+2026-08-24 11:46:47,463 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09925430.png -> /home/ddurand/fotos/09925430.png
+2026-08-24 11:46:47,463 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07036299.png -> /home/ddurand/fotos/07036299.png
+2026-08-24 11:46:47,464 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06705985.png -> /home/ddurand/fotos/06705985.png
+2026-08-24 11:46:47,464 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09758044.png -> /home/ddurand/fotos/09758044.png
+2026-08-24 11:46:47,464 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08274855.png -> /home/ddurand/fotos/08274855.png
+2026-08-24 11:46:47,465 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09438230.png -> /home/ddurand/fotos/09438230.png
+2026-08-24 11:46:47,466 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07619118.png -> /home/ddurand/fotos/07619118.png
+2026-08-24 11:46:47,466 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000289623.png -> /home/ddurand/fotos/000289623.png
+2026-08-24 11:46:47,467 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09938520.png -> /home/ddurand/fotos/09938520.png
+2026-08-24 11:46:47,467 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09514821.png -> /home/ddurand/fotos/09514821.png
+2026-08-24 11:46:47,468 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001059423.png -> /home/ddurand/fotos/001059423.png
+2026-08-24 11:46:47,468 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07866725.png -> /home/ddurand/fotos/07866725.png
+2026-08-24 11:46:47,468 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07760596.png -> /home/ddurand/fotos/07760596.png
+2026-08-24 11:46:47,469 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09930074.png -> /home/ddurand/fotos/09930074.png
+2026-08-24 11:46:47,469 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09849275.png -> /home/ddurand/fotos/09849275.png
+2026-08-24 11:46:47,470 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09941857.png -> /home/ddurand/fotos/09941857.png
+2026-08-24 11:46:47,470 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001309666.png -> /home/ddurand/fotos/001309666.png
+2026-08-24 11:46:47,470 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02844255.png -> /home/ddurand/fotos/02844255.png
+2026-08-24 11:46:47,471 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07977270.png -> /home/ddurand/fotos/07977270.png
+2026-08-24 11:46:47,471 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07295979.png -> /home/ddurand/fotos/07295979.png
+2026-08-24 11:46:47,471 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07163768.png -> /home/ddurand/fotos/07163768.png
+2026-08-24 11:46:47,471 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08647566.png -> /home/ddurand/fotos/08647566.png
+2026-08-24 11:46:47,472 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09417629.png -> /home/ddurand/fotos/09417629.png
+2026-08-24 11:46:47,472 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07722088.png -> /home/ddurand/fotos/07722088.png
+2026-08-24 11:46:47,472 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09155186.png -> /home/ddurand/fotos/09155186.png
+2026-08-24 11:46:47,473 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02899617.png -> /home/ddurand/fotos/02899617.png
+2026-08-24 11:46:47,473 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08087571.png -> /home/ddurand/fotos/08087571.png
+2026-08-24 11:46:47,473 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07450679.png -> /home/ddurand/fotos/07450679.png
+2026-08-24 11:46:47,474 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08119476.png -> /home/ddurand/fotos/08119476.png
+2026-08-24 11:46:47,474 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09946288.png -> /home/ddurand/fotos/09946288.png
+2026-08-24 11:46:47,474 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02619240.png -> /home/ddurand/fotos/02619240.png
+2026-08-24 11:46:47,475 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/002081640.png -> /home/ddurand/fotos/002081640.png
+2026-08-24 11:46:47,475 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07477634.png -> /home/ddurand/fotos/07477634.png
+2026-08-24 11:46:47,475 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09884484.png -> /home/ddurand/fotos/09884484.png
+2026-08-24 11:46:47,476 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08881303.png -> /home/ddurand/fotos/08881303.png
+2026-08-24 11:46:47,476 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09895111.png -> /home/ddurand/fotos/09895111.png
+2026-08-24 11:46:47,476 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08122306.png -> /home/ddurand/fotos/08122306.png
+2026-08-24 11:46:47,477 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07972010.png -> /home/ddurand/fotos/07972010.png
+2026-08-24 11:46:47,477 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001044194.png -> /home/ddurand/fotos/001044194.png
+2026-08-24 11:46:47,478 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07576240.png -> /home/ddurand/fotos/07576240.png
+2026-08-24 11:46:47,478 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07539472.png -> /home/ddurand/fotos/07539472.png
+2026-08-24 11:46:47,478 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09048211.png -> /home/ddurand/fotos/09048211.png
+2026-08-24 11:46:47,478 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09275579.png -> /home/ddurand/fotos/09275579.png
+2026-08-24 11:46:47,479 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09431929.png -> /home/ddurand/fotos/09431929.png
+2026-08-24 11:46:47,479 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000553282.png -> /home/ddurand/fotos/000553282.png
+2026-08-24 11:46:47,479 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/05645980.png -> /home/ddurand/fotos/05645980.png
+2026-08-24 11:46:47,480 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06630299.png -> /home/ddurand/fotos/06630299.png
+2026-08-24 11:46:47,480 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07626446.png -> /home/ddurand/fotos/07626446.png
+2026-08-24 11:46:47,480 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02888499.png -> /home/ddurand/fotos/02888499.png
+2026-08-24 11:46:47,481 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07849407.png -> /home/ddurand/fotos/07849407.png
+2026-08-24 11:46:47,481 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001218936.png -> /home/ddurand/fotos/001218936.png
+2026-08-24 11:46:47,482 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07713854.png -> /home/ddurand/fotos/07713854.png
+2026-08-24 11:46:47,482 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07374636.png -> /home/ddurand/fotos/07374636.png
+2026-08-24 11:46:47,482 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09908885.png -> /home/ddurand/fotos/09908885.png
+2026-08-24 11:46:47,483 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08675455.png -> /home/ddurand/fotos/08675455.png
+2026-08-24 11:46:47,483 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02371284.png -> /home/ddurand/fotos/02371284.png
+2026-08-24 11:46:47,484 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09743052.png -> /home/ddurand/fotos/09743052.png
+2026-08-24 11:46:47,484 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02801737.png -> /home/ddurand/fotos/02801737.png
+2026-08-24 11:46:47,484 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/05372358.png -> /home/ddurand/fotos/05372358.png
+2026-08-24 11:46:47,485 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06599923.png -> /home/ddurand/fotos/06599923.png
+2026-08-24 11:46:47,486 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06650387.png -> /home/ddurand/fotos/06650387.png
+2026-08-24 11:46:47,486 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06239574.png -> /home/ddurand/fotos/06239574.png
+2026-08-24 11:46:47,486 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00682828.png -> /home/ddurand/fotos/00682828.png
+2026-08-24 11:46:47,487 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06771951.png -> /home/ddurand/fotos/06771951.png
+2026-08-24 11:46:47,487 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001330191.png -> /home/ddurand/fotos/001330191.png
+2026-08-24 11:46:47,487 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001121730.png -> /home/ddurand/fotos/001121730.png
+2026-08-24 11:46:47,487 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000098151.png -> /home/ddurand/fotos/000098151.png
+2026-08-24 11:46:47,488 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09961471.png -> /home/ddurand/fotos/09961471.png
+2026-08-24 11:46:47,488 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07095688.png -> /home/ddurand/fotos/07095688.png
+2026-08-24 11:46:47,488 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09340915.png -> /home/ddurand/fotos/09340915.png
+2026-08-24 11:46:47,488 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001818875.png -> /home/ddurand/fotos/001818875.png
+2026-08-24 11:46:47,489 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000025588.png -> /home/ddurand/fotos/000025588.png
+2026-08-24 11:46:47,489 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08771329.png -> /home/ddurand/fotos/08771329.png
+2026-08-24 11:46:47,490 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001630131.png -> /home/ddurand/fotos/001630131.png
+2026-08-24 11:46:47,490 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09648036.png -> /home/ddurand/fotos/09648036.png
+2026-08-24 11:46:47,490 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07856086.png -> /home/ddurand/fotos/07856086.png
+2026-08-24 11:46:47,490 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07148417.png -> /home/ddurand/fotos/07148417.png
+2026-08-24 11:46:47,491 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06797683.png -> /home/ddurand/fotos/06797683.png
+2026-08-24 11:46:47,491 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09931875.png -> /home/ddurand/fotos/09931875.png
+2026-08-24 11:46:47,491 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08702976.png -> /home/ddurand/fotos/08702976.png
+2026-08-24 11:46:47,491 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08702836.png -> /home/ddurand/fotos/08702836.png
+2026-08-24 11:46:47,492 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07070458.png -> /home/ddurand/fotos/07070458.png
+2026-08-24 11:46:47,492 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/05402957.png -> /home/ddurand/fotos/05402957.png
+2026-08-24 11:46:47,492 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09839787.png -> /home/ddurand/fotos/09839787.png
+2026-08-24 11:46:47,492 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02806678.png -> /home/ddurand/fotos/02806678.png
+2026-08-24 11:46:47,493 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07508938.png -> /home/ddurand/fotos/07508938.png
+2026-08-24 11:46:47,493 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09864050.png -> /home/ddurand/fotos/09864050.png
+2026-08-24 11:46:47,493 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06271669.png -> /home/ddurand/fotos/06271669.png
+2026-08-24 11:46:47,494 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09533114.png -> /home/ddurand/fotos/09533114.png
+2026-08-24 11:46:47,494 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09433046.png -> /home/ddurand/fotos/09433046.png
+2026-08-24 11:46:47,494 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00201951.png -> /home/ddurand/fotos/00201951.png
+2026-08-24 11:46:47,495 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09864508.png -> /home/ddurand/fotos/09864508.png
+2026-08-24 11:46:47,495 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07501127.png -> /home/ddurand/fotos/07501127.png
+2026-08-24 11:46:47,495 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07042372.png -> /home/ddurand/fotos/07042372.png
+2026-08-24 11:46:47,496 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000574891.png -> /home/ddurand/fotos/000574891.png
+2026-08-24 11:46:47,496 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/04823534.png -> /home/ddurand/fotos/04823534.png
+2026-08-24 11:46:47,496 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07899934.png -> /home/ddurand/fotos/07899934.png
+2026-08-24 11:46:47,497 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07964527.png -> /home/ddurand/fotos/07964527.png
+2026-08-24 11:46:47,497 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08663379.png -> /home/ddurand/fotos/08663379.png
+2026-08-24 11:46:47,498 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/03879197.png -> /home/ddurand/fotos/03879197.png
+2026-08-24 11:46:47,498 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09513406.png -> /home/ddurand/fotos/09513406.png
+2026-08-24 11:46:47,499 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07869566.png -> /home/ddurand/fotos/07869566.png
+2026-08-24 11:46:47,499 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/03330356.png -> /home/ddurand/fotos/03330356.png
+2026-08-24 11:46:47,500 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00443074.png -> /home/ddurand/fotos/00443074.png
+2026-08-24 11:46:47,500 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07965226.png -> /home/ddurand/fotos/07965226.png
+2026-08-24 11:46:47,501 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00509522.png -> /home/ddurand/fotos/00509522.png
+2026-08-24 11:46:47,501 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09671889.png -> /home/ddurand/fotos/09671889.png
+2026-08-24 11:46:47,502 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09994460.png -> /home/ddurand/fotos/09994460.png
+2026-08-24 11:46:47,502 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09451232.png -> /home/ddurand/fotos/09451232.png
+2026-08-24 11:46:47,502 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001045642.png -> /home/ddurand/fotos/001045642.png
+2026-08-24 11:46:47,503 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00126358.png -> /home/ddurand/fotos/00126358.png
+2026-08-24 11:46:47,503 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09297113.png -> /home/ddurand/fotos/09297113.png
+2026-08-24 11:46:47,503 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07305156.png -> /home/ddurand/fotos/07305156.png
+2026-08-24 11:46:47,504 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09542252.png -> /home/ddurand/fotos/09542252.png
+2026-08-24 11:46:47,504 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07495666.png -> /home/ddurand/fotos/07495666.png
+2026-08-24 11:46:47,504 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/04427310.png -> /home/ddurand/fotos/04427310.png
+2026-08-24 11:46:47,504 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09859679.png -> /home/ddurand/fotos/09859679.png
+2026-08-24 11:46:47,505 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09936824.png -> /home/ddurand/fotos/09936824.png
+2026-08-24 11:46:47,505 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07709401.png -> /home/ddurand/fotos/07709401.png
+2026-08-24 11:46:47,505 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09596994.png -> /home/ddurand/fotos/09596994.png
+2026-08-24 11:46:47,506 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07238163.png -> /home/ddurand/fotos/07238163.png
+2026-08-24 11:46:47,506 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07875296.png -> /home/ddurand/fotos/07875296.png
+2026-08-24 11:46:47,506 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001443436.png -> /home/ddurand/fotos/001443436.png
+2026-08-24 11:46:47,507 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00413274.png -> /home/ddurand/fotos/00413274.png
+2026-08-24 11:46:47,507 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001196987.png -> /home/ddurand/fotos/001196987.png
+2026-08-24 11:46:47,507 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09385820.png -> /home/ddurand/fotos/09385820.png
+2026-08-24 11:46:47,507 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000098119.png -> /home/ddurand/fotos/000098119.png
+2026-08-24 11:46:47,508 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08102380.png -> /home/ddurand/fotos/08102380.png
+2026-08-24 11:46:47,508 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09674905.png -> /home/ddurand/fotos/09674905.png
+2026-08-24 11:46:47,509 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07133618.png -> /home/ddurand/fotos/07133618.png
+2026-08-24 11:46:47,509 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06243204.png -> /home/ddurand/fotos/06243204.png
+2026-08-24 11:46:47,510 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/001143244.png -> /home/ddurand/fotos/001143244.png
+2026-08-24 11:46:47,510 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00791803.png -> /home/ddurand/fotos/00791803.png
+2026-08-24 11:46:47,510 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09943956.png -> /home/ddurand/fotos/09943956.png
+2026-08-24 11:46:47,510 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07883292.png -> /home/ddurand/fotos/07883292.png
+2026-08-24 11:46:47,511 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06812194.png -> /home/ddurand/fotos/06812194.png
+2026-08-24 11:46:47,511 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09379523.png -> /home/ddurand/fotos/09379523.png
+2026-08-24 11:46:47,511 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07492063.png -> /home/ddurand/fotos/07492063.png
+2026-08-24 11:46:47,512 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08268574.png -> /home/ddurand/fotos/08268574.png
+2026-08-24 11:46:47,512 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/01321929.png -> /home/ddurand/fotos/01321929.png
+2026-08-24 11:46:47,512 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06769761.png -> /home/ddurand/fotos/06769761.png
+2026-08-24 11:46:47,512 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07519310.png -> /home/ddurand/fotos/07519310.png
+2026-08-24 11:46:47,513 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07531026.png -> /home/ddurand/fotos/07531026.png
+2026-08-24 11:46:47,513 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09431916.png -> /home/ddurand/fotos/09431916.png
+2026-08-24 11:46:47,514 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09953552.png -> /home/ddurand/fotos/09953552.png
+2026-08-24 11:46:47,514 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09821387.png -> /home/ddurand/fotos/09821387.png
+2026-08-24 11:46:47,514 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07869967.png -> /home/ddurand/fotos/07869967.png
+2026-08-24 11:46:47,515 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000025260.png -> /home/ddurand/fotos/000025260.png
+2026-08-24 11:46:47,515 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08697071.png -> /home/ddurand/fotos/08697071.png
+2026-08-24 11:46:47,516 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08159206.png -> /home/ddurand/fotos/08159206.png
+2026-08-24 11:46:47,516 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000415599.png -> /home/ddurand/fotos/000415599.png
+2026-08-24 11:46:47,516 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/002196232.png -> /home/ddurand/fotos/002196232.png
+2026-08-24 11:46:47,517 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000063790.png -> /home/ddurand/fotos/000063790.png
+2026-08-24 11:46:47,517 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000069381.png -> /home/ddurand/fotos/000069381.png
+2026-08-24 11:46:47,518 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07886954.png -> /home/ddurand/fotos/07886954.png
+2026-08-24 11:46:47,518 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09864410.png -> /home/ddurand/fotos/09864410.png
+2026-08-24 11:46:47,519 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/00125501.png -> /home/ddurand/fotos/00125501.png
+2026-08-24 11:46:47,519 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/05393877.png -> /home/ddurand/fotos/05393877.png
+2026-08-24 11:46:47,519 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000382992.png -> /home/ddurand/fotos/000382992.png
+2026-08-24 11:46:47,519 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09279245.png -> /home/ddurand/fotos/09279245.png
+2026-08-24 11:46:47,520 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07473497.png -> /home/ddurand/fotos/07473497.png
+2026-08-24 11:46:47,520 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09536263.png -> /home/ddurand/fotos/09536263.png
+2026-08-24 11:46:47,520 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/04423413.png -> /home/ddurand/fotos/04423413.png
+2026-08-24 11:46:47,521 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07736099.png -> /home/ddurand/fotos/07736099.png
+2026-08-24 11:46:47,521 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09467669.png -> /home/ddurand/fotos/09467669.png
+2026-08-24 11:46:47,521 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/04749374.png -> /home/ddurand/fotos/04749374.png
+2026-08-24 11:46:47,521 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08084439.png -> /home/ddurand/fotos/08084439.png
+2026-08-24 11:46:47,522 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07842467.png -> /home/ddurand/fotos/07842467.png
+2026-08-24 11:46:47,522 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07877828.png -> /home/ddurand/fotos/07877828.png
+2026-08-24 11:46:47,522 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/02767232.png -> /home/ddurand/fotos/02767232.png
+2026-08-24 11:46:47,522 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/000020667.png -> /home/ddurand/fotos/000020667.png
+2026-08-24 11:46:47,523 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07865959.png -> /home/ddurand/fotos/07865959.png
+2026-08-24 11:46:47,523 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07707788.png -> /home/ddurand/fotos/07707788.png
+2026-08-24 11:46:47,523 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06671271.png -> /home/ddurand/fotos/06671271.png
+2026-08-24 11:46:47,524 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08273577.png -> /home/ddurand/fotos/08273577.png
+2026-08-24 11:46:47,524 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08770531.png -> /home/ddurand/fotos/08770531.png
+2026-08-24 11:46:47,524 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09335257.png -> /home/ddurand/fotos/09335257.png
+2026-08-24 11:46:47,525 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/05218237.png -> /home/ddurand/fotos/05218237.png
+2026-08-24 11:46:47,525 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/06779348.png -> /home/ddurand/fotos/06779348.png
+2026-08-24 11:46:47,526 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09597922.png -> /home/ddurand/fotos/09597922.png
+2026-08-24 11:46:47,526 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09861099.png -> /home/ddurand/fotos/09861099.png
+2026-08-24 11:46:47,526 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07793915.png -> /home/ddurand/fotos/07793915.png
+2026-08-24 11:46:47,527 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/03653450.png -> /home/ddurand/fotos/03653450.png
+2026-08-24 11:46:47,527 INFO __main__ - Sincronización finalizada
+2026-08-24 13:42:56,219 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-24 13:43:26,854 WARNING urllib3.connectionpool - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=57545): Failed to establish a new connection: [Errno 111] Connection refused")': /session/17584f93f8a262594aae14a1f23536ee
+2026-08-24 13:43:26,857 WARNING urllib3.connectionpool - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=57545): Failed to establish a new connection: [Errno 111] Connection refused")': /session/17584f93f8a262594aae14a1f23536ee
+2026-08-24 13:43:26,859 WARNING urllib3.connectionpool - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=57545): Failed to establish a new connection: [Errno 111] Connection refused")': /session/17584f93f8a262594aae14a1f23536ee
+2026-08-24 13:43:37,405 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-24 15:15:04,616 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-24 15:19:01,912 INFO sync_merger - Merge completado: insert=749 | update=723 | recurrent=1
+2026-08-24 15:19:02,110 INFO __main__ - Sincronización finalizada
+2026-08-24 15:56:35,462 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-24 15:58:20,410 ERROR __main__ - Error durante la automatización MINCETUR
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 41, in obtener_df_scraper
+    estado: EstadoPagina = parsear_estado_pagina(*scraper.capturar_estado())
+                                                  ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 254, in capturar_estado
+    self.driver.title,
+    ^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 536, in title
+    return self.execute(Command.GET_TITLE).get("value", "")
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 504, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=151.0.7922.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5e4e9d61b36a <unknown>
+#1 0x5e4e9cf8ef49 <unknown>
+#2 0x5e4e9cf75143 <unknown>
+#3 0x5e4e9cf9e27a <unknown>
+#4 0x5e4e9d012db0 <unknown>
+#5 0x5e4e9d02ca58 <unknown>
+#6 0x5e4e9cfd7c92 <unknown>
+#7 0x5e4e9cfd8b11 <unknown>
+#8 0x5e4e9d5e08d0 <unknown>
+#9 0x5e4e9d5def3a <unknown>
+#10 0x5e4e9d5c99b5 <unknown>
+#11 0x5e4e9d5dfc0a <unknown>
+#12 0x5e4e9d5b1740 <unknown>
+#13 0x5e4e9d6069a8 <unknown>
+#14 0x5e4e9d606b45 <unknown>
+#15 0x5e4e9d619f1e <unknown>
+#16 0x731e344a407a <unknown>
+#17 0x731e3453772c <unknown>
+
+2026-08-24 15:58:20,488 ERROR __main__ - Proceso abortado al obtener datos del scraper: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=151.0.7922.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5e4e9d61b36a <unknown>
+#1 0x5e4e9cf8ef49 <unknown>
+#2 0x5e4e9cf75143 <unknown>
+#3 0x5e4e9cf9e27a <unknown>
+#4 0x5e4e9d012db0 <unknown>
+#5 0x5e4e9d02ca58 <unknown>
+#6 0x5e4e9cfd7c92 <unknown>
+#7 0x5e4e9cfd8b11 <unknown>
+#8 0x5e4e9d5e08d0 <unknown>
+#9 0x5e4e9d5def3a <unknown>
+#10 0x5e4e9d5c99b5 <unknown>
+#11 0x5e4e9d5dfc0a <unknown>
+#12 0x5e4e9d5b1740 <unknown>
+#13 0x5e4e9d6069a8 <unknown>
+#14 0x5e4e9d606b45 <unknown>
+#15 0x5e4e9d619f1e <unknown>
+#16 0x731e344a407a <unknown>
+#17 0x731e3453772c <unknown>
+
+2026-08-24 16:01:57,050 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-24 16:03:39,728 INFO sync_merger - Merge completado: insert=749 | update=723 | recurrent=1
+2026-08-24 16:03:39,840 INFO __main__ - Sincronización finalizada
+2026-08-24 16:11:42,020 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-24 16:13:23,569 INFO sync_merger - Merge completado: insert=749 | update=723 | recurrent=1
+2026-08-24 16:13:23,650 INFO __main__ - Sincronización finalizada
+2026-08-24 17:05:11,936 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-24 17:06:53,328 INFO sync_merger - Merge completado: insert=718 | update=718 | recurrent=0
+2026-08-24 17:06:53,353 INFO __main__ - Sincronización finalizada
+2026-08-24 17:18:16,538 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-24 17:20:20,869 INFO sync_merger - Merge completado: insert=718 | update=718 | recurrent=0
+2026-08-24 17:20:20,891 INFO __main__ - Sincronización finalizada
+2026-08-24 17:26:09,617 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-24 17:28:27,418 INFO sync_merger - Merge completado: insert=718 | update=718 | recurrent=0
+2026-08-24 17:28:27,442 INFO __main__ - Sincronización finalizada
+2026-08-24 17:34:13,680 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-24 17:35:58,792 INFO __main__ - Sincronización finalizada
+2026-08-24 17:41:34,266 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-24 17:43:10,469 INFO __main__ - Sincronización finalizada
+2026-08-25 11:00:59,713 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-25 11:02:36,466 INFO __main__ - Sincronización finalizada
+2026-08-25 11:09:27,231 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-25 11:10:50,322 INFO sync_merger - Merge completado: insert=718 | update=718 | recurrent=0
+2026-08-25 11:10:50,333 INFO __main__ - Sincronización finalizada
+2026-08-25 11:21:41,591 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-25 11:23:26,435 INFO sync_merger - Merge completado: insert=0 | update=0 | recurrent=0
+2026-08-25 11:23:26,441 INFO __main__ - Sincronización finalizada
+2026-08-25 11:25:34,329 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-25 11:29:16,414 INFO sync_merger - Merge completado: insert=16 | update=1 | recurrent=0
+2026-08-25 11:29:16,456 INFO __main__ - Sincronización finalizada
+2026-08-26 00:37:21,816 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 00:41:20,331 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 00:41:20,360 INFO __main__ - Sincronización finalizada
+2026-08-26 01:07:49,051 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 01:09:23,868 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 01:09:23,897 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 01:27:18,032 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 01:28:45,289 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 01:28:45,294 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 01:28:45,298 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 01:28:45,298 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 01:28:45,299 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 01:28:45,300 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 01:28:45,300 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 01:28:45,301 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 01:28:45,301 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 01:28:45,302 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 01:28:45,303 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 01:28:45,303 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 01:28:45,304 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 01:28:45,304 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 01:28:45,305 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 01:28:45,305 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 01:28:45,306 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 01:28:45,306 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 01:28:45,306 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 01:28:45,307 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 01:28:45,307 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 01:28:45,309 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,309 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15350', 'persona': 'QUISPE LUNA, MARIO', 'documento': '10463195', 'contacto': 'QUISPE BALDEON, MARIO 995968696', 'ubigeo': 'LIMA/LIMA/EL AGUSTINO', 'ruta_foto': 'src/static/images/10463195.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,309 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15349', 'persona': 'MARQUEZ YUMBATO, SARITA', 'documento': '61960692', 'contacto': 'YUMBATO MANIHUARI, ESTHER 925394134', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/61960692.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,309 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15348', 'persona': 'FRANCO OLAECHEA, SEBASTIAN ARTURO', 'documento': '76951613', 'contacto': 'FRANCO MARTINEZ, JOSE JESUS 937048732', 'ubigeo': 'LIMA/LIMA/SANTIAGO DE SURCO', 'ruta_foto': 'src/static/images/76951613.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,309 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15346', 'persona': 'MACARLUPU VERAMENDI, LUIS ALEX', 'documento': '41428904', 'contacto': 'OCAMPO MALDONADO, SHARONHE DESIREE 912631782', 'ubigeo': 'LIMA/HUAURA/HUALMAY', 'ruta_foto': 'src/static/images/41428904.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,309 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15342', 'persona': 'RAMOS ESTRELLA, JACOB ARTURO', 'documento': '76888993', 'contacto': 'ESTRELLA VARGAS, YESICA RUTH 986526676', 'ubigeo': 'LIMA/LIMA/SANTA ANITA', 'ruta_foto': 'src/static/images/76888993.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,309 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15337', 'persona': 'MEDINA CONDORI, GODOFREDO EMILIO', 'documento': '43589023', 'contacto': 'BENDIVES FELIPE, MIYOSHI CATHERIN 930911764', 'ubigeo': 'AREQUIPA/AREQUIPA/CERRO COLORADO', 'ruta_foto': 'src/static/images/43589023.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,309 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15336', 'persona': 'FLORES CCORAHUA, DANNY AMERICO', 'documento': '41584881', 'contacto': 'CCORAHUA BENITES, ISABEL 975884266', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/41584881.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,309 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15335', 'persona': 'GARCIA AMASIFUEN, MAX CHARLES', 'documento': '47918483', 'contacto': 'AMASIFUEN GARCIA, ROSA 916075575', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/47918483.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,309 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15334', 'persona': 'Huahuala Chire, Gledy Cinthya', 'documento': '73031275', 'contacto': 'CASTILLA BORJA, MARTIN REY RAMIRO 940793144', 'ubigeo': 'AREQUIPA/AREQUIPA/ALTO SELVA ALEGRE', 'ruta_foto': 'src/static/images/73031275.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,310 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15333', 'persona': 'Leiva Rivera, Jahir Felipe', 'documento': '72649132', 'contacto': 'HERRERA BORJA, ANA CAROLINA 939413942', 'ubigeo': 'LIMA/LIMA/SAN MIGUEL', 'ruta_foto': 'src/static/images/72649132.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,310 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15332', 'persona': 'MINAYA BOCANEGRA, JOSE SANTOS', 'documento': '61350078', 'contacto': 'MINAYA BOCANEGRA, ARELI MORELY 943209711', 'ubigeo': 'ÁNCASH/SANTA/NUEVO CHIMBOTE', 'ruta_foto': 'src/static/images/61350078.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,310 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15331', 'persona': 'Ostolaza Carvallo, Rafael Alfonso', 'documento': '72531647', 'contacto': 'CARVALLO ROMERO, GLADYS 993628633', 'ubigeo': 'LIMA/LIMA/MIRAFLORES', 'ruta_foto': 'src/static/images/72531647.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,310 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15330', 'persona': 'ANGULO MARTINEZ, JORGE LUIS', 'documento': '75403973', 'contacto': 'MARTINEZ PERALTA, LILIANA VERONICA 996685732', 'ubigeo': 'LIMA/LIMA/SURQUILLO', 'ruta_foto': 'src/static/images/75403973.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,310 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15329', 'persona': 'Chavez Tuesta, Eloy Fabricio', 'documento': '72979798', 'contacto': 'TUESTA RUBIO, ROCIO 966949107', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/72979798.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,310 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15320', 'persona': 'Marengo Orsini, Armida Milagros', 'documento': '09164152', 'contacto': 'CABALLERO MARENGO ORSINI, CARLA MILAGROS 903186652', 'ubigeo': 'LIMA/LIMA/SAN BORJA', 'ruta_foto': 'src/static/images/09164152.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,310 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15311', 'persona': 'CASTRO GARCIA, FATIMA PAOLA', 'documento': '71784833', 'contacto': 'TORRES ORDOÑEZ, FABRIZZIO MARCO ANTONIO 948255879', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/71784833.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,310 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15275', 'persona': 'Jordan Campos, Jorge', 'documento': '21527618', 'contacto': 'JORDAN CAMPOS, MARIA ELENA 922321315', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21527618.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:28:45,310 INFO __main__ - Tareas adicionales de scraping en sistema inhouse finalizadas.
+2026-08-26 01:28:45,310 INFO __main__ - Registros detectados en df_update (1). Pendiente scraping a sistema inhouse.
+2026-08-26 01:28:45,311 INFO __main__ - [UPDATE] Iniciando scraping inhouse para: {'id': 2450, 'code': 12464, 'first_name': 'Mirian Mercedes', 'last_name': 'Cabanillastardillo', 'card_type': 1, 'id_card': '08661213', 'ubigeo': 'Callao / Prov. Const. Delcallao / Callao', 'published_at': '2024-02-21 00:00:00.000', 'contact': 'Chavez Herrera Raulalberto 966929676', 'photo': 'players/player/b0994ea2ec9b4c4e80bf49c8d6262466.PNG', 'created_at': '2024-02-22 10:36:16.000', 'updated_at': '2024-02-22 10:36:16.000', 'is_active': 1}
+2026-08-26 01:28:45,311 INFO __main__ - Tareas adicionales de scraping en sistema inhouse finalizadas.
+2026-08-26 01:28:45,311 INFO __main__ - No hay registros recurrentes para actualizar (df_update_recurrent vacío).
+2026-08-26 01:28:45,311 INFO __main__ - Sincronización finalizada
+2026-08-26 01:31:46,149 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 01:33:11,064 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 01:33:11,068 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 01:33:11,070 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 01:33:11,071 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 01:33:11,071 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 01:33:11,072 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 01:33:11,072 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 01:33:11,073 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 01:33:11,073 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 01:33:11,073 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 01:33:11,073 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 01:33:11,074 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 01:33:11,074 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 01:33:11,074 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 01:33:11,075 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 01:33:11,075 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 01:33:11,075 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 01:33:11,075 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 01:33:11,076 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 01:33:11,076 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 01:33:11,076 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 01:33:11,078 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,078 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15350', 'persona': 'QUISPE LUNA, MARIO', 'documento': '10463195', 'contacto': 'QUISPE BALDEON, MARIO 995968696', 'ubigeo': 'LIMA/LIMA/EL AGUSTINO', 'ruta_foto': 'src/static/images/10463195.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,078 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15349', 'persona': 'MARQUEZ YUMBATO, SARITA', 'documento': '61960692', 'contacto': 'YUMBATO MANIHUARI, ESTHER 925394134', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/61960692.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,078 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15348', 'persona': 'FRANCO OLAECHEA, SEBASTIAN ARTURO', 'documento': '76951613', 'contacto': 'FRANCO MARTINEZ, JOSE JESUS 937048732', 'ubigeo': 'LIMA/LIMA/SANTIAGO DE SURCO', 'ruta_foto': 'src/static/images/76951613.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,078 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15346', 'persona': 'MACARLUPU VERAMENDI, LUIS ALEX', 'documento': '41428904', 'contacto': 'OCAMPO MALDONADO, SHARONHE DESIREE 912631782', 'ubigeo': 'LIMA/HUAURA/HUALMAY', 'ruta_foto': 'src/static/images/41428904.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,078 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15342', 'persona': 'RAMOS ESTRELLA, JACOB ARTURO', 'documento': '76888993', 'contacto': 'ESTRELLA VARGAS, YESICA RUTH 986526676', 'ubigeo': 'LIMA/LIMA/SANTA ANITA', 'ruta_foto': 'src/static/images/76888993.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,078 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15337', 'persona': 'MEDINA CONDORI, GODOFREDO EMILIO', 'documento': '43589023', 'contacto': 'BENDIVES FELIPE, MIYOSHI CATHERIN 930911764', 'ubigeo': 'AREQUIPA/AREQUIPA/CERRO COLORADO', 'ruta_foto': 'src/static/images/43589023.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,078 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15336', 'persona': 'FLORES CCORAHUA, DANNY AMERICO', 'documento': '41584881', 'contacto': 'CCORAHUA BENITES, ISABEL 975884266', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/41584881.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,078 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15335', 'persona': 'GARCIA AMASIFUEN, MAX CHARLES', 'documento': '47918483', 'contacto': 'AMASIFUEN GARCIA, ROSA 916075575', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/47918483.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,078 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15334', 'persona': 'Huahuala Chire, Gledy Cinthya', 'documento': '73031275', 'contacto': 'CASTILLA BORJA, MARTIN REY RAMIRO 940793144', 'ubigeo': 'AREQUIPA/AREQUIPA/ALTO SELVA ALEGRE', 'ruta_foto': 'src/static/images/73031275.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,078 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15333', 'persona': 'Leiva Rivera, Jahir Felipe', 'documento': '72649132', 'contacto': 'HERRERA BORJA, ANA CAROLINA 939413942', 'ubigeo': 'LIMA/LIMA/SAN MIGUEL', 'ruta_foto': 'src/static/images/72649132.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,079 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15332', 'persona': 'MINAYA BOCANEGRA, JOSE SANTOS', 'documento': '61350078', 'contacto': 'MINAYA BOCANEGRA, ARELI MORELY 943209711', 'ubigeo': 'ÁNCASH/SANTA/NUEVO CHIMBOTE', 'ruta_foto': 'src/static/images/61350078.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,079 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15331', 'persona': 'Ostolaza Carvallo, Rafael Alfonso', 'documento': '72531647', 'contacto': 'CARVALLO ROMERO, GLADYS 993628633', 'ubigeo': 'LIMA/LIMA/MIRAFLORES', 'ruta_foto': 'src/static/images/72531647.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,079 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15330', 'persona': 'ANGULO MARTINEZ, JORGE LUIS', 'documento': '75403973', 'contacto': 'MARTINEZ PERALTA, LILIANA VERONICA 996685732', 'ubigeo': 'LIMA/LIMA/SURQUILLO', 'ruta_foto': 'src/static/images/75403973.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,079 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15329', 'persona': 'Chavez Tuesta, Eloy Fabricio', 'documento': '72979798', 'contacto': 'TUESTA RUBIO, ROCIO 966949107', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/72979798.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,079 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15320', 'persona': 'Marengo Orsini, Armida Milagros', 'documento': '09164152', 'contacto': 'CABALLERO MARENGO ORSINI, CARLA MILAGROS 903186652', 'ubigeo': 'LIMA/LIMA/SAN BORJA', 'ruta_foto': 'src/static/images/09164152.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,079 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15311', 'persona': 'CASTRO GARCIA, FATIMA PAOLA', 'documento': '71784833', 'contacto': 'TORRES ORDOÑEZ, FABRIZZIO MARCO ANTONIO 948255879', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/71784833.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,079 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15275', 'persona': 'Jordan Campos, Jorge', 'documento': '21527618', 'contacto': 'JORDAN CAMPOS, MARIA ELENA 922321315', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21527618.png', 'fec_publicacion': '25/08/2026'}
+2026-08-26 01:33:11,079 INFO __main__ - Tareas adicionales de scraping en sistema inhouse finalizadas.
+2026-08-26 01:33:11,079 INFO __main__ - Registros detectados en df_update (1). Pendiente scraping a sistema inhouse.
+2026-08-26 01:33:11,080 INFO __main__ - [UPDATE] Iniciando scraping inhouse para: {'id': 2450, 'code': 12464, 'first_name': 'Mirian Mercedes', 'last_name': 'Cabanillastardillo', 'card_type': 1, 'id_card': '08661213', 'ubigeo': 'Callao / Prov. Const. Delcallao / Callao', 'published_at': '2024-02-21 00:00:00.000', 'contact': 'Chavez Herrera Raulalberto 966929676', 'photo': 'players/player/b0994ea2ec9b4c4e80bf49c8d6262466.PNG', 'created_at': '2024-02-22 10:36:16.000', 'updated_at': '2024-02-22 10:36:16.000', 'is_active': 1}
+2026-08-26 01:33:11,080 INFO __main__ - Tareas adicionales de scraping en sistema inhouse finalizadas.
+2026-08-26 01:33:11,080 INFO __main__ - No hay registros recurrentes para actualizar (df_update_recurrent vacío).
+2026-08-26 01:33:11,080 INFO __main__ - Sincronización finalizada

@@ -1,18 +1,7 @@
 from dataclasses import dataclass
-from pydantic_settings import BaseSettings, SettingsConfigDict
 
-
-class Credenciales(BaseSettings):
-    model_config = SettingsConfigDict(
-        env_file=".env",
-        env_file_encoding="utf-8",
-        extra="ignore",
-    )
-
-    mincetur_ruc: str = ""
-    mincetur_usuario: str = ""
-    mincetur_clave: str = ""
-    mincetur_headless: bool = False
+'''validar, limpiar y estructurar datos que provienen del scraping o de entradas del usuario. Ofrece dos utilidades principales: 
+una función para garantizar que un RUC sea válido y una estructura para normalizar el contenido extraído de una página web.'''
 
 def normalizar_ruc(ruc: str) -> str:
     ruc_limpio = ruc.strip()
@@ -20,12 +9,11 @@ def normalizar_ruc(ruc: str) -> str:
         raise ValueError(f"El RUC debe tener 11 dígitos numéricos, se recibió: {ruc!r}")
     return ruc_limpio
 
-@dataclass
+@dataclass # El decorador @dataclass convierte esta clase en un contenedor de datos ligero.
 class EstadoPagina:
     titulo: str
     url: str
     texto_visible: str
-
 
 def parsear_estado_pagina(titulo: str, url: str, texto_visible: str) -> EstadoPagina:
     return EstadoPagina(

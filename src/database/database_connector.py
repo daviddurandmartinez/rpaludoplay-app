@@ -2,42 +2,57 @@ from sqlalchemy import create_engine
 from sqlalchemy.engine import Engine
 from typing import Optional
 import urllib.parse
-from config import SQL_SERVER_CONFIG,TARGET_TABLE  # Asegúrate de importar tu configuración validada
+from config import SQLServerSettings,TARGET_TABLE
 import pandas as pd
-import sqlite3
-import openpyxl
 import os
 
 #############################################
 ## CONEXION A SQL SERVER USANDO SQLALCHEMY ##
 #############################################
 
-def fetch_sqlite_dataframe():
-    nombre_archivo = os.path.join("src", "static", "files","ludoplay.xlsx")
-    df_excel = pd.read_excel(nombre_archivo)
-    conn = sqlite3.connect(':memory:')
-    df_excel.to_sql('ludoplay', conn, if_exists='replace', index=False)
-    consulta_sql = "SELECT * FROM ludoplay"
-    df_desde_sqlite = pd.read_sql(consulta_sql, conn)
-    conn.close()
-    return df_desde_sqlite
+def get_sql_server_configs() -> Optional[dict]:
+    """
+    Carga y valida las configuraciones de SQL Server usando Pydantic.
+    Retorna un diccionario listo para la conexión o None si falla la validación.
+    """
+    try:
+        settings = SQLServerSettings
+        # Retornamos en formato diccionario (usamos .get_secret_value() para extraer la contraseña al conectar)
+        return {
+            "DRIVER": settings.driver,
+            "SERVER": settings.server,
+            "USER": settings.user,
+            "DATABASE": settings.database,
+            "PASSWORD": settings.password.get_secret_value(),
+        }
+    except Exception as e:
+        print(f"Error al cargar las credenciales de configuración: {e}")
+        return None
+    
+def fetch_sqlite_dataframe() -> pd.DataFrame:
+    nombre_archivo = os.path.join("src", "static", "files", "ludoplay.xlsx")
+    df_excel = pd.read_excel(
+        nombre_archivo,
+        dtype={"id_card": str}  # Reemplaza 'id_card' por el nombre exacto del header en Excel
+    )
+    return df_excel
 
 '''def create_sqlalchemy_engine():
     """
     Crea un motor de SQLAlchemy para SQL Server aplicando buenas prácticas
     de conexión, codificación de credenciales y manejo de errores.
     """
-    if not SQL_SERVER_CONFIG:
+    if not SQLServerSettings:
         print("Error: No se encontró la configuración de SQL Server.")
         return None
     
     try:
         # Extraemos los valores de forma segura desde el diccionario de configuración
-        driver_name = SQL_SERVER_CONFIG["DRIVER"].strip("{}")
-        username = SQL_SERVER_CONFIG["USER"]
-        server = SQL_SERVER_CONFIG["SERVER"]
-        database = SQL_SERVER_CONFIG["DATABASE"]
-        password = urllib.parse.quote_plus(SQL_SERVER_CONFIG["PASSWORD"])
+        driver_name = get_sql_server_configs["DRIVER"].strip("{}")
+        username = get_sql_server_configs["USER"]
+        server = get_sql_server_configs["SERVER"]
+        database = get_sql_server_configs["DATABASE"]
+        password = urllib.parse.quote_plus(get_sql_server_configs["PASSWORD"])
         
         # Construcción de la cadena de conexión optimizada para pyodbc
         conn_str = (
@@ -59,10 +74,7 @@ def fetch_sqlite_dataframe():
     except Exception as e:
         print(f"Error creando el motor de SQLAlchemy para la base de datos '{database}': {e}")
         return None
-
-# Ejemplo de uso:
-# engine_gestion = create_sqlalchemy_engine(database="NOMBRE_DE_BD")
-
+    
 def fetch_sql_dataframe(table_name=TARGET_TABLE):
     """
     Descarga todos los datos de la tabla de destino a un DataFrame.
