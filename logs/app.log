@@ -5893,3 +5893,1183 @@ TypeError: WebDriver.find_element() takes from 1 to 3 positional arguments but 4
 2026-08-26 12:33:21,986 ERROR __main__ - Proceso abortado al obtener datos del scraper: WebDriver.find_element() takes from 1 to 3 positional arguments but 48 were given
 2026-08-26 12:34:18,153 INFO __main__ - Iniciando sincronización Ludoplay
 2026-08-26 12:38:49,279 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 15:52:07,354 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 15:56:51,028 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 16:28:54,319 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 16:29:16,377 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 16:29:18,465 ERROR __main__ - Error durante la automatización MINCETUR
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 35, in obtener_df_scraper
+    df_scraper = scraper.extraer_tabla_y_fotos_pdf()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Scraper' object has no attribute 'extraer_tabla_y_fotos_pdf'
+2026-08-26 16:29:18,555 ERROR __main__ - Proceso abortado al obtener datos del scraper: 'Scraper' object has no attribute 'extraer_tabla_y_fotos_pdf'
+2026-08-26 16:30:05,468 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 16:32:14,556 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 16:39:32,377 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 16:41:29,553 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 16:41:32,824 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 16:41:32,831 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 16:41:32,832 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 16:41:32,833 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 16:41:32,834 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 16:41:32,835 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 16:41:32,837 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 16:41:32,838 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 16:41:32,840 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 16:41:32,841 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 16:41:32,842 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 16:41:32,843 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 16:41:32,843 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 16:41:32,844 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 16:41:32,845 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 16:41:32,846 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 16:41:32,847 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 16:41:32,848 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 16:41:32,849 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 16:41:32,849 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 16:41:32,854 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026', 'apellido': 'HINOSTROZA ALARCON', 'nombre': 'SERGIO ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 16:41:58,488 ERROR __main__ - Error durante la sincronización en Ludoplay: Message: 
+Stacktrace:
+#0 0x5f91680a136a <unknown>
+#1 0x5f9167a14f49 <unknown>
+#2 0x5f9167a6a7e2 <unknown>
+#3 0x5f9167a6aa31 <unknown>
+#4 0x5f9167ab5ed4 <unknown>
+#5 0x5f9167ab30c3 <unknown>
+#6 0x5f9167a5dc92 <unknown>
+#7 0x5f9167a5eb11 <unknown>
+#8 0x5f91680668d0 <unknown>
+#9 0x5f9168064f3a <unknown>
+#10 0x5f916804f9b5 <unknown>
+#11 0x5f9168065c0a <unknown>
+#12 0x5f9168037740 <unknown>
+#13 0x5f916808c9a8 <unknown>
+#14 0x5f916808cb45 <unknown>
+#15 0x5f916809ff1e <unknown>
+#16 0x72d025ea407a <unknown>
+#17 0x72d025f3772c <unknown>
+
+2026-08-26 16:46:58,932 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 16:48:53,633 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 16:48:57,125 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 16:48:57,130 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 16:48:57,132 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 16:48:57,133 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 16:48:57,134 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 16:48:57,135 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 16:48:57,137 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 16:48:57,138 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 16:48:57,139 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 16:48:57,140 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 16:48:57,142 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 16:48:57,143 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 16:48:57,144 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 16:48:57,146 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 16:48:57,148 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 16:48:57,150 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 16:48:57,151 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 16:48:57,152 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 16:48:57,153 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 16:48:57,153 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 16:48:57,156 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026', 'apellido': 'HINOSTROZA ALARCON', 'nombre': 'SERGIO ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 16:49:22,924 ERROR __main__ - Error de Selenium al ejecutar INSERT: 
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 54, in _procesar_registro_inhouse
+    metodo_accion(**registro)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 349, in clic_insert
+    self._esperar_y_escribir((By.ID,INPUT_MENU_PERSONAS_NUEVO_REGISTRO), num_reg)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 320, in _esperar_y_escribir
+    campo = WebDriverWait(self.driver, TIEMPO_ESPERA).until(
+        EC.presence_of_element_located(selector)
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x609c675f636a <unknown>
+#1 0x609c66f69f49 <unknown>
+#2 0x609c66fbf7e2 <unknown>
+#3 0x609c66fbfa31 <unknown>
+#4 0x609c6700aed4 <unknown>
+#5 0x609c670080c3 <unknown>
+#6 0x609c66fb2c92 <unknown>
+#7 0x609c66fb3b11 <unknown>
+#8 0x609c675bb8d0 <unknown>
+#9 0x609c675b9f3a <unknown>
+#10 0x609c675a49b5 <unknown>
+#11 0x609c675bac0a <unknown>
+#12 0x609c6758c740 <unknown>
+#13 0x609c675e19a8 <unknown>
+#14 0x609c675e1b45 <unknown>
+#15 0x609c675f4f1e <unknown>
+#16 0x720ea4ea407a <unknown>
+#17 0x720ea4f3772c <unknown>
+
+2026-08-26 16:49:22,996 ERROR __main__ - Error durante la sincronización en Ludoplay: Message: 
+Stacktrace:
+#0 0x609c675f636a <unknown>
+#1 0x609c66f69f49 <unknown>
+#2 0x609c66fbf7e2 <unknown>
+#3 0x609c66fbfa31 <unknown>
+#4 0x609c6700aed4 <unknown>
+#5 0x609c670080c3 <unknown>
+#6 0x609c66fb2c92 <unknown>
+#7 0x609c66fb3b11 <unknown>
+#8 0x609c675bb8d0 <unknown>
+#9 0x609c675b9f3a <unknown>
+#10 0x609c675a49b5 <unknown>
+#11 0x609c675bac0a <unknown>
+#12 0x609c6758c740 <unknown>
+#13 0x609c675e19a8 <unknown>
+#14 0x609c675e1b45 <unknown>
+#15 0x609c675f4f1e <unknown>
+#16 0x720ea4ea407a <unknown>
+#17 0x720ea4f3772c <unknown>
+
+2026-08-26 16:56:22,217 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 16:58:29,196 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 16:58:31,949 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 16:58:31,953 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 16:58:31,954 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 16:58:31,955 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 16:58:31,955 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 16:58:31,956 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 16:58:31,957 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 16:58:31,958 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 16:58:31,958 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 16:58:31,958 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 16:58:31,959 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 16:58:31,959 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 16:58:31,959 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 16:58:31,960 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 16:58:31,960 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 16:58:31,961 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 16:58:31,961 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 16:58:31,962 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 16:58:31,962 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 16:58:31,962 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 16:58:31,965 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026', 'apellido': 'HINOSTROZA ALARCON', 'nombre': 'SERGIO ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 16:59:02,739 ERROR __main__ - Error de Selenium al ejecutar INSERT: 
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 54, in _procesar_registro_inhouse
+    metodo_accion(**registro)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 349, in clic_insert
+    self._esperar_y_escribir((By.ID,INPUT_MENU_PERSONAS_NUEVO_REGISTRO), num_reg)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 319, in _esperar_y_escribir
+    campo = WebDriverWait(self.driver, TIEMPO_ESPERA).until(
+        EC.presence_of_element_located(selector)
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x55a3a40e536a <unknown>
+#1 0x55a3a3a58f49 <unknown>
+#2 0x55a3a3aae7e2 <unknown>
+#3 0x55a3a3aaea31 <unknown>
+#4 0x55a3a3af9ed4 <unknown>
+#5 0x55a3a3af70c3 <unknown>
+#6 0x55a3a3aa1c92 <unknown>
+#7 0x55a3a3aa2b11 <unknown>
+#8 0x55a3a40aa8d0 <unknown>
+#9 0x55a3a40a8f3a <unknown>
+#10 0x55a3a40939b5 <unknown>
+#11 0x55a3a40a9c0a <unknown>
+#12 0x55a3a407b740 <unknown>
+#13 0x55a3a40d09a8 <unknown>
+#14 0x55a3a40d0b45 <unknown>
+#15 0x55a3a40e3f1e <unknown>
+#16 0x7a962cca407a <unknown>
+#17 0x7a962cd3772c <unknown>
+
+2026-08-26 16:59:02,804 ERROR __main__ - Error durante la sincronización en Ludoplay: Message: 
+Stacktrace:
+#0 0x55a3a40e536a <unknown>
+#1 0x55a3a3a58f49 <unknown>
+#2 0x55a3a3aae7e2 <unknown>
+#3 0x55a3a3aaea31 <unknown>
+#4 0x55a3a3af9ed4 <unknown>
+#5 0x55a3a3af70c3 <unknown>
+#6 0x55a3a3aa1c92 <unknown>
+#7 0x55a3a3aa2b11 <unknown>
+#8 0x55a3a40aa8d0 <unknown>
+#9 0x55a3a40a8f3a <unknown>
+#10 0x55a3a40939b5 <unknown>
+#11 0x55a3a40a9c0a <unknown>
+#12 0x55a3a407b740 <unknown>
+#13 0x55a3a40d09a8 <unknown>
+#14 0x55a3a40d0b45 <unknown>
+#15 0x55a3a40e3f1e <unknown>
+#16 0x7a962cca407a <unknown>
+#17 0x7a962cd3772c <unknown>
+
+2026-08-26 17:13:35,703 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 17:15:25,692 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 17:15:29,149 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 17:15:29,157 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 17:15:29,159 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 17:15:29,161 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 17:15:29,163 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 17:15:29,165 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 17:15:29,167 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 17:15:29,168 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 17:15:29,170 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 17:15:29,171 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 17:15:29,173 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 17:15:29,175 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 17:15:29,176 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 17:15:29,177 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 17:15:29,178 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 17:15:29,179 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 17:15:29,181 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 17:15:29,182 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 17:15:29,183 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 17:15:29,184 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 17:15:29,187 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026', 'apellido': 'HINOSTROZA ALARCON', 'nombre': 'SERGIO ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 17:15:50,320 ERROR __main__ - Error de Selenium al ejecutar INSERT: 
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 54, in _procesar_registro_inhouse
+    metodo_accion(**registro)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 344, in clic_insert
+    WebDriverWait(self.driver, TIEMPO_ESPERA).until(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EC.element_to_be_clickable((By.ID, INPUT_MENU_PERSONAS_NUEVO_REGISTRO))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x61a23776c36a <unknown>
+#1 0x61a2370dff49 <unknown>
+#2 0x61a2371357e2 <unknown>
+#3 0x61a237135a31 <unknown>
+#4 0x61a237180ed4 <unknown>
+#5 0x61a23717e0c3 <unknown>
+#6 0x61a237128c92 <unknown>
+#7 0x61a237129b11 <unknown>
+#8 0x61a2377318d0 <unknown>
+#9 0x61a23772ff3a <unknown>
+#10 0x61a23771a9b5 <unknown>
+#11 0x61a237730c0a <unknown>
+#12 0x61a237702740 <unknown>
+#13 0x61a2377579a8 <unknown>
+#14 0x61a237757b45 <unknown>
+#15 0x61a23776af1e <unknown>
+#16 0x7dd1848a407a <unknown>
+#17 0x7dd18493772c <unknown>
+
+2026-08-26 17:15:50,385 ERROR __main__ - Error durante la sincronización en Ludoplay: Message: 
+Stacktrace:
+#0 0x61a23776c36a <unknown>
+#1 0x61a2370dff49 <unknown>
+#2 0x61a2371357e2 <unknown>
+#3 0x61a237135a31 <unknown>
+#4 0x61a237180ed4 <unknown>
+#5 0x61a23717e0c3 <unknown>
+#6 0x61a237128c92 <unknown>
+#7 0x61a237129b11 <unknown>
+#8 0x61a2377318d0 <unknown>
+#9 0x61a23772ff3a <unknown>
+#10 0x61a23771a9b5 <unknown>
+#11 0x61a237730c0a <unknown>
+#12 0x61a237702740 <unknown>
+#13 0x61a2377579a8 <unknown>
+#14 0x61a237757b45 <unknown>
+#15 0x61a23776af1e <unknown>
+#16 0x7dd1848a407a <unknown>
+#17 0x7dd18493772c <unknown>
+
+2026-08-26 17:19:08,728 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 17:21:11,715 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 17:21:15,199 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 17:21:15,204 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 17:21:15,206 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 17:21:15,207 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 17:21:15,208 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 17:21:15,209 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 17:21:15,210 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 17:21:15,211 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 17:21:15,212 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 17:21:15,213 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 17:21:15,214 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 17:21:15,215 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 17:21:15,216 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 17:21:15,218 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 17:21:15,219 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 17:21:15,220 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 17:21:15,221 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 17:21:15,222 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 17:21:15,223 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 17:21:15,223 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 17:21:15,228 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026', 'apellido': 'HINOSTROZA ALARCON', 'nombre': 'SERGIO ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 17:21:17,111 ERROR __main__ - Error de Selenium al ejecutar INSERT: invalid element state
+  (Session info: chrome=151.0.7922.108)
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 54, in _procesar_registro_inhouse
+    metodo_accion(**registro)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 361, in clic_insert
+    elem.clear()
+    ~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webelement.py", line 147, in clear
+    self._execute(Command.CLEAR_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 504, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=151.0.7922.108)
+Stacktrace:
+#0 0x58d55d77a36a <unknown>
+#1 0x58d55d0edd00 <unknown>
+#2 0x58d55d13b065 <unknown>
+#3 0x58d55d138587 <unknown>
+#4 0x58d55d18c0c3 <unknown>
+#5 0x58d55d136c92 <unknown>
+#6 0x58d55d137b11 <unknown>
+#7 0x58d55d73f8d0 <unknown>
+#8 0x58d55d73df3a <unknown>
+#9 0x58d55d7289b5 <unknown>
+#10 0x58d55d73ec0a <unknown>
+#11 0x58d55d710740 <unknown>
+#12 0x58d55d7659a8 <unknown>
+#13 0x58d55d765b45 <unknown>
+#14 0x58d55d778f1e <unknown>
+#15 0x71a6258a407a <unknown>
+#16 0x71a62593772c <unknown>
+
+2026-08-26 17:21:17,193 ERROR __main__ - Error durante la sincronización en Ludoplay: Message: invalid element state
+  (Session info: chrome=151.0.7922.108)
+Stacktrace:
+#0 0x58d55d77a36a <unknown>
+#1 0x58d55d0edd00 <unknown>
+#2 0x58d55d13b065 <unknown>
+#3 0x58d55d138587 <unknown>
+#4 0x58d55d18c0c3 <unknown>
+#5 0x58d55d136c92 <unknown>
+#6 0x58d55d137b11 <unknown>
+#7 0x58d55d73f8d0 <unknown>
+#8 0x58d55d73df3a <unknown>
+#9 0x58d55d7289b5 <unknown>
+#10 0x58d55d73ec0a <unknown>
+#11 0x58d55d710740 <unknown>
+#12 0x58d55d7659a8 <unknown>
+#13 0x58d55d765b45 <unknown>
+#14 0x58d55d778f1e <unknown>
+#15 0x71a6258a407a <unknown>
+#16 0x71a62593772c <unknown>
+
+2026-08-26 17:32:05,551 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 17:34:20,421 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 17:34:23,819 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 17:34:23,825 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 17:34:23,827 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 17:34:23,829 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 17:34:23,831 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 17:34:23,832 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 17:34:23,834 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 17:34:23,836 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 17:34:23,839 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 17:34:23,840 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 17:34:23,841 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 17:34:23,842 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 17:34:23,843 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 17:34:23,844 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 17:34:23,844 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 17:34:23,845 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 17:34:23,846 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 17:34:23,847 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 17:34:23,849 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 17:34:23,849 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 17:34:23,852 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026', 'apellido': 'HINOSTROZA ALARCON', 'nombre': 'SERGIO ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 17:34:44,928 ERROR __main__ - Error de Selenium al ejecutar INSERT: 
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 54, in _procesar_registro_inhouse
+    metodo_accion(**registro)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 343, in clic_insert
+    WebDriverWait(self.driver, TIEMPO_ESPERA).until(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EC.element_to_be_clickable((By.ID, INPUT_MENU_PERSONAS_NUEVO_REGISTRO))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x5fff4d8d636a <unknown>
+#1 0x5fff4d249f49 <unknown>
+#2 0x5fff4d29f7e2 <unknown>
+#3 0x5fff4d29fa31 <unknown>
+#4 0x5fff4d2eaed4 <unknown>
+#5 0x5fff4d2e80c3 <unknown>
+#6 0x5fff4d292c92 <unknown>
+#7 0x5fff4d293b11 <unknown>
+#8 0x5fff4d89b8d0 <unknown>
+#9 0x5fff4d899f3a <unknown>
+#10 0x5fff4d8849b5 <unknown>
+#11 0x5fff4d89ac0a <unknown>
+#12 0x5fff4d86c740 <unknown>
+#13 0x5fff4d8c19a8 <unknown>
+#14 0x5fff4d8c1b45 <unknown>
+#15 0x5fff4d8d4f1e <unknown>
+#16 0x7be386aa407a <unknown>
+#17 0x7be386b3772c <unknown>
+
+2026-08-26 17:34:44,996 ERROR __main__ - Error durante la sincronización en Ludoplay: Message: 
+Stacktrace:
+#0 0x5fff4d8d636a <unknown>
+#1 0x5fff4d249f49 <unknown>
+#2 0x5fff4d29f7e2 <unknown>
+#3 0x5fff4d29fa31 <unknown>
+#4 0x5fff4d2eaed4 <unknown>
+#5 0x5fff4d2e80c3 <unknown>
+#6 0x5fff4d292c92 <unknown>
+#7 0x5fff4d293b11 <unknown>
+#8 0x5fff4d89b8d0 <unknown>
+#9 0x5fff4d899f3a <unknown>
+#10 0x5fff4d8849b5 <unknown>
+#11 0x5fff4d89ac0a <unknown>
+#12 0x5fff4d86c740 <unknown>
+#13 0x5fff4d8c19a8 <unknown>
+#14 0x5fff4d8c1b45 <unknown>
+#15 0x5fff4d8d4f1e <unknown>
+#16 0x7be386aa407a <unknown>
+#17 0x7be386b3772c <unknown>
+
+2026-08-26 17:38:05,922 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 17:40:24,786 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 17:40:27,700 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 17:40:27,704 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 17:40:27,705 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 17:40:27,705 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 17:40:27,706 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 17:40:27,706 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 17:40:27,707 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 17:40:27,707 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 17:40:27,708 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 17:40:27,708 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 17:40:27,708 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 17:40:27,709 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 17:40:27,709 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 17:40:27,709 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 17:40:27,710 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 17:40:27,710 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 17:40:27,710 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 17:40:27,711 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 17:40:27,712 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 17:40:27,712 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 17:40:27,715 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026', 'apellido': 'HINOSTROZA ALARCON', 'nombre': 'SERGIO ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:29,121 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15350', 'persona': 'QUISPE LUNA, MARIO', 'documento': '10463195', 'contacto': 'QUISPE BALDEON, MARIO 995968696', 'ubigeo': 'LIMA/LIMA/EL AGUSTINO', 'ruta_foto': 'src/static/images/10463195.png', 'fec_publicacion': '25/08/2026', 'apellido': 'QUISPE LUNA', 'nombre': 'MARIO', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:30,300 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15349', 'persona': 'MARQUEZ YUMBATO, SARITA', 'documento': '61960692', 'contacto': 'YUMBATO MANIHUARI, ESTHER 925394134', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/61960692.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MARQUEZ YUMBATO', 'nombre': 'SARITA', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:31,594 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15348', 'persona': 'FRANCO OLAECHEA, SEBASTIAN ARTURO', 'documento': '76951613', 'contacto': 'FRANCO MARTINEZ, JOSE JESUS 937048732', 'ubigeo': 'LIMA/LIMA/SANTIAGO DE SURCO', 'ruta_foto': 'src/static/images/76951613.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FRANCO OLAECHEA', 'nombre': 'SEBASTIAN ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:32,802 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15346', 'persona': 'MACARLUPU VERAMENDI, LUIS ALEX', 'documento': '41428904', 'contacto': 'OCAMPO MALDONADO, SHARONHE DESIREE 912631782', 'ubigeo': 'LIMA/HUAURA/HUALMAY', 'ruta_foto': 'src/static/images/41428904.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MACARLUPU VERAMENDI', 'nombre': 'LUIS ALEX', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:34,397 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15342', 'persona': 'RAMOS ESTRELLA, JACOB ARTURO', 'documento': '76888993', 'contacto': 'ESTRELLA VARGAS, YESICA RUTH 986526676', 'ubigeo': 'LIMA/LIMA/SANTA ANITA', 'ruta_foto': 'src/static/images/76888993.png', 'fec_publicacion': '25/08/2026', 'apellido': 'RAMOS ESTRELLA', 'nombre': 'JACOB ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:35,804 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15337', 'persona': 'MEDINA CONDORI, GODOFREDO EMILIO', 'documento': '43589023', 'contacto': 'BENDIVES FELIPE, MIYOSHI CATHERIN 930911764', 'ubigeo': 'AREQUIPA/AREQUIPA/CERRO COLORADO', 'ruta_foto': 'src/static/images/43589023.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MEDINA CONDORI', 'nombre': 'GODOFREDO EMILIO', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:36,996 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15336', 'persona': 'FLORES CCORAHUA, DANNY AMERICO', 'documento': '41584881', 'contacto': 'CCORAHUA BENITES, ISABEL 975884266', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/41584881.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FLORES CCORAHUA', 'nombre': 'DANNY AMERICO', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:38,262 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15335', 'persona': 'GARCIA AMASIFUEN, MAX CHARLES', 'documento': '47918483', 'contacto': 'AMASIFUEN GARCIA, ROSA 916075575', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/47918483.png', 'fec_publicacion': '25/08/2026', 'apellido': 'GARCIA AMASIFUEN', 'nombre': 'MAX CHARLES', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:39,516 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15334', 'persona': 'Huahuala Chire, Gledy Cinthya', 'documento': '73031275', 'contacto': 'CASTILLA BORJA, MARTIN REY RAMIRO 940793144', 'ubigeo': 'AREQUIPA/AREQUIPA/ALTO SELVA ALEGRE', 'ruta_foto': 'src/static/images/73031275.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Huahuala Chire', 'nombre': 'Gledy Cinthya', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:41,075 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15333', 'persona': 'Leiva Rivera, Jahir Felipe', 'documento': '72649132', 'contacto': 'HERRERA BORJA, ANA CAROLINA 939413942', 'ubigeo': 'LIMA/LIMA/SAN MIGUEL', 'ruta_foto': 'src/static/images/72649132.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Leiva Rivera', 'nombre': 'Jahir Felipe', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:42,495 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15332', 'persona': 'MINAYA BOCANEGRA, JOSE SANTOS', 'documento': '61350078', 'contacto': 'MINAYA BOCANEGRA, ARELI MORELY 943209711', 'ubigeo': 'ÁNCASH/SANTA/NUEVO CHIMBOTE', 'ruta_foto': 'src/static/images/61350078.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MINAYA BOCANEGRA', 'nombre': 'JOSE SANTOS', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:44,079 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15331', 'persona': 'Ostolaza Carvallo, Rafael Alfonso', 'documento': '72531647', 'contacto': 'CARVALLO ROMERO, GLADYS 993628633', 'ubigeo': 'LIMA/LIMA/MIRAFLORES', 'ruta_foto': 'src/static/images/72531647.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Ostolaza Carvallo', 'nombre': 'Rafael Alfonso', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:45,645 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15330', 'persona': 'ANGULO MARTINEZ, JORGE LUIS', 'documento': '75403973', 'contacto': 'MARTINEZ PERALTA, LILIANA VERONICA 996685732', 'ubigeo': 'LIMA/LIMA/SURQUILLO', 'ruta_foto': 'src/static/images/75403973.png', 'fec_publicacion': '25/08/2026', 'apellido': 'ANGULO MARTINEZ', 'nombre': 'JORGE LUIS', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:47,172 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15329', 'persona': 'Chavez Tuesta, Eloy Fabricio', 'documento': '72979798', 'contacto': 'TUESTA RUBIO, ROCIO 966949107', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/72979798.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Chavez Tuesta', 'nombre': 'Eloy Fabricio', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:48,804 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15320', 'persona': 'Marengo Orsini, Armida Milagros', 'documento': '09164152', 'contacto': 'CABALLERO MARENGO ORSINI, CARLA MILAGROS 903186652', 'ubigeo': 'LIMA/LIMA/SAN BORJA', 'ruta_foto': 'src/static/images/09164152.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Marengo Orsini', 'nombre': 'Armida Milagros', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:50,188 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15311', 'persona': 'CASTRO GARCIA, FATIMA PAOLA', 'documento': '71784833', 'contacto': 'TORRES ORDOÑEZ, FABRIZZIO MARCO ANTONIO 948255879', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/71784833.png', 'fec_publicacion': '25/08/2026', 'apellido': 'CASTRO GARCIA', 'nombre': 'FATIMA PAOLA', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:51,413 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15275', 'persona': 'Jordan Campos, Jorge', 'documento': '21527618', 'contacto': 'JORDAN CAMPOS, MARIA ELENA 922321315', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21527618.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Jordan Campos', 'nombre': 'Jorge', 'tipo_documento': 'DNI'}
+2026-08-26 17:40:52,585 INFO __main__ - Tareas adicionales de INSERT finalizadas.
+2026-08-26 17:40:52,585 INFO __main__ - Registros detectados en df_update (1).
+2026-08-26 17:40:52,589 INFO __main__ - [UPDATE] Iniciando scraping inhouse para: {'id': 2450, 'code': 12464, 'first_name': 'Mirian Mercedes', 'last_name': 'Cabanillastardillo', 'card_type': 1, 'id_card': '08661213', 'ubigeo': 'Callao / Prov. Const. Delcallao / Callao', 'published_at': '2024-02-21 00:00:00.000', 'contact': 'Chavez Herrera Raulalberto 966929676', 'photo': 'players/player/b0994ea2ec9b4c4e80bf49c8d6262466.PNG', 'created_at': '2024-02-22 10:36:16.000', 'updated_at': '2024-02-22 10:36:16.000', 'is_active': 1}
+2026-08-26 17:40:52,589 WARNING __main__ - Tipo de operación no reconocido: UPDATE
+2026-08-26 17:40:52,589 INFO __main__ - Tareas adicionales de UPDATE finalizadas.
+2026-08-26 17:40:52,589 INFO __main__ - No hay registros recurrentes para actualizar (df_update_recurrent vacío).
+2026-08-26 17:40:52,651 INFO __main__ - Sincronización finalizada
+2026-08-26 18:14:01,513 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 18:16:00,608 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 18:16:04,840 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 18:16:04,848 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 18:16:04,850 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 18:16:04,851 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 18:16:04,853 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 18:16:04,854 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 18:16:04,856 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 18:16:04,859 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 18:16:04,861 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 18:16:04,862 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 18:16:04,864 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 18:16:04,867 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 18:16:04,868 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 18:16:04,870 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 18:16:04,870 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 18:16:04,871 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 18:16:04,873 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 18:16:04,874 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 18:16:04,876 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 18:16:04,876 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 18:16:04,881 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026', 'apellido': 'HINOSTROZA ALARCON', 'nombre': 'SERGIO ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,881 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,881 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15350', 'persona': 'QUISPE LUNA, MARIO', 'documento': '10463195', 'contacto': 'QUISPE BALDEON, MARIO 995968696', 'ubigeo': 'LIMA/LIMA/EL AGUSTINO', 'ruta_foto': 'src/static/images/10463195.png', 'fec_publicacion': '25/08/2026', 'apellido': 'QUISPE LUNA', 'nombre': 'MARIO', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,882 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,882 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15349', 'persona': 'MARQUEZ YUMBATO, SARITA', 'documento': '61960692', 'contacto': 'YUMBATO MANIHUARI, ESTHER 925394134', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/61960692.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MARQUEZ YUMBATO', 'nombre': 'SARITA', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,882 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,882 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15348', 'persona': 'FRANCO OLAECHEA, SEBASTIAN ARTURO', 'documento': '76951613', 'contacto': 'FRANCO MARTINEZ, JOSE JESUS 937048732', 'ubigeo': 'LIMA/LIMA/SANTIAGO DE SURCO', 'ruta_foto': 'src/static/images/76951613.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FRANCO OLAECHEA', 'nombre': 'SEBASTIAN ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,882 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,882 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15346', 'persona': 'MACARLUPU VERAMENDI, LUIS ALEX', 'documento': '41428904', 'contacto': 'OCAMPO MALDONADO, SHARONHE DESIREE 912631782', 'ubigeo': 'LIMA/HUAURA/HUALMAY', 'ruta_foto': 'src/static/images/41428904.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MACARLUPU VERAMENDI', 'nombre': 'LUIS ALEX', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,882 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,883 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15342', 'persona': 'RAMOS ESTRELLA, JACOB ARTURO', 'documento': '76888993', 'contacto': 'ESTRELLA VARGAS, YESICA RUTH 986526676', 'ubigeo': 'LIMA/LIMA/SANTA ANITA', 'ruta_foto': 'src/static/images/76888993.png', 'fec_publicacion': '25/08/2026', 'apellido': 'RAMOS ESTRELLA', 'nombre': 'JACOB ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,883 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,883 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15337', 'persona': 'MEDINA CONDORI, GODOFREDO EMILIO', 'documento': '43589023', 'contacto': 'BENDIVES FELIPE, MIYOSHI CATHERIN 930911764', 'ubigeo': 'AREQUIPA/AREQUIPA/CERRO COLORADO', 'ruta_foto': 'src/static/images/43589023.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MEDINA CONDORI', 'nombre': 'GODOFREDO EMILIO', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,883 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,883 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15336', 'persona': 'FLORES CCORAHUA, DANNY AMERICO', 'documento': '41584881', 'contacto': 'CCORAHUA BENITES, ISABEL 975884266', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/41584881.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FLORES CCORAHUA', 'nombre': 'DANNY AMERICO', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,883 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,883 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15335', 'persona': 'GARCIA AMASIFUEN, MAX CHARLES', 'documento': '47918483', 'contacto': 'AMASIFUEN GARCIA, ROSA 916075575', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/47918483.png', 'fec_publicacion': '25/08/2026', 'apellido': 'GARCIA AMASIFUEN', 'nombre': 'MAX CHARLES', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,884 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,884 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15334', 'persona': 'Huahuala Chire, Gledy Cinthya', 'documento': '73031275', 'contacto': 'CASTILLA BORJA, MARTIN REY RAMIRO 940793144', 'ubigeo': 'AREQUIPA/AREQUIPA/ALTO SELVA ALEGRE', 'ruta_foto': 'src/static/images/73031275.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Huahuala Chire', 'nombre': 'Gledy Cinthya', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,884 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,884 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15333', 'persona': 'Leiva Rivera, Jahir Felipe', 'documento': '72649132', 'contacto': 'HERRERA BORJA, ANA CAROLINA 939413942', 'ubigeo': 'LIMA/LIMA/SAN MIGUEL', 'ruta_foto': 'src/static/images/72649132.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Leiva Rivera', 'nombre': 'Jahir Felipe', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,884 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,884 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15332', 'persona': 'MINAYA BOCANEGRA, JOSE SANTOS', 'documento': '61350078', 'contacto': 'MINAYA BOCANEGRA, ARELI MORELY 943209711', 'ubigeo': 'ÁNCASH/SANTA/NUEVO CHIMBOTE', 'ruta_foto': 'src/static/images/61350078.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MINAYA BOCANEGRA', 'nombre': 'JOSE SANTOS', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,885 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,886 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15331', 'persona': 'Ostolaza Carvallo, Rafael Alfonso', 'documento': '72531647', 'contacto': 'CARVALLO ROMERO, GLADYS 993628633', 'ubigeo': 'LIMA/LIMA/MIRAFLORES', 'ruta_foto': 'src/static/images/72531647.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Ostolaza Carvallo', 'nombre': 'Rafael Alfonso', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,886 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,887 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15330', 'persona': 'ANGULO MARTINEZ, JORGE LUIS', 'documento': '75403973', 'contacto': 'MARTINEZ PERALTA, LILIANA VERONICA 996685732', 'ubigeo': 'LIMA/LIMA/SURQUILLO', 'ruta_foto': 'src/static/images/75403973.png', 'fec_publicacion': '25/08/2026', 'apellido': 'ANGULO MARTINEZ', 'nombre': 'JORGE LUIS', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,888 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,888 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15329', 'persona': 'Chavez Tuesta, Eloy Fabricio', 'documento': '72979798', 'contacto': 'TUESTA RUBIO, ROCIO 966949107', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/72979798.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Chavez Tuesta', 'nombre': 'Eloy Fabricio', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,888 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,889 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15320', 'persona': 'Marengo Orsini, Armida Milagros', 'documento': '09164152', 'contacto': 'CABALLERO MARENGO ORSINI, CARLA MILAGROS 903186652', 'ubigeo': 'LIMA/LIMA/SAN BORJA', 'ruta_foto': 'src/static/images/09164152.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Marengo Orsini', 'nombre': 'Armida Milagros', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,889 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,890 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15311', 'persona': 'CASTRO GARCIA, FATIMA PAOLA', 'documento': '71784833', 'contacto': 'TORRES ORDOÑEZ, FABRIZZIO MARCO ANTONIO 948255879', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/71784833.png', 'fec_publicacion': '25/08/2026', 'apellido': 'CASTRO GARCIA', 'nombre': 'FATIMA PAOLA', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,890 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,890 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15275', 'persona': 'Jordan Campos, Jorge', 'documento': '21527618', 'contacto': 'JORDAN CAMPOS, MARIA ELENA 922321315', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21527618.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Jordan Campos', 'nombre': 'Jorge', 'tipo_documento': 'DNI'}
+2026-08-26 18:16:04,890 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:16:04,891 INFO __main__ - Tareas adicionales de INSERT finalizadas.
+2026-08-26 18:16:04,891 INFO __main__ - Registros detectados en df_update (1).
+2026-08-26 18:16:04,893 INFO __main__ - [UPDATE] Iniciando scraping inhouse para: {'id': 2450, 'code': 12464, 'first_name': 'Mirian Mercedes', 'last_name': 'Cabanillastardillo', 'card_type': 1, 'id_card': '08661213', 'ubigeo': 'Callao / Prov. Const. Delcallao / Callao', 'published_at': '2024-02-21 00:00:00.000', 'contact': 'Chavez Herrera Raulalberto 966929676', 'photo': 'players/player/b0994ea2ec9b4c4e80bf49c8d6262466.PNG', 'created_at': '2024-02-22 10:36:16.000', 'updated_at': '2024-02-22 10:36:16.000', 'is_active': 1}
+2026-08-26 18:16:25,896 ERROR __main__ - Error de Selenium al ejecutar UPDATE: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=151.0.7922.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 54, in _procesar_registro_inhouse
+    metodo_accion(**registro)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 408, in clic_update
+    self._esperar_y_clic(CHECK_MENU_PERSONAS_LISTA_ACTIVAR_DESACTIVAR)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 318, in _esperar_y_clic
+    boton = WebDriverWait(self.driver, TIEMPO_ESPERA).until(
+        EC.element_to_be_clickable(selector)
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/support/expected_conditions.py", line 518, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 911, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 504, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=151.0.7922.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x6148d92c436a <unknown>
+#1 0x6148d8c37f49 <unknown>
+#2 0x6148d8c1e143 <unknown>
+#3 0x6148d8c4727a <unknown>
+#4 0x6148d8cbbdb0 <unknown>
+#5 0x6148d8cd5a58 <unknown>
+#6 0x6148d8c80c92 <unknown>
+#7 0x6148d8c81b11 <unknown>
+#8 0x6148d92898d0 <unknown>
+#9 0x6148d9287f3a <unknown>
+#10 0x6148d92729b5 <unknown>
+#11 0x6148d9288c0a <unknown>
+#12 0x6148d925a740 <unknown>
+#13 0x6148d92af9a8 <unknown>
+#14 0x6148d92afb45 <unknown>
+#15 0x6148d92c2f1e <unknown>
+#16 0x797621ea407a <unknown>
+#17 0x797621f3772c <unknown>
+
+2026-08-26 18:16:25,915 ERROR __main__ - Error durante la sincronización en Ludoplay: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=151.0.7922.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x6148d92c436a <unknown>
+#1 0x6148d8c37f49 <unknown>
+#2 0x6148d8c1e143 <unknown>
+#3 0x6148d8c4727a <unknown>
+#4 0x6148d8cbbdb0 <unknown>
+#5 0x6148d8cd5a58 <unknown>
+#6 0x6148d8c80c92 <unknown>
+#7 0x6148d8c81b11 <unknown>
+#8 0x6148d92898d0 <unknown>
+#9 0x6148d9287f3a <unknown>
+#10 0x6148d92729b5 <unknown>
+#11 0x6148d9288c0a <unknown>
+#12 0x6148d925a740 <unknown>
+#13 0x6148d92af9a8 <unknown>
+#14 0x6148d92afb45 <unknown>
+#15 0x6148d92c2f1e <unknown>
+#16 0x797621ea407a <unknown>
+#17 0x797621f3772c <unknown>
+
+2026-08-26 18:22:24,248 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 18:24:36,938 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 18:24:40,972 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 18:24:40,978 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 18:24:40,979 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 18:24:40,980 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 18:24:40,980 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 18:24:40,981 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 18:24:40,982 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 18:24:40,983 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 18:24:40,983 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 18:24:40,984 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 18:24:40,984 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 18:24:40,985 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 18:24:40,986 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 18:24:40,986 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 18:24:40,987 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 18:24:40,988 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 18:24:40,989 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 18:24:40,990 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 18:24:40,991 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 18:24:40,992 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 18:24:40,996 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026', 'apellido': 'HINOSTROZA ALARCON', 'nombre': 'SERGIO ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:40,996 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:40,997 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15350', 'persona': 'QUISPE LUNA, MARIO', 'documento': '10463195', 'contacto': 'QUISPE BALDEON, MARIO 995968696', 'ubigeo': 'LIMA/LIMA/EL AGUSTINO', 'ruta_foto': 'src/static/images/10463195.png', 'fec_publicacion': '25/08/2026', 'apellido': 'QUISPE LUNA', 'nombre': 'MARIO', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:40,997 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:40,997 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15349', 'persona': 'MARQUEZ YUMBATO, SARITA', 'documento': '61960692', 'contacto': 'YUMBATO MANIHUARI, ESTHER 925394134', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/61960692.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MARQUEZ YUMBATO', 'nombre': 'SARITA', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:40,997 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:40,997 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15348', 'persona': 'FRANCO OLAECHEA, SEBASTIAN ARTURO', 'documento': '76951613', 'contacto': 'FRANCO MARTINEZ, JOSE JESUS 937048732', 'ubigeo': 'LIMA/LIMA/SANTIAGO DE SURCO', 'ruta_foto': 'src/static/images/76951613.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FRANCO OLAECHEA', 'nombre': 'SEBASTIAN ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:40,998 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:40,998 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15346', 'persona': 'MACARLUPU VERAMENDI, LUIS ALEX', 'documento': '41428904', 'contacto': 'OCAMPO MALDONADO, SHARONHE DESIREE 912631782', 'ubigeo': 'LIMA/HUAURA/HUALMAY', 'ruta_foto': 'src/static/images/41428904.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MACARLUPU VERAMENDI', 'nombre': 'LUIS ALEX', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:40,998 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:40,998 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15342', 'persona': 'RAMOS ESTRELLA, JACOB ARTURO', 'documento': '76888993', 'contacto': 'ESTRELLA VARGAS, YESICA RUTH 986526676', 'ubigeo': 'LIMA/LIMA/SANTA ANITA', 'ruta_foto': 'src/static/images/76888993.png', 'fec_publicacion': '25/08/2026', 'apellido': 'RAMOS ESTRELLA', 'nombre': 'JACOB ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:40,998 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:40,998 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15337', 'persona': 'MEDINA CONDORI, GODOFREDO EMILIO', 'documento': '43589023', 'contacto': 'BENDIVES FELIPE, MIYOSHI CATHERIN 930911764', 'ubigeo': 'AREQUIPA/AREQUIPA/CERRO COLORADO', 'ruta_foto': 'src/static/images/43589023.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MEDINA CONDORI', 'nombre': 'GODOFREDO EMILIO', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:40,999 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:40,999 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15336', 'persona': 'FLORES CCORAHUA, DANNY AMERICO', 'documento': '41584881', 'contacto': 'CCORAHUA BENITES, ISABEL 975884266', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/41584881.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FLORES CCORAHUA', 'nombre': 'DANNY AMERICO', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:40,999 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:40,999 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15335', 'persona': 'GARCIA AMASIFUEN, MAX CHARLES', 'documento': '47918483', 'contacto': 'AMASIFUEN GARCIA, ROSA 916075575', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/47918483.png', 'fec_publicacion': '25/08/2026', 'apellido': 'GARCIA AMASIFUEN', 'nombre': 'MAX CHARLES', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:40,999 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:41,000 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15334', 'persona': 'Huahuala Chire, Gledy Cinthya', 'documento': '73031275', 'contacto': 'CASTILLA BORJA, MARTIN REY RAMIRO 940793144', 'ubigeo': 'AREQUIPA/AREQUIPA/ALTO SELVA ALEGRE', 'ruta_foto': 'src/static/images/73031275.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Huahuala Chire', 'nombre': 'Gledy Cinthya', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:41,000 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:41,000 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15333', 'persona': 'Leiva Rivera, Jahir Felipe', 'documento': '72649132', 'contacto': 'HERRERA BORJA, ANA CAROLINA 939413942', 'ubigeo': 'LIMA/LIMA/SAN MIGUEL', 'ruta_foto': 'src/static/images/72649132.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Leiva Rivera', 'nombre': 'Jahir Felipe', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:41,000 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:41,000 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15332', 'persona': 'MINAYA BOCANEGRA, JOSE SANTOS', 'documento': '61350078', 'contacto': 'MINAYA BOCANEGRA, ARELI MORELY 943209711', 'ubigeo': 'ÁNCASH/SANTA/NUEVO CHIMBOTE', 'ruta_foto': 'src/static/images/61350078.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MINAYA BOCANEGRA', 'nombre': 'JOSE SANTOS', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:41,000 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:41,000 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15331', 'persona': 'Ostolaza Carvallo, Rafael Alfonso', 'documento': '72531647', 'contacto': 'CARVALLO ROMERO, GLADYS 993628633', 'ubigeo': 'LIMA/LIMA/MIRAFLORES', 'ruta_foto': 'src/static/images/72531647.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Ostolaza Carvallo', 'nombre': 'Rafael Alfonso', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:41,001 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:41,001 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15330', 'persona': 'ANGULO MARTINEZ, JORGE LUIS', 'documento': '75403973', 'contacto': 'MARTINEZ PERALTA, LILIANA VERONICA 996685732', 'ubigeo': 'LIMA/LIMA/SURQUILLO', 'ruta_foto': 'src/static/images/75403973.png', 'fec_publicacion': '25/08/2026', 'apellido': 'ANGULO MARTINEZ', 'nombre': 'JORGE LUIS', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:41,001 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:41,001 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15329', 'persona': 'Chavez Tuesta, Eloy Fabricio', 'documento': '72979798', 'contacto': 'TUESTA RUBIO, ROCIO 966949107', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/72979798.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Chavez Tuesta', 'nombre': 'Eloy Fabricio', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:41,001 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:41,002 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15320', 'persona': 'Marengo Orsini, Armida Milagros', 'documento': '09164152', 'contacto': 'CABALLERO MARENGO ORSINI, CARLA MILAGROS 903186652', 'ubigeo': 'LIMA/LIMA/SAN BORJA', 'ruta_foto': 'src/static/images/09164152.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Marengo Orsini', 'nombre': 'Armida Milagros', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:41,002 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:41,002 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15311', 'persona': 'CASTRO GARCIA, FATIMA PAOLA', 'documento': '71784833', 'contacto': 'TORRES ORDOÑEZ, FABRIZZIO MARCO ANTONIO 948255879', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/71784833.png', 'fec_publicacion': '25/08/2026', 'apellido': 'CASTRO GARCIA', 'nombre': 'FATIMA PAOLA', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:41,002 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:41,002 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15275', 'persona': 'Jordan Campos, Jorge', 'documento': '21527618', 'contacto': 'JORDAN CAMPOS, MARIA ELENA 922321315', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21527618.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Jordan Campos', 'nombre': 'Jorge', 'tipo_documento': 'DNI'}
+2026-08-26 18:24:41,002 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:24:41,003 INFO __main__ - Tareas adicionales de INSERT finalizadas.
+2026-08-26 18:24:41,003 INFO __main__ - Registros detectados en df_update (1).
+2026-08-26 18:24:41,006 INFO __main__ - [UPDATE] Iniciando scraping inhouse para: {'id': 2450, 'code': 12464, 'first_name': 'Mirian Mercedes', 'last_name': 'Cabanillastardillo', 'card_type': 1, 'id_card': '08661213', 'ubigeo': 'Callao / Prov. Const. Delcallao / Callao', 'published_at': '2024-02-21 00:00:00.000', 'contact': 'Chavez Herrera Raulalberto 966929676', 'photo': 'players/player/b0994ea2ec9b4c4e80bf49c8d6262466.PNG', 'created_at': '2024-02-22 10:36:16.000', 'updated_at': '2024-02-22 10:36:16.000', 'is_active': 1}
+2026-08-26 18:25:03,615 ERROR __main__ - Error de Selenium al ejecutar UPDATE: 
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 54, in _procesar_registro_inhouse
+    metodo_accion(**registro)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 408, in clic_update
+    self._esperar_y_clic(CHECK_MENU_PERSONAS_LISTA_ACTIVAR_DESACTIVAR)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 318, in _esperar_y_clic
+    boton = WebDriverWait(self.driver, TIEMPO_ESPERA).until(
+        EC.element_to_be_clickable(selector)
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-08-26 18:25:03,682 ERROR __main__ - Error durante la sincronización en Ludoplay: Message: 
+
+2026-08-26 18:36:22,488 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 18:38:21,424 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 18:38:25,553 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 18:38:25,567 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 18:38:25,571 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 18:38:25,579 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 18:38:25,585 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 18:38:25,588 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 18:38:25,589 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 18:38:25,591 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 18:38:25,592 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 18:38:25,594 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 18:38:25,597 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 18:38:25,606 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 18:38:25,607 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 18:38:25,610 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 18:38:25,611 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 18:38:25,611 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 18:38:25,613 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 18:38:25,615 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 18:38:25,617 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 18:38:25,618 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 18:38:25,625 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026', 'apellido': 'HINOSTROZA ALARCON', 'nombre': 'SERGIO ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,627 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,628 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15350', 'persona': 'QUISPE LUNA, MARIO', 'documento': '10463195', 'contacto': 'QUISPE BALDEON, MARIO 995968696', 'ubigeo': 'LIMA/LIMA/EL AGUSTINO', 'ruta_foto': 'src/static/images/10463195.png', 'fec_publicacion': '25/08/2026', 'apellido': 'QUISPE LUNA', 'nombre': 'MARIO', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,629 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,630 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15349', 'persona': 'MARQUEZ YUMBATO, SARITA', 'documento': '61960692', 'contacto': 'YUMBATO MANIHUARI, ESTHER 925394134', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/61960692.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MARQUEZ YUMBATO', 'nombre': 'SARITA', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,630 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,631 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15348', 'persona': 'FRANCO OLAECHEA, SEBASTIAN ARTURO', 'documento': '76951613', 'contacto': 'FRANCO MARTINEZ, JOSE JESUS 937048732', 'ubigeo': 'LIMA/LIMA/SANTIAGO DE SURCO', 'ruta_foto': 'src/static/images/76951613.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FRANCO OLAECHEA', 'nombre': 'SEBASTIAN ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,632 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,632 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15346', 'persona': 'MACARLUPU VERAMENDI, LUIS ALEX', 'documento': '41428904', 'contacto': 'OCAMPO MALDONADO, SHARONHE DESIREE 912631782', 'ubigeo': 'LIMA/HUAURA/HUALMAY', 'ruta_foto': 'src/static/images/41428904.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MACARLUPU VERAMENDI', 'nombre': 'LUIS ALEX', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,632 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,632 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15342', 'persona': 'RAMOS ESTRELLA, JACOB ARTURO', 'documento': '76888993', 'contacto': 'ESTRELLA VARGAS, YESICA RUTH 986526676', 'ubigeo': 'LIMA/LIMA/SANTA ANITA', 'ruta_foto': 'src/static/images/76888993.png', 'fec_publicacion': '25/08/2026', 'apellido': 'RAMOS ESTRELLA', 'nombre': 'JACOB ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,632 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,633 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15337', 'persona': 'MEDINA CONDORI, GODOFREDO EMILIO', 'documento': '43589023', 'contacto': 'BENDIVES FELIPE, MIYOSHI CATHERIN 930911764', 'ubigeo': 'AREQUIPA/AREQUIPA/CERRO COLORADO', 'ruta_foto': 'src/static/images/43589023.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MEDINA CONDORI', 'nombre': 'GODOFREDO EMILIO', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,633 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,633 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15336', 'persona': 'FLORES CCORAHUA, DANNY AMERICO', 'documento': '41584881', 'contacto': 'CCORAHUA BENITES, ISABEL 975884266', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/41584881.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FLORES CCORAHUA', 'nombre': 'DANNY AMERICO', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,633 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,633 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15335', 'persona': 'GARCIA AMASIFUEN, MAX CHARLES', 'documento': '47918483', 'contacto': 'AMASIFUEN GARCIA, ROSA 916075575', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/47918483.png', 'fec_publicacion': '25/08/2026', 'apellido': 'GARCIA AMASIFUEN', 'nombre': 'MAX CHARLES', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,634 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,634 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15334', 'persona': 'Huahuala Chire, Gledy Cinthya', 'documento': '73031275', 'contacto': 'CASTILLA BORJA, MARTIN REY RAMIRO 940793144', 'ubigeo': 'AREQUIPA/AREQUIPA/ALTO SELVA ALEGRE', 'ruta_foto': 'src/static/images/73031275.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Huahuala Chire', 'nombre': 'Gledy Cinthya', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,634 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,635 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15333', 'persona': 'Leiva Rivera, Jahir Felipe', 'documento': '72649132', 'contacto': 'HERRERA BORJA, ANA CAROLINA 939413942', 'ubigeo': 'LIMA/LIMA/SAN MIGUEL', 'ruta_foto': 'src/static/images/72649132.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Leiva Rivera', 'nombre': 'Jahir Felipe', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,635 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,635 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15332', 'persona': 'MINAYA BOCANEGRA, JOSE SANTOS', 'documento': '61350078', 'contacto': 'MINAYA BOCANEGRA, ARELI MORELY 943209711', 'ubigeo': 'ÁNCASH/SANTA/NUEVO CHIMBOTE', 'ruta_foto': 'src/static/images/61350078.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MINAYA BOCANEGRA', 'nombre': 'JOSE SANTOS', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,635 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,635 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15331', 'persona': 'Ostolaza Carvallo, Rafael Alfonso', 'documento': '72531647', 'contacto': 'CARVALLO ROMERO, GLADYS 993628633', 'ubigeo': 'LIMA/LIMA/MIRAFLORES', 'ruta_foto': 'src/static/images/72531647.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Ostolaza Carvallo', 'nombre': 'Rafael Alfonso', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,635 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,636 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15330', 'persona': 'ANGULO MARTINEZ, JORGE LUIS', 'documento': '75403973', 'contacto': 'MARTINEZ PERALTA, LILIANA VERONICA 996685732', 'ubigeo': 'LIMA/LIMA/SURQUILLO', 'ruta_foto': 'src/static/images/75403973.png', 'fec_publicacion': '25/08/2026', 'apellido': 'ANGULO MARTINEZ', 'nombre': 'JORGE LUIS', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,636 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,636 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15329', 'persona': 'Chavez Tuesta, Eloy Fabricio', 'documento': '72979798', 'contacto': 'TUESTA RUBIO, ROCIO 966949107', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/72979798.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Chavez Tuesta', 'nombre': 'Eloy Fabricio', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,637 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,637 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15320', 'persona': 'Marengo Orsini, Armida Milagros', 'documento': '09164152', 'contacto': 'CABALLERO MARENGO ORSINI, CARLA MILAGROS 903186652', 'ubigeo': 'LIMA/LIMA/SAN BORJA', 'ruta_foto': 'src/static/images/09164152.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Marengo Orsini', 'nombre': 'Armida Milagros', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,638 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,638 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15311', 'persona': 'CASTRO GARCIA, FATIMA PAOLA', 'documento': '71784833', 'contacto': 'TORRES ORDOÑEZ, FABRIZZIO MARCO ANTONIO 948255879', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/71784833.png', 'fec_publicacion': '25/08/2026', 'apellido': 'CASTRO GARCIA', 'nombre': 'FATIMA PAOLA', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,638 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,639 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15275', 'persona': 'Jordan Campos, Jorge', 'documento': '21527618', 'contacto': 'JORDAN CAMPOS, MARIA ELENA 922321315', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21527618.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Jordan Campos', 'nombre': 'Jorge', 'tipo_documento': 'DNI'}
+2026-08-26 18:38:25,639 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:38:25,640 INFO __main__ - Tareas adicionales de INSERT finalizadas.
+2026-08-26 18:38:25,640 INFO __main__ - Registros detectados en df_update (1).
+2026-08-26 18:38:25,651 INFO __main__ - [UPDATE] Iniciando scraping inhouse para: {'id': 2450, 'code': 12464, 'first_name': 'Mirian Mercedes', 'last_name': 'Cabanillastardillo', 'card_type': 1, 'id_card': '08661213', 'ubigeo': 'Callao / Prov. Const. Delcallao / Callao', 'published_at': '2024-02-21 00:00:00.000', 'contact': 'Chavez Herrera Raulalberto 966929676', 'photo': 'players/player/b0994ea2ec9b4c4e80bf49c8d6262466.PNG', 'created_at': '2024-02-22 10:36:16.000', 'updated_at': '2024-02-22 10:36:16.000', 'is_active': 1}
+2026-08-26 18:38:27,732 INFO __main__ - Tareas adicionales de UPDATE finalizadas.
+2026-08-26 18:38:27,732 INFO __main__ - No hay registros recurrentes para actualizar (df_update_recurrent vacío).
+2026-08-26 18:38:27,798 INFO __main__ - Sincronización finalizada
+2026-08-26 18:44:36,740 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 18:46:48,462 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 18:46:53,175 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 18:46:53,183 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 18:46:53,185 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 18:46:53,186 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 18:46:53,186 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 18:46:53,188 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 18:46:53,190 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 18:46:53,191 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 18:46:53,193 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 18:46:53,194 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 18:46:53,194 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 18:46:53,195 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 18:46:53,196 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 18:46:53,197 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 18:46:53,198 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 18:46:53,199 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 18:46:53,200 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 18:46:53,201 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 18:46:53,202 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 18:46:53,202 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 18:46:53,206 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026', 'apellido': 'HINOSTROZA ALARCON', 'nombre': 'SERGIO ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,206 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,207 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15350', 'persona': 'QUISPE LUNA, MARIO', 'documento': '10463195', 'contacto': 'QUISPE BALDEON, MARIO 995968696', 'ubigeo': 'LIMA/LIMA/EL AGUSTINO', 'ruta_foto': 'src/static/images/10463195.png', 'fec_publicacion': '25/08/2026', 'apellido': 'QUISPE LUNA', 'nombre': 'MARIO', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,207 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,207 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15349', 'persona': 'MARQUEZ YUMBATO, SARITA', 'documento': '61960692', 'contacto': 'YUMBATO MANIHUARI, ESTHER 925394134', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/61960692.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MARQUEZ YUMBATO', 'nombre': 'SARITA', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,208 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,208 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15348', 'persona': 'FRANCO OLAECHEA, SEBASTIAN ARTURO', 'documento': '76951613', 'contacto': 'FRANCO MARTINEZ, JOSE JESUS 937048732', 'ubigeo': 'LIMA/LIMA/SANTIAGO DE SURCO', 'ruta_foto': 'src/static/images/76951613.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FRANCO OLAECHEA', 'nombre': 'SEBASTIAN ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,208 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,208 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15346', 'persona': 'MACARLUPU VERAMENDI, LUIS ALEX', 'documento': '41428904', 'contacto': 'OCAMPO MALDONADO, SHARONHE DESIREE 912631782', 'ubigeo': 'LIMA/HUAURA/HUALMAY', 'ruta_foto': 'src/static/images/41428904.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MACARLUPU VERAMENDI', 'nombre': 'LUIS ALEX', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,208 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,209 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15342', 'persona': 'RAMOS ESTRELLA, JACOB ARTURO', 'documento': '76888993', 'contacto': 'ESTRELLA VARGAS, YESICA RUTH 986526676', 'ubigeo': 'LIMA/LIMA/SANTA ANITA', 'ruta_foto': 'src/static/images/76888993.png', 'fec_publicacion': '25/08/2026', 'apellido': 'RAMOS ESTRELLA', 'nombre': 'JACOB ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,209 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,209 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15337', 'persona': 'MEDINA CONDORI, GODOFREDO EMILIO', 'documento': '43589023', 'contacto': 'BENDIVES FELIPE, MIYOSHI CATHERIN 930911764', 'ubigeo': 'AREQUIPA/AREQUIPA/CERRO COLORADO', 'ruta_foto': 'src/static/images/43589023.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MEDINA CONDORI', 'nombre': 'GODOFREDO EMILIO', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,209 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,210 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15336', 'persona': 'FLORES CCORAHUA, DANNY AMERICO', 'documento': '41584881', 'contacto': 'CCORAHUA BENITES, ISABEL 975884266', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/41584881.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FLORES CCORAHUA', 'nombre': 'DANNY AMERICO', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,210 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,210 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15335', 'persona': 'GARCIA AMASIFUEN, MAX CHARLES', 'documento': '47918483', 'contacto': 'AMASIFUEN GARCIA, ROSA 916075575', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/47918483.png', 'fec_publicacion': '25/08/2026', 'apellido': 'GARCIA AMASIFUEN', 'nombre': 'MAX CHARLES', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,210 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,210 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15334', 'persona': 'Huahuala Chire, Gledy Cinthya', 'documento': '73031275', 'contacto': 'CASTILLA BORJA, MARTIN REY RAMIRO 940793144', 'ubigeo': 'AREQUIPA/AREQUIPA/ALTO SELVA ALEGRE', 'ruta_foto': 'src/static/images/73031275.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Huahuala Chire', 'nombre': 'Gledy Cinthya', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,211 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,211 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15333', 'persona': 'Leiva Rivera, Jahir Felipe', 'documento': '72649132', 'contacto': 'HERRERA BORJA, ANA CAROLINA 939413942', 'ubigeo': 'LIMA/LIMA/SAN MIGUEL', 'ruta_foto': 'src/static/images/72649132.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Leiva Rivera', 'nombre': 'Jahir Felipe', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,211 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,211 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15332', 'persona': 'MINAYA BOCANEGRA, JOSE SANTOS', 'documento': '61350078', 'contacto': 'MINAYA BOCANEGRA, ARELI MORELY 943209711', 'ubigeo': 'ÁNCASH/SANTA/NUEVO CHIMBOTE', 'ruta_foto': 'src/static/images/61350078.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MINAYA BOCANEGRA', 'nombre': 'JOSE SANTOS', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,211 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,211 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15331', 'persona': 'Ostolaza Carvallo, Rafael Alfonso', 'documento': '72531647', 'contacto': 'CARVALLO ROMERO, GLADYS 993628633', 'ubigeo': 'LIMA/LIMA/MIRAFLORES', 'ruta_foto': 'src/static/images/72531647.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Ostolaza Carvallo', 'nombre': 'Rafael Alfonso', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,211 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,212 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15330', 'persona': 'ANGULO MARTINEZ, JORGE LUIS', 'documento': '75403973', 'contacto': 'MARTINEZ PERALTA, LILIANA VERONICA 996685732', 'ubigeo': 'LIMA/LIMA/SURQUILLO', 'ruta_foto': 'src/static/images/75403973.png', 'fec_publicacion': '25/08/2026', 'apellido': 'ANGULO MARTINEZ', 'nombre': 'JORGE LUIS', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,212 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,212 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15329', 'persona': 'Chavez Tuesta, Eloy Fabricio', 'documento': '72979798', 'contacto': 'TUESTA RUBIO, ROCIO 966949107', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/72979798.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Chavez Tuesta', 'nombre': 'Eloy Fabricio', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,212 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,213 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15320', 'persona': 'Marengo Orsini, Armida Milagros', 'documento': '09164152', 'contacto': 'CABALLERO MARENGO ORSINI, CARLA MILAGROS 903186652', 'ubigeo': 'LIMA/LIMA/SAN BORJA', 'ruta_foto': 'src/static/images/09164152.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Marengo Orsini', 'nombre': 'Armida Milagros', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,213 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,213 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15311', 'persona': 'CASTRO GARCIA, FATIMA PAOLA', 'documento': '71784833', 'contacto': 'TORRES ORDOÑEZ, FABRIZZIO MARCO ANTONIO 948255879', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/71784833.png', 'fec_publicacion': '25/08/2026', 'apellido': 'CASTRO GARCIA', 'nombre': 'FATIMA PAOLA', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,213 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,214 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15275', 'persona': 'Jordan Campos, Jorge', 'documento': '21527618', 'contacto': 'JORDAN CAMPOS, MARIA ELENA 922321315', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21527618.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Jordan Campos', 'nombre': 'Jorge', 'tipo_documento': 'DNI'}
+2026-08-26 18:46:53,214 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:46:53,214 INFO __main__ - Tareas adicionales de INSERT finalizadas.
+2026-08-26 18:46:53,214 INFO __main__ - Registros detectados en df_update (1).
+2026-08-26 18:46:53,217 INFO __main__ - [UPDATE] Iniciando scraping inhouse para: {'id': 2450, 'code': 12464, 'first_name': 'Mirian Mercedes', 'last_name': 'Cabanillastardillo', 'card_type': 1, 'id_card': '08661213', 'ubigeo': 'Callao / Prov. Const. Delcallao / Callao', 'published_at': '2024-02-21 00:00:00.000', 'contact': 'Chavez Herrera Raulalberto 966929676', 'photo': 'players/player/b0994ea2ec9b4c4e80bf49c8d6262466.PNG', 'created_at': '2024-02-22 10:36:16.000', 'updated_at': '2024-02-22 10:36:16.000', 'is_active': 1}
+2026-08-26 18:47:15,571 INFO __main__ - Tareas adicionales de UPDATE finalizadas.
+2026-08-26 18:47:15,572 INFO __main__ - No hay registros recurrentes para actualizar (df_update_recurrent vacío).
+2026-08-26 18:47:15,642 INFO __main__ - Sincronización finalizada
+2026-08-26 18:54:58,304 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 18:57:17,375 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 18:57:21,370 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 18:57:21,377 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 18:57:21,379 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 18:57:21,380 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 18:57:21,380 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 18:57:21,381 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 18:57:21,382 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 18:57:21,383 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 18:57:21,384 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 18:57:21,385 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 18:57:21,386 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 18:57:21,387 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 18:57:21,387 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 18:57:21,388 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 18:57:21,389 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 18:57:21,390 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 18:57:21,390 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 18:57:21,391 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 18:57:21,392 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 18:57:21,392 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 18:57:21,394 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026', 'apellido': 'HINOSTROZA ALARCON', 'nombre': 'SERGIO ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,395 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,395 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15350', 'persona': 'QUISPE LUNA, MARIO', 'documento': '10463195', 'contacto': 'QUISPE BALDEON, MARIO 995968696', 'ubigeo': 'LIMA/LIMA/EL AGUSTINO', 'ruta_foto': 'src/static/images/10463195.png', 'fec_publicacion': '25/08/2026', 'apellido': 'QUISPE LUNA', 'nombre': 'MARIO', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,395 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,395 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15349', 'persona': 'MARQUEZ YUMBATO, SARITA', 'documento': '61960692', 'contacto': 'YUMBATO MANIHUARI, ESTHER 925394134', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/61960692.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MARQUEZ YUMBATO', 'nombre': 'SARITA', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,395 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,395 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15348', 'persona': 'FRANCO OLAECHEA, SEBASTIAN ARTURO', 'documento': '76951613', 'contacto': 'FRANCO MARTINEZ, JOSE JESUS 937048732', 'ubigeo': 'LIMA/LIMA/SANTIAGO DE SURCO', 'ruta_foto': 'src/static/images/76951613.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FRANCO OLAECHEA', 'nombre': 'SEBASTIAN ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,395 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,395 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15346', 'persona': 'MACARLUPU VERAMENDI, LUIS ALEX', 'documento': '41428904', 'contacto': 'OCAMPO MALDONADO, SHARONHE DESIREE 912631782', 'ubigeo': 'LIMA/HUAURA/HUALMAY', 'ruta_foto': 'src/static/images/41428904.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MACARLUPU VERAMENDI', 'nombre': 'LUIS ALEX', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,396 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,396 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15342', 'persona': 'RAMOS ESTRELLA, JACOB ARTURO', 'documento': '76888993', 'contacto': 'ESTRELLA VARGAS, YESICA RUTH 986526676', 'ubigeo': 'LIMA/LIMA/SANTA ANITA', 'ruta_foto': 'src/static/images/76888993.png', 'fec_publicacion': '25/08/2026', 'apellido': 'RAMOS ESTRELLA', 'nombre': 'JACOB ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,396 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,396 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15337', 'persona': 'MEDINA CONDORI, GODOFREDO EMILIO', 'documento': '43589023', 'contacto': 'BENDIVES FELIPE, MIYOSHI CATHERIN 930911764', 'ubigeo': 'AREQUIPA/AREQUIPA/CERRO COLORADO', 'ruta_foto': 'src/static/images/43589023.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MEDINA CONDORI', 'nombre': 'GODOFREDO EMILIO', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,396 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,396 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15336', 'persona': 'FLORES CCORAHUA, DANNY AMERICO', 'documento': '41584881', 'contacto': 'CCORAHUA BENITES, ISABEL 975884266', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/41584881.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FLORES CCORAHUA', 'nombre': 'DANNY AMERICO', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,396 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,396 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15335', 'persona': 'GARCIA AMASIFUEN, MAX CHARLES', 'documento': '47918483', 'contacto': 'AMASIFUEN GARCIA, ROSA 916075575', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/47918483.png', 'fec_publicacion': '25/08/2026', 'apellido': 'GARCIA AMASIFUEN', 'nombre': 'MAX CHARLES', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,396 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,396 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15334', 'persona': 'Huahuala Chire, Gledy Cinthya', 'documento': '73031275', 'contacto': 'CASTILLA BORJA, MARTIN REY RAMIRO 940793144', 'ubigeo': 'AREQUIPA/AREQUIPA/ALTO SELVA ALEGRE', 'ruta_foto': 'src/static/images/73031275.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Huahuala Chire', 'nombre': 'Gledy Cinthya', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,397 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,397 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15333', 'persona': 'Leiva Rivera, Jahir Felipe', 'documento': '72649132', 'contacto': 'HERRERA BORJA, ANA CAROLINA 939413942', 'ubigeo': 'LIMA/LIMA/SAN MIGUEL', 'ruta_foto': 'src/static/images/72649132.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Leiva Rivera', 'nombre': 'Jahir Felipe', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,397 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,397 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15332', 'persona': 'MINAYA BOCANEGRA, JOSE SANTOS', 'documento': '61350078', 'contacto': 'MINAYA BOCANEGRA, ARELI MORELY 943209711', 'ubigeo': 'ÁNCASH/SANTA/NUEVO CHIMBOTE', 'ruta_foto': 'src/static/images/61350078.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MINAYA BOCANEGRA', 'nombre': 'JOSE SANTOS', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,397 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,398 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15331', 'persona': 'Ostolaza Carvallo, Rafael Alfonso', 'documento': '72531647', 'contacto': 'CARVALLO ROMERO, GLADYS 993628633', 'ubigeo': 'LIMA/LIMA/MIRAFLORES', 'ruta_foto': 'src/static/images/72531647.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Ostolaza Carvallo', 'nombre': 'Rafael Alfonso', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,398 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,398 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15330', 'persona': 'ANGULO MARTINEZ, JORGE LUIS', 'documento': '75403973', 'contacto': 'MARTINEZ PERALTA, LILIANA VERONICA 996685732', 'ubigeo': 'LIMA/LIMA/SURQUILLO', 'ruta_foto': 'src/static/images/75403973.png', 'fec_publicacion': '25/08/2026', 'apellido': 'ANGULO MARTINEZ', 'nombre': 'JORGE LUIS', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,398 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,398 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15329', 'persona': 'Chavez Tuesta, Eloy Fabricio', 'documento': '72979798', 'contacto': 'TUESTA RUBIO, ROCIO 966949107', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/72979798.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Chavez Tuesta', 'nombre': 'Eloy Fabricio', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,399 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,399 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15320', 'persona': 'Marengo Orsini, Armida Milagros', 'documento': '09164152', 'contacto': 'CABALLERO MARENGO ORSINI, CARLA MILAGROS 903186652', 'ubigeo': 'LIMA/LIMA/SAN BORJA', 'ruta_foto': 'src/static/images/09164152.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Marengo Orsini', 'nombre': 'Armida Milagros', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,399 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,399 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15311', 'persona': 'CASTRO GARCIA, FATIMA PAOLA', 'documento': '71784833', 'contacto': 'TORRES ORDOÑEZ, FABRIZZIO MARCO ANTONIO 948255879', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/71784833.png', 'fec_publicacion': '25/08/2026', 'apellido': 'CASTRO GARCIA', 'nombre': 'FATIMA PAOLA', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,399 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,399 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15275', 'persona': 'Jordan Campos, Jorge', 'documento': '21527618', 'contacto': 'JORDAN CAMPOS, MARIA ELENA 922321315', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21527618.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Jordan Campos', 'nombre': 'Jorge', 'tipo_documento': 'DNI'}
+2026-08-26 18:57:21,399 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 18:57:21,399 INFO __main__ - Tareas adicionales de INSERT finalizadas.
+2026-08-26 18:57:21,399 INFO __main__ - Registros detectados en df_update (1).
+2026-08-26 18:57:21,401 INFO __main__ - [UPDATE] Iniciando scraping inhouse para: {'id': 2450, 'code': 12464, 'first_name': 'Mirian Mercedes', 'last_name': 'Cabanillastardillo', 'card_type': 1, 'id_card': '08661213', 'ubigeo': 'Callao / Prov. Const. Delcallao / Callao', 'published_at': '2024-02-21 00:00:00.000', 'contact': 'Chavez Herrera Raulalberto 966929676', 'photo': 'players/player/b0994ea2ec9b4c4e80bf49c8d6262466.PNG', 'created_at': '2024-02-22 10:36:16.000', 'updated_at': '2024-02-22 10:36:16.000', 'is_active': 1}
+2026-08-26 18:57:43,526 INFO __main__ - Tareas adicionales de UPDATE finalizadas.
+2026-08-26 18:57:43,527 INFO __main__ - No hay registros recurrentes para actualizar (df_update_recurrent vacío).
+2026-08-26 18:57:43,609 INFO __main__ - Sincronización finalizada
+2026-08-26 19:02:23,328 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 19:04:42,904 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 19:04:45,892 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 19:04:45,898 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 19:04:45,900 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 19:04:45,901 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 19:04:45,902 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 19:04:45,903 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 19:04:45,903 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 19:04:45,904 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 19:04:45,905 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 19:04:45,906 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 19:04:45,907 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 19:04:45,908 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 19:04:45,909 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 19:04:45,909 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 19:04:45,910 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 19:04:45,911 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 19:04:45,911 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 19:04:45,912 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 19:04:45,913 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 19:04:45,913 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 19:04:45,916 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026', 'apellido': 'HINOSTROZA ALARCON', 'nombre': 'SERGIO ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,917 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,917 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15350', 'persona': 'QUISPE LUNA, MARIO', 'documento': '10463195', 'contacto': 'QUISPE BALDEON, MARIO 995968696', 'ubigeo': 'LIMA/LIMA/EL AGUSTINO', 'ruta_foto': 'src/static/images/10463195.png', 'fec_publicacion': '25/08/2026', 'apellido': 'QUISPE LUNA', 'nombre': 'MARIO', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,917 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,917 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15349', 'persona': 'MARQUEZ YUMBATO, SARITA', 'documento': '61960692', 'contacto': 'YUMBATO MANIHUARI, ESTHER 925394134', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/61960692.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MARQUEZ YUMBATO', 'nombre': 'SARITA', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,917 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,918 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15348', 'persona': 'FRANCO OLAECHEA, SEBASTIAN ARTURO', 'documento': '76951613', 'contacto': 'FRANCO MARTINEZ, JOSE JESUS 937048732', 'ubigeo': 'LIMA/LIMA/SANTIAGO DE SURCO', 'ruta_foto': 'src/static/images/76951613.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FRANCO OLAECHEA', 'nombre': 'SEBASTIAN ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,918 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,918 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15346', 'persona': 'MACARLUPU VERAMENDI, LUIS ALEX', 'documento': '41428904', 'contacto': 'OCAMPO MALDONADO, SHARONHE DESIREE 912631782', 'ubigeo': 'LIMA/HUAURA/HUALMAY', 'ruta_foto': 'src/static/images/41428904.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MACARLUPU VERAMENDI', 'nombre': 'LUIS ALEX', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,918 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,918 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15342', 'persona': 'RAMOS ESTRELLA, JACOB ARTURO', 'documento': '76888993', 'contacto': 'ESTRELLA VARGAS, YESICA RUTH 986526676', 'ubigeo': 'LIMA/LIMA/SANTA ANITA', 'ruta_foto': 'src/static/images/76888993.png', 'fec_publicacion': '25/08/2026', 'apellido': 'RAMOS ESTRELLA', 'nombre': 'JACOB ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,918 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,918 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15337', 'persona': 'MEDINA CONDORI, GODOFREDO EMILIO', 'documento': '43589023', 'contacto': 'BENDIVES FELIPE, MIYOSHI CATHERIN 930911764', 'ubigeo': 'AREQUIPA/AREQUIPA/CERRO COLORADO', 'ruta_foto': 'src/static/images/43589023.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MEDINA CONDORI', 'nombre': 'GODOFREDO EMILIO', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,918 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,918 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15336', 'persona': 'FLORES CCORAHUA, DANNY AMERICO', 'documento': '41584881', 'contacto': 'CCORAHUA BENITES, ISABEL 975884266', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/41584881.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FLORES CCORAHUA', 'nombre': 'DANNY AMERICO', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,918 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,919 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15335', 'persona': 'GARCIA AMASIFUEN, MAX CHARLES', 'documento': '47918483', 'contacto': 'AMASIFUEN GARCIA, ROSA 916075575', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/47918483.png', 'fec_publicacion': '25/08/2026', 'apellido': 'GARCIA AMASIFUEN', 'nombre': 'MAX CHARLES', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,919 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,919 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15334', 'persona': 'Huahuala Chire, Gledy Cinthya', 'documento': '73031275', 'contacto': 'CASTILLA BORJA, MARTIN REY RAMIRO 940793144', 'ubigeo': 'AREQUIPA/AREQUIPA/ALTO SELVA ALEGRE', 'ruta_foto': 'src/static/images/73031275.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Huahuala Chire', 'nombre': 'Gledy Cinthya', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,919 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,919 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15333', 'persona': 'Leiva Rivera, Jahir Felipe', 'documento': '72649132', 'contacto': 'HERRERA BORJA, ANA CAROLINA 939413942', 'ubigeo': 'LIMA/LIMA/SAN MIGUEL', 'ruta_foto': 'src/static/images/72649132.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Leiva Rivera', 'nombre': 'Jahir Felipe', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,919 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,919 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15332', 'persona': 'MINAYA BOCANEGRA, JOSE SANTOS', 'documento': '61350078', 'contacto': 'MINAYA BOCANEGRA, ARELI MORELY 943209711', 'ubigeo': 'ÁNCASH/SANTA/NUEVO CHIMBOTE', 'ruta_foto': 'src/static/images/61350078.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MINAYA BOCANEGRA', 'nombre': 'JOSE SANTOS', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,919 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,919 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15331', 'persona': 'Ostolaza Carvallo, Rafael Alfonso', 'documento': '72531647', 'contacto': 'CARVALLO ROMERO, GLADYS 993628633', 'ubigeo': 'LIMA/LIMA/MIRAFLORES', 'ruta_foto': 'src/static/images/72531647.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Ostolaza Carvallo', 'nombre': 'Rafael Alfonso', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,920 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,920 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15330', 'persona': 'ANGULO MARTINEZ, JORGE LUIS', 'documento': '75403973', 'contacto': 'MARTINEZ PERALTA, LILIANA VERONICA 996685732', 'ubigeo': 'LIMA/LIMA/SURQUILLO', 'ruta_foto': 'src/static/images/75403973.png', 'fec_publicacion': '25/08/2026', 'apellido': 'ANGULO MARTINEZ', 'nombre': 'JORGE LUIS', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,920 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,920 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15329', 'persona': 'Chavez Tuesta, Eloy Fabricio', 'documento': '72979798', 'contacto': 'TUESTA RUBIO, ROCIO 966949107', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/72979798.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Chavez Tuesta', 'nombre': 'Eloy Fabricio', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,920 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,920 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15320', 'persona': 'Marengo Orsini, Armida Milagros', 'documento': '09164152', 'contacto': 'CABALLERO MARENGO ORSINI, CARLA MILAGROS 903186652', 'ubigeo': 'LIMA/LIMA/SAN BORJA', 'ruta_foto': 'src/static/images/09164152.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Marengo Orsini', 'nombre': 'Armida Milagros', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,920 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,920 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15311', 'persona': 'CASTRO GARCIA, FATIMA PAOLA', 'documento': '71784833', 'contacto': 'TORRES ORDOÑEZ, FABRIZZIO MARCO ANTONIO 948255879', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/71784833.png', 'fec_publicacion': '25/08/2026', 'apellido': 'CASTRO GARCIA', 'nombre': 'FATIMA PAOLA', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,921 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,921 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15275', 'persona': 'Jordan Campos, Jorge', 'documento': '21527618', 'contacto': 'JORDAN CAMPOS, MARIA ELENA 922321315', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21527618.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Jordan Campos', 'nombre': 'Jorge', 'tipo_documento': 'DNI'}
+2026-08-26 19:04:45,921 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:04:45,921 INFO __main__ - Tareas adicionales de INSERT finalizadas.
+2026-08-26 19:04:45,921 INFO __main__ - Registros detectados en df_update (1).
+2026-08-26 19:04:45,922 INFO __main__ - [UPDATE] Iniciando scraping inhouse para: {'id': 2450, 'code': 12464, 'first_name': 'Mirian Mercedes', 'last_name': 'Cabanillastardillo', 'card_type': 1, 'id_card': '08661213', 'ubigeo': 'Callao / Prov. Const. Delcallao / Callao', 'published_at': '2024-02-21 00:00:00.000', 'contact': 'Chavez Herrera Raulalberto 966929676', 'photo': 'players/player/b0994ea2ec9b4c4e80bf49c8d6262466.PNG', 'created_at': '2024-02-22 10:36:16.000', 'updated_at': '2024-02-22 10:36:16.000', 'is_active': 1}
+2026-08-26 19:04:47,499 INFO __main__ - Tareas adicionales de UPDATE finalizadas.
+2026-08-26 19:04:47,499 INFO __main__ - No hay registros recurrentes para actualizar (df_update_recurrent vacío).
+2026-08-26 19:04:47,560 INFO __main__ - Sincronización finalizada
+2026-08-26 19:07:42,414 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 19:10:01,427 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 19:10:07,579 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 19:10:07,590 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 19:10:07,591 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 19:10:07,594 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 19:10:07,597 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 19:10:07,598 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 19:10:07,600 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 19:10:07,601 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 19:10:07,602 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 19:10:07,604 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 19:10:07,605 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 19:10:07,606 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 19:10:07,607 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 19:10:07,608 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 19:10:07,609 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 19:10:07,611 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 19:10:07,612 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 19:10:07,613 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 19:10:07,614 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 19:10:07,615 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 19:10:07,619 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026', 'apellido': 'HINOSTROZA ALARCON', 'nombre': 'SERGIO ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,620 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,620 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15350', 'persona': 'QUISPE LUNA, MARIO', 'documento': '10463195', 'contacto': 'QUISPE BALDEON, MARIO 995968696', 'ubigeo': 'LIMA/LIMA/EL AGUSTINO', 'ruta_foto': 'src/static/images/10463195.png', 'fec_publicacion': '25/08/2026', 'apellido': 'QUISPE LUNA', 'nombre': 'MARIO', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,620 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,621 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15349', 'persona': 'MARQUEZ YUMBATO, SARITA', 'documento': '61960692', 'contacto': 'YUMBATO MANIHUARI, ESTHER 925394134', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/61960692.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MARQUEZ YUMBATO', 'nombre': 'SARITA', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,621 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,621 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15348', 'persona': 'FRANCO OLAECHEA, SEBASTIAN ARTURO', 'documento': '76951613', 'contacto': 'FRANCO MARTINEZ, JOSE JESUS 937048732', 'ubigeo': 'LIMA/LIMA/SANTIAGO DE SURCO', 'ruta_foto': 'src/static/images/76951613.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FRANCO OLAECHEA', 'nombre': 'SEBASTIAN ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,621 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,622 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15346', 'persona': 'MACARLUPU VERAMENDI, LUIS ALEX', 'documento': '41428904', 'contacto': 'OCAMPO MALDONADO, SHARONHE DESIREE 912631782', 'ubigeo': 'LIMA/HUAURA/HUALMAY', 'ruta_foto': 'src/static/images/41428904.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MACARLUPU VERAMENDI', 'nombre': 'LUIS ALEX', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,622 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,622 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15342', 'persona': 'RAMOS ESTRELLA, JACOB ARTURO', 'documento': '76888993', 'contacto': 'ESTRELLA VARGAS, YESICA RUTH 986526676', 'ubigeo': 'LIMA/LIMA/SANTA ANITA', 'ruta_foto': 'src/static/images/76888993.png', 'fec_publicacion': '25/08/2026', 'apellido': 'RAMOS ESTRELLA', 'nombre': 'JACOB ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,622 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,622 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15337', 'persona': 'MEDINA CONDORI, GODOFREDO EMILIO', 'documento': '43589023', 'contacto': 'BENDIVES FELIPE, MIYOSHI CATHERIN 930911764', 'ubigeo': 'AREQUIPA/AREQUIPA/CERRO COLORADO', 'ruta_foto': 'src/static/images/43589023.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MEDINA CONDORI', 'nombre': 'GODOFREDO EMILIO', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,622 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,623 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15336', 'persona': 'FLORES CCORAHUA, DANNY AMERICO', 'documento': '41584881', 'contacto': 'CCORAHUA BENITES, ISABEL 975884266', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/41584881.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FLORES CCORAHUA', 'nombre': 'DANNY AMERICO', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,623 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,623 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15335', 'persona': 'GARCIA AMASIFUEN, MAX CHARLES', 'documento': '47918483', 'contacto': 'AMASIFUEN GARCIA, ROSA 916075575', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/47918483.png', 'fec_publicacion': '25/08/2026', 'apellido': 'GARCIA AMASIFUEN', 'nombre': 'MAX CHARLES', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,623 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,623 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15334', 'persona': 'Huahuala Chire, Gledy Cinthya', 'documento': '73031275', 'contacto': 'CASTILLA BORJA, MARTIN REY RAMIRO 940793144', 'ubigeo': 'AREQUIPA/AREQUIPA/ALTO SELVA ALEGRE', 'ruta_foto': 'src/static/images/73031275.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Huahuala Chire', 'nombre': 'Gledy Cinthya', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,624 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,624 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15333', 'persona': 'Leiva Rivera, Jahir Felipe', 'documento': '72649132', 'contacto': 'HERRERA BORJA, ANA CAROLINA 939413942', 'ubigeo': 'LIMA/LIMA/SAN MIGUEL', 'ruta_foto': 'src/static/images/72649132.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Leiva Rivera', 'nombre': 'Jahir Felipe', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,624 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,624 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15332', 'persona': 'MINAYA BOCANEGRA, JOSE SANTOS', 'documento': '61350078', 'contacto': 'MINAYA BOCANEGRA, ARELI MORELY 943209711', 'ubigeo': 'ÁNCASH/SANTA/NUEVO CHIMBOTE', 'ruta_foto': 'src/static/images/61350078.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MINAYA BOCANEGRA', 'nombre': 'JOSE SANTOS', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,624 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,625 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15331', 'persona': 'Ostolaza Carvallo, Rafael Alfonso', 'documento': '72531647', 'contacto': 'CARVALLO ROMERO, GLADYS 993628633', 'ubigeo': 'LIMA/LIMA/MIRAFLORES', 'ruta_foto': 'src/static/images/72531647.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Ostolaza Carvallo', 'nombre': 'Rafael Alfonso', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,625 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,625 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15330', 'persona': 'ANGULO MARTINEZ, JORGE LUIS', 'documento': '75403973', 'contacto': 'MARTINEZ PERALTA, LILIANA VERONICA 996685732', 'ubigeo': 'LIMA/LIMA/SURQUILLO', 'ruta_foto': 'src/static/images/75403973.png', 'fec_publicacion': '25/08/2026', 'apellido': 'ANGULO MARTINEZ', 'nombre': 'JORGE LUIS', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,625 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,625 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15329', 'persona': 'Chavez Tuesta, Eloy Fabricio', 'documento': '72979798', 'contacto': 'TUESTA RUBIO, ROCIO 966949107', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/72979798.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Chavez Tuesta', 'nombre': 'Eloy Fabricio', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,625 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,625 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15320', 'persona': 'Marengo Orsini, Armida Milagros', 'documento': '09164152', 'contacto': 'CABALLERO MARENGO ORSINI, CARLA MILAGROS 903186652', 'ubigeo': 'LIMA/LIMA/SAN BORJA', 'ruta_foto': 'src/static/images/09164152.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Marengo Orsini', 'nombre': 'Armida Milagros', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,626 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,626 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15311', 'persona': 'CASTRO GARCIA, FATIMA PAOLA', 'documento': '71784833', 'contacto': 'TORRES ORDOÑEZ, FABRIZZIO MARCO ANTONIO 948255879', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/71784833.png', 'fec_publicacion': '25/08/2026', 'apellido': 'CASTRO GARCIA', 'nombre': 'FATIMA PAOLA', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,626 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,626 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15275', 'persona': 'Jordan Campos, Jorge', 'documento': '21527618', 'contacto': 'JORDAN CAMPOS, MARIA ELENA 922321315', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21527618.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Jordan Campos', 'nombre': 'Jorge', 'tipo_documento': 'DNI'}
+2026-08-26 19:10:07,626 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:10:07,626 INFO __main__ - Tareas adicionales de INSERT finalizadas.
+2026-08-26 19:10:07,627 INFO __main__ - Registros detectados en df_update (1).
+2026-08-26 19:10:07,629 INFO __main__ - [UPDATE] Iniciando scraping inhouse para: {'id': 2450, 'code': 12464, 'first_name': 'Mirian Mercedes', 'last_name': 'Cabanillastardillo', 'card_type': 1, 'id_card': '08661213', 'ubigeo': 'Callao / Prov. Const. Delcallao / Callao', 'published_at': '2024-02-21 00:00:00.000', 'contact': 'Chavez Herrera Raulalberto 966929676', 'photo': 'players/player/b0994ea2ec9b4c4e80bf49c8d6262466.PNG', 'created_at': '2024-02-22 10:36:16.000', 'updated_at': '2024-02-22 10:36:16.000', 'is_active': 1}
+2026-08-26 19:10:30,415 ERROR __main__ - Error de Selenium al ejecutar UPDATE: 
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 54, in _procesar_registro_inhouse
+    metodo_accion(**registro)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 403, in clic_update
+    self._esperar_y_clic(CHECK_MENU_PERSONAS_LISTA_ACTIVAR_DESACTIVAR)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scraper.py", line 318, in _esperar_y_clic
+    boton = WebDriverWait(self.driver, TIEMPO_ESPERA).until(
+        EC.element_to_be_clickable(selector)
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2026-08-26 19:10:30,483 ERROR __main__ - Error durante la sincronización en Ludoplay: Message: 
+
+2026-08-26 19:15:22,951 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 19:17:11,013 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 19:17:14,335 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 19:17:14,342 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 19:17:14,343 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 19:17:14,344 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 19:17:14,346 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 19:17:14,346 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 19:17:14,347 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 19:17:14,348 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 19:17:14,349 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 19:17:14,350 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 19:17:14,351 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 19:17:14,352 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 19:17:14,353 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 19:17:14,354 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 19:17:14,355 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 19:17:14,355 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 19:17:14,357 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 19:17:14,357 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 19:17:14,358 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 19:17:14,358 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 19:17:14,362 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026', 'apellido': 'HINOSTROZA ALARCON', 'nombre': 'SERGIO ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,362 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,362 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15350', 'persona': 'QUISPE LUNA, MARIO', 'documento': '10463195', 'contacto': 'QUISPE BALDEON, MARIO 995968696', 'ubigeo': 'LIMA/LIMA/EL AGUSTINO', 'ruta_foto': 'src/static/images/10463195.png', 'fec_publicacion': '25/08/2026', 'apellido': 'QUISPE LUNA', 'nombre': 'MARIO', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,362 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,363 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15349', 'persona': 'MARQUEZ YUMBATO, SARITA', 'documento': '61960692', 'contacto': 'YUMBATO MANIHUARI, ESTHER 925394134', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/61960692.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MARQUEZ YUMBATO', 'nombre': 'SARITA', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,363 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,363 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15348', 'persona': 'FRANCO OLAECHEA, SEBASTIAN ARTURO', 'documento': '76951613', 'contacto': 'FRANCO MARTINEZ, JOSE JESUS 937048732', 'ubigeo': 'LIMA/LIMA/SANTIAGO DE SURCO', 'ruta_foto': 'src/static/images/76951613.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FRANCO OLAECHEA', 'nombre': 'SEBASTIAN ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,363 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,363 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15346', 'persona': 'MACARLUPU VERAMENDI, LUIS ALEX', 'documento': '41428904', 'contacto': 'OCAMPO MALDONADO, SHARONHE DESIREE 912631782', 'ubigeo': 'LIMA/HUAURA/HUALMAY', 'ruta_foto': 'src/static/images/41428904.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MACARLUPU VERAMENDI', 'nombre': 'LUIS ALEX', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,363 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,363 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15342', 'persona': 'RAMOS ESTRELLA, JACOB ARTURO', 'documento': '76888993', 'contacto': 'ESTRELLA VARGAS, YESICA RUTH 986526676', 'ubigeo': 'LIMA/LIMA/SANTA ANITA', 'ruta_foto': 'src/static/images/76888993.png', 'fec_publicacion': '25/08/2026', 'apellido': 'RAMOS ESTRELLA', 'nombre': 'JACOB ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,364 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,364 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15337', 'persona': 'MEDINA CONDORI, GODOFREDO EMILIO', 'documento': '43589023', 'contacto': 'BENDIVES FELIPE, MIYOSHI CATHERIN 930911764', 'ubigeo': 'AREQUIPA/AREQUIPA/CERRO COLORADO', 'ruta_foto': 'src/static/images/43589023.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MEDINA CONDORI', 'nombre': 'GODOFREDO EMILIO', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,364 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,364 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15336', 'persona': 'FLORES CCORAHUA, DANNY AMERICO', 'documento': '41584881', 'contacto': 'CCORAHUA BENITES, ISABEL 975884266', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/41584881.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FLORES CCORAHUA', 'nombre': 'DANNY AMERICO', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,364 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,364 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15335', 'persona': 'GARCIA AMASIFUEN, MAX CHARLES', 'documento': '47918483', 'contacto': 'AMASIFUEN GARCIA, ROSA 916075575', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/47918483.png', 'fec_publicacion': '25/08/2026', 'apellido': 'GARCIA AMASIFUEN', 'nombre': 'MAX CHARLES', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,364 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,364 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15334', 'persona': 'Huahuala Chire, Gledy Cinthya', 'documento': '73031275', 'contacto': 'CASTILLA BORJA, MARTIN REY RAMIRO 940793144', 'ubigeo': 'AREQUIPA/AREQUIPA/ALTO SELVA ALEGRE', 'ruta_foto': 'src/static/images/73031275.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Huahuala Chire', 'nombre': 'Gledy Cinthya', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,364 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,364 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15333', 'persona': 'Leiva Rivera, Jahir Felipe', 'documento': '72649132', 'contacto': 'HERRERA BORJA, ANA CAROLINA 939413942', 'ubigeo': 'LIMA/LIMA/SAN MIGUEL', 'ruta_foto': 'src/static/images/72649132.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Leiva Rivera', 'nombre': 'Jahir Felipe', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,365 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,365 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15332', 'persona': 'MINAYA BOCANEGRA, JOSE SANTOS', 'documento': '61350078', 'contacto': 'MINAYA BOCANEGRA, ARELI MORELY 943209711', 'ubigeo': 'ÁNCASH/SANTA/NUEVO CHIMBOTE', 'ruta_foto': 'src/static/images/61350078.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MINAYA BOCANEGRA', 'nombre': 'JOSE SANTOS', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,365 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,365 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15331', 'persona': 'Ostolaza Carvallo, Rafael Alfonso', 'documento': '72531647', 'contacto': 'CARVALLO ROMERO, GLADYS 993628633', 'ubigeo': 'LIMA/LIMA/MIRAFLORES', 'ruta_foto': 'src/static/images/72531647.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Ostolaza Carvallo', 'nombre': 'Rafael Alfonso', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,365 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,365 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15330', 'persona': 'ANGULO MARTINEZ, JORGE LUIS', 'documento': '75403973', 'contacto': 'MARTINEZ PERALTA, LILIANA VERONICA 996685732', 'ubigeo': 'LIMA/LIMA/SURQUILLO', 'ruta_foto': 'src/static/images/75403973.png', 'fec_publicacion': '25/08/2026', 'apellido': 'ANGULO MARTINEZ', 'nombre': 'JORGE LUIS', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,366 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,366 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15329', 'persona': 'Chavez Tuesta, Eloy Fabricio', 'documento': '72979798', 'contacto': 'TUESTA RUBIO, ROCIO 966949107', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/72979798.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Chavez Tuesta', 'nombre': 'Eloy Fabricio', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,366 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,366 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15320', 'persona': 'Marengo Orsini, Armida Milagros', 'documento': '09164152', 'contacto': 'CABALLERO MARENGO ORSINI, CARLA MILAGROS 903186652', 'ubigeo': 'LIMA/LIMA/SAN BORJA', 'ruta_foto': 'src/static/images/09164152.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Marengo Orsini', 'nombre': 'Armida Milagros', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,366 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,366 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15311', 'persona': 'CASTRO GARCIA, FATIMA PAOLA', 'documento': '71784833', 'contacto': 'TORRES ORDOÑEZ, FABRIZZIO MARCO ANTONIO 948255879', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/71784833.png', 'fec_publicacion': '25/08/2026', 'apellido': 'CASTRO GARCIA', 'nombre': 'FATIMA PAOLA', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,366 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,367 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15275', 'persona': 'Jordan Campos, Jorge', 'documento': '21527618', 'contacto': 'JORDAN CAMPOS, MARIA ELENA 922321315', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21527618.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Jordan Campos', 'nombre': 'Jorge', 'tipo_documento': 'DNI'}
+2026-08-26 19:17:14,367 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:17:14,367 INFO __main__ - Tareas adicionales de INSERT finalizadas.
+2026-08-26 19:17:14,367 INFO __main__ - Registros detectados en df_update (1).
+2026-08-26 19:17:14,368 INFO __main__ - [UPDATE] Iniciando scraping inhouse para: {'id': 2450, 'code': 12464, 'first_name': 'Mirian Mercedes', 'last_name': 'Cabanillastardillo', 'card_type': 1, 'id_card': '08661213', 'ubigeo': 'Callao / Prov. Const. Delcallao / Callao', 'published_at': '2024-02-21 00:00:00.000', 'contact': 'Chavez Herrera Raulalberto 966929676', 'photo': 'players/player/b0994ea2ec9b4c4e80bf49c8d6262466.PNG', 'created_at': '2024-02-22 10:36:16.000', 'updated_at': '2024-02-22 10:36:16.000', 'is_active': 1}
+2026-08-26 19:17:16,346 INFO __main__ - Tareas adicionales de UPDATE finalizadas.
+2026-08-26 19:17:16,347 INFO __main__ - No hay registros recurrentes para actualizar (df_update_recurrent vacío).
+2026-08-26 19:17:16,409 INFO __main__ - Sincronización finalizada
+2026-08-26 19:19:44,926 INFO __main__ - Iniciando sincronización Ludoplay
+2026-08-26 19:21:42,559 INFO sync_merger - Merge completado: insert=18 | update=1 | recurrent=0
+2026-08-26 19:21:46,578 INFO __main__ - Procesando 18 registros para INSERT...
+2026-08-26 19:21:46,590 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21532172.png -> /home/ddurand/fotos/21532172.png
+2026-08-26 19:21:46,593 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/10463195.png -> /home/ddurand/fotos/10463195.png
+2026-08-26 19:21:46,597 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61960692.png -> /home/ddurand/fotos/61960692.png
+2026-08-26 19:21:46,599 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76951613.png -> /home/ddurand/fotos/76951613.png
+2026-08-26 19:21:46,600 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41428904.png -> /home/ddurand/fotos/41428904.png
+2026-08-26 19:21:46,601 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/76888993.png -> /home/ddurand/fotos/76888993.png
+2026-08-26 19:21:46,602 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43589023.png -> /home/ddurand/fotos/43589023.png
+2026-08-26 19:21:46,603 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/41584881.png -> /home/ddurand/fotos/41584881.png
+2026-08-26 19:21:46,604 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47918483.png -> /home/ddurand/fotos/47918483.png
+2026-08-26 19:21:46,605 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73031275.png -> /home/ddurand/fotos/73031275.png
+2026-08-26 19:21:46,606 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72649132.png -> /home/ddurand/fotos/72649132.png
+2026-08-26 19:21:46,607 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/61350078.png -> /home/ddurand/fotos/61350078.png
+2026-08-26 19:21:46,608 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72531647.png -> /home/ddurand/fotos/72531647.png
+2026-08-26 19:21:46,608 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75403973.png -> /home/ddurand/fotos/75403973.png
+2026-08-26 19:21:46,610 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72979798.png -> /home/ddurand/fotos/72979798.png
+2026-08-26 19:21:46,611 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/09164152.png -> /home/ddurand/fotos/09164152.png
+2026-08-26 19:21:46,612 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71784833.png -> /home/ddurand/fotos/71784833.png
+2026-08-26 19:21:46,613 INFO photo_manager - Foto movida: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/21527618.png -> /home/ddurand/fotos/21527618.png
+2026-08-26 19:21:46,614 INFO __main__ - Fotos movidas exitosamente: {'movidas': ['21532172', '10463195', '61960692', '76951613', '41428904', '76888993', '43589023', '41584881', '47918483', '73031275', '72649132', '61350078', '72531647', '75403973', '72979798', '09164152', '71784833', '21527618'], 'faltantes': []}
+2026-08-26 19:21:46,620 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15351', 'persona': 'HINOSTROZA ALARCON, SERGIO ARTURO', 'documento': '21532172', 'contacto': 'VIZCARRA LOPEZ, CLAUDIA 991128900', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21532172.png', 'fec_publicacion': '25/08/2026', 'apellido': 'HINOSTROZA ALARCON', 'nombre': 'SERGIO ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,620 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,620 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15350', 'persona': 'QUISPE LUNA, MARIO', 'documento': '10463195', 'contacto': 'QUISPE BALDEON, MARIO 995968696', 'ubigeo': 'LIMA/LIMA/EL AGUSTINO', 'ruta_foto': 'src/static/images/10463195.png', 'fec_publicacion': '25/08/2026', 'apellido': 'QUISPE LUNA', 'nombre': 'MARIO', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,621 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,621 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15349', 'persona': 'MARQUEZ YUMBATO, SARITA', 'documento': '61960692', 'contacto': 'YUMBATO MANIHUARI, ESTHER 925394134', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/61960692.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MARQUEZ YUMBATO', 'nombre': 'SARITA', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,621 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,621 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15348', 'persona': 'FRANCO OLAECHEA, SEBASTIAN ARTURO', 'documento': '76951613', 'contacto': 'FRANCO MARTINEZ, JOSE JESUS 937048732', 'ubigeo': 'LIMA/LIMA/SANTIAGO DE SURCO', 'ruta_foto': 'src/static/images/76951613.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FRANCO OLAECHEA', 'nombre': 'SEBASTIAN ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,621 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,621 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15346', 'persona': 'MACARLUPU VERAMENDI, LUIS ALEX', 'documento': '41428904', 'contacto': 'OCAMPO MALDONADO, SHARONHE DESIREE 912631782', 'ubigeo': 'LIMA/HUAURA/HUALMAY', 'ruta_foto': 'src/static/images/41428904.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MACARLUPU VERAMENDI', 'nombre': 'LUIS ALEX', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,621 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,622 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15342', 'persona': 'RAMOS ESTRELLA, JACOB ARTURO', 'documento': '76888993', 'contacto': 'ESTRELLA VARGAS, YESICA RUTH 986526676', 'ubigeo': 'LIMA/LIMA/SANTA ANITA', 'ruta_foto': 'src/static/images/76888993.png', 'fec_publicacion': '25/08/2026', 'apellido': 'RAMOS ESTRELLA', 'nombre': 'JACOB ARTURO', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,622 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,622 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15337', 'persona': 'MEDINA CONDORI, GODOFREDO EMILIO', 'documento': '43589023', 'contacto': 'BENDIVES FELIPE, MIYOSHI CATHERIN 930911764', 'ubigeo': 'AREQUIPA/AREQUIPA/CERRO COLORADO', 'ruta_foto': 'src/static/images/43589023.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MEDINA CONDORI', 'nombre': 'GODOFREDO EMILIO', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,622 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,622 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15336', 'persona': 'FLORES CCORAHUA, DANNY AMERICO', 'documento': '41584881', 'contacto': 'CCORAHUA BENITES, ISABEL 975884266', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/41584881.png', 'fec_publicacion': '25/08/2026', 'apellido': 'FLORES CCORAHUA', 'nombre': 'DANNY AMERICO', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,622 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,622 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15335', 'persona': 'GARCIA AMASIFUEN, MAX CHARLES', 'documento': '47918483', 'contacto': 'AMASIFUEN GARCIA, ROSA 916075575', 'ubigeo': 'LIMA/LIMA/LIMA', 'ruta_foto': 'src/static/images/47918483.png', 'fec_publicacion': '25/08/2026', 'apellido': 'GARCIA AMASIFUEN', 'nombre': 'MAX CHARLES', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,622 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,623 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15334', 'persona': 'Huahuala Chire, Gledy Cinthya', 'documento': '73031275', 'contacto': 'CASTILLA BORJA, MARTIN REY RAMIRO 940793144', 'ubigeo': 'AREQUIPA/AREQUIPA/ALTO SELVA ALEGRE', 'ruta_foto': 'src/static/images/73031275.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Huahuala Chire', 'nombre': 'Gledy Cinthya', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,623 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,623 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15333', 'persona': 'Leiva Rivera, Jahir Felipe', 'documento': '72649132', 'contacto': 'HERRERA BORJA, ANA CAROLINA 939413942', 'ubigeo': 'LIMA/LIMA/SAN MIGUEL', 'ruta_foto': 'src/static/images/72649132.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Leiva Rivera', 'nombre': 'Jahir Felipe', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,623 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,623 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15332', 'persona': 'MINAYA BOCANEGRA, JOSE SANTOS', 'documento': '61350078', 'contacto': 'MINAYA BOCANEGRA, ARELI MORELY 943209711', 'ubigeo': 'ÁNCASH/SANTA/NUEVO CHIMBOTE', 'ruta_foto': 'src/static/images/61350078.png', 'fec_publicacion': '25/08/2026', 'apellido': 'MINAYA BOCANEGRA', 'nombre': 'JOSE SANTOS', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,623 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,624 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15331', 'persona': 'Ostolaza Carvallo, Rafael Alfonso', 'documento': '72531647', 'contacto': 'CARVALLO ROMERO, GLADYS 993628633', 'ubigeo': 'LIMA/LIMA/MIRAFLORES', 'ruta_foto': 'src/static/images/72531647.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Ostolaza Carvallo', 'nombre': 'Rafael Alfonso', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,624 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,624 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15330', 'persona': 'ANGULO MARTINEZ, JORGE LUIS', 'documento': '75403973', 'contacto': 'MARTINEZ PERALTA, LILIANA VERONICA 996685732', 'ubigeo': 'LIMA/LIMA/SURQUILLO', 'ruta_foto': 'src/static/images/75403973.png', 'fec_publicacion': '25/08/2026', 'apellido': 'ANGULO MARTINEZ', 'nombre': 'JORGE LUIS', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,624 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,624 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15329', 'persona': 'Chavez Tuesta, Eloy Fabricio', 'documento': '72979798', 'contacto': 'TUESTA RUBIO, ROCIO 966949107', 'ubigeo': 'LIMA/LIMA/SAN JUAN DE LURIGANCHO', 'ruta_foto': 'src/static/images/72979798.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Chavez Tuesta', 'nombre': 'Eloy Fabricio', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,624 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,625 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15320', 'persona': 'Marengo Orsini, Armida Milagros', 'documento': '09164152', 'contacto': 'CABALLERO MARENGO ORSINI, CARLA MILAGROS 903186652', 'ubigeo': 'LIMA/LIMA/SAN BORJA', 'ruta_foto': 'src/static/images/09164152.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Marengo Orsini', 'nombre': 'Armida Milagros', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,625 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,625 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15311', 'persona': 'CASTRO GARCIA, FATIMA PAOLA', 'documento': '71784833', 'contacto': 'TORRES ORDOÑEZ, FABRIZZIO MARCO ANTONIO 948255879', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/71784833.png', 'fec_publicacion': '25/08/2026', 'apellido': 'CASTRO GARCIA', 'nombre': 'FATIMA PAOLA', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,625 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,625 INFO __main__ - [INSERT] Iniciando scraping inhouse para: {'num_reg': '15275', 'persona': 'Jordan Campos, Jorge', 'documento': '21527618', 'contacto': 'JORDAN CAMPOS, MARIA ELENA 922321315', 'ubigeo': 'ICA/ICA/ICA', 'ruta_foto': 'src/static/images/21527618.png', 'fec_publicacion': '25/08/2026', 'apellido': 'Jordan Campos', 'nombre': 'Jorge', 'tipo_documento': 'DNI'}
+2026-08-26 19:21:46,626 WARNING __main__ - Tipo de operación no reconocido: INSERT
+2026-08-26 19:21:46,626 INFO __main__ - Tareas adicionales de INSERT finalizadas.
+2026-08-26 19:21:46,626 INFO __main__ - Registros detectados en df_update (1).
+2026-08-26 19:21:46,628 INFO __main__ - [UPDATE] Iniciando scraping inhouse para: {'id': 2450, 'code': 12464, 'first_name': 'Mirian Mercedes', 'last_name': 'Cabanillastardillo', 'card_type': 1, 'id_card': '08661213', 'ubigeo': 'Callao / Prov. Const. Delcallao / Callao', 'published_at': '2024-02-21 00:00:00.000', 'contact': 'Chavez Herrera Raulalberto 966929676', 'photo': 'players/player/b0994ea2ec9b4c4e80bf49c8d6262466.PNG', 'created_at': '2024-02-22 10:36:16.000', 'updated_at': '2024-02-22 10:36:16.000', 'is_active': 1}
+2026-08-26 19:22:08,260 INFO __main__ - Tareas adicionales de UPDATE finalizadas.
+2026-08-26 19:22:08,261 INFO __main__ - No hay registros recurrentes para actualizar (df_update_recurrent vacío).
+2026-08-26 19:22:08,323 INFO __main__ - Sincronización finalizada

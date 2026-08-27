@@ -3,8 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import Select, WebDriverWait
 import os
 import pymupdf as fitz
 import pdfplumber
@@ -26,12 +26,27 @@ from config import (
     INPUT_USUARIO,
     PATH_DOWNLOADS,
     URL_LUDOPLAY,
-    XPATH_USUARIO_LUDOPLAY,
-    XPATH_CLAVE_LUDOPLAY,
+    INPUT_USUARIO_LUDOPLAY,
+    INPUT_CLAVE_LUDOPLAY,
     XPATH_BOTON_ENTRAR_LUDOPLAY,
     XPATH_MENU_PERSONAS_LUDOPLAY,
     XPATH_MENU_PERSONAS_LISTA_LUDOPLAY,
-    XPATH_MENU_PERSONAS_NUEVO_LUDOPLAY
+    XPATH_MENU_PERSONAS_NUEVO_LUDOPLAY,
+    INPUT_MENU_PERSONAS_NUEVO_REGISTRO,
+    INPUT_MENU_PERSONAS_NUEVO_UBIGEO,
+    INPUT_MENU_PERSONAS_NUEVO_NOMBRE,
+    INPUT_MENU_PERSONAS_NUEVO_APELLIDO,
+    INPUT_MENU_PERSONAS_NUEVO_TIPO,
+    INPUT_MENU_PERSONAS_NUEVO_DOCUMENTO,
+    INPUT_MENU_PERSONAS_NUEVO_CONTACTO,
+    INPUT_MENU_PERSONAS_NUEVO_PUBLICADO,
+    INPUT_MENU_PERSONAS_NUEVO_FOTO,
+    XPATH_MENU_PERSONAS_NUEVO_BOTON,
+    INPUT_MENU_PERSONAS_LISTA_DOCUMENTO,
+    XPATH_MENU_PERSONAS_LISTA_SELECCIONAR,
+    XPATH_MENU_PERSONAS_LISTA_ACTUALIZAR,
+    CHECK_MENU_PERSONAS_LISTA_ACTIVAR_DESACTIVAR,
+    XPATH_MENU_PERSONAS_LISTA_BOTON
 )
 
 def _build_options(headless: bool = False) -> Options:
@@ -192,11 +207,15 @@ class Scraper:
                     if len(fila) < 7: continue
 
                     # 1. Limpieza del documento (fila[2]) -> pdf muestra como fila[1]
-                    # 1. Limpieza agresiva:
                     doc_sucio = str(fila[1]) if fila[1] else ''
+                    
+                    # Extracción del tipo de documento antes de limpiarlo
+                    coincidencia = patron_limpieza.search(doc_sucio)
+                    tipo_doc_raw = coincidencia.group(0) if coincidencia else ''
+
                     # Eliminamos tipos de documentos
                     doc_limpio = patron_limpieza.sub('', doc_sucio)
-                    # FUERZA: Solo conservar números (quitamos cualquier espacio, salto de línea o letra que haya quedado)
+                    # FUERZA: Solo conservar números (o letras en caso de pasaportes/CE si aplica)
                     doc_limpio = re.sub(r'\D', '', doc_limpio)
 
                     # 2. Guardar foto usando el doc_limpio como nombre
@@ -210,20 +229,47 @@ class Scraper:
                         nombre_archivo = f"{doc_limpio}.png"
                         ruta_foto_guardada = os.path.join(carpeta_fotos, nombre_archivo)
                         pix.save(ruta_foto_guardada)
-                        # Liberar memoria explícitamente
                         pix = None
 
                     datos_completos.append({
                         'num_reg': fila[0],
                         'persona': fila[2],
-                        'documento': doc_limpio, # Guardamos el limpio en el DF
+                        'doc_raw': tipo_doc_raw, # Campo auxiliar para mapear el tipo de doc
+                        'documento': doc_limpio, 
                         'contacto': fila[3],
                         'ubigeo': fila[4],
                         'ruta_foto': ruta_foto_guardada,
                         'fec_publicacion': fila[6],
                     })
 
-        df_scraper = pd.DataFrame(datos_completos)  
+        df_scraper = pd.DataFrame(datos_completos)
+
+        if not df_scraper.empty:
+            # A. Dividir 'persona' en 'apellido' y 'nombre' por la coma ','
+            # expand=True genera 2 columnas; n=1 divide solo en la primera coma que encuentre
+            split_persona = df_scraper['persona'].astype(str).str.split(',', n=1, expand=True)
+            df_scraper['apellido'] = split_persona[0].str.strip()
+            df_scraper['nombre'] = split_persona[1].str.strip() if 1 in split_persona.columns else ''
+
+            # B. Mapeo para 'tipo_documento'
+            mapa_docs = {
+                'dni': 'DNI',
+                'carnet extranjeria': 'CE',
+                'permiso temporal de permanencia': 'PT',
+                'pasaporte': 'PP'
+            }
+            df_scraper['tipo_documento'] = (
+                df_scraper['doc_raw']
+                .astype(str)
+                .str.strip()
+                .str.lower()
+                .map(mapa_docs)
+                .fillna('')
+            )
+
+            # C. Limpieza de columna temporal 'doc_raw'
+            df_scraper = df_scraper.drop(columns=['doc_raw'])
+
         return df_scraper
 
     def limpiar_carpetas(self) -> None:
@@ -274,51 +320,102 @@ class Scraper_Ludoplay:
         )
         boton.click()
 
-    def _esperar_y_escribir(self, selector: tuple, texto: str) -> None:
-        """Método auxiliar para limpiar un campo e ingresar texto de forma segura."""
-        campo = WebDriverWait(self.driver, TIEMPO_ESPERA).until(
-            EC.presence_of_element_located(selector)
-        )
-        campo.clear()
-        campo.send_keys(str(texto))
-
     def llenar_formulario(self, usuario: str, clave: str) -> None:
         WebDriverWait(self.driver, TIEMPO_ESPERA).until(
-            EC.presence_of_element_located(XPATH_USUARIO_LUDOPLAY)
+            EC.presence_of_element_located(INPUT_USUARIO_LUDOPLAY)
         )
-        self.driver.find_element(*XPATH_USUARIO_LUDOPLAY).send_keys(usuario)
-        self.driver.find_element(*XPATH_CLAVE_LUDOPLAY).send_keys(clave)
+        self.driver.find_element(*INPUT_USUARIO_LUDOPLAY).send_keys(usuario)
+        self.driver.find_element(*INPUT_CLAVE_LUDOPLAY).send_keys(clave)
         self._esperar_y_clic((By.XPATH, XPATH_BOTON_ENTRAR_LUDOPLAY))
 
     def clic_insert(
                     self,
-                    documento: str = "",
-                    persona: str = "",
+                    num_reg: str = "",
                     ubigeo: str = "",
-                    fecha_publicacion: str = "",
+                    nombre: str = "",
+                    apellido: str = "",
+                    tipo_documento: str = "",
+                    documento: str = "",
+                    contacto: str = "",
+                    fec_publicacion: str = "",
                     **kwargs,
-                    ) -> None:
+                ) -> None:
+        # 1. Abrir modal/vista de registro
         self._esperar_y_clic((By.XPATH, XPATH_MENU_PERSONAS_LUDOPLAY))
         self._esperar_y_clic((By.XPATH, XPATH_MENU_PERSONAS_NUEVO_LUDOPLAY))
-        # 2. Llenado de campos del formulario (reemplaza los XPATH con los reales)
-        self._esperar_y_escribir((By.XPATH, "//input[@id='documento']"), documento)
-        self._esperar_y_escribir((By.XPATH, "//input[@id='persona']"), persona)
-        self._esperar_y_escribir((By.XPATH, "//input[@id='ubigeo']"), ubigeo)
-        self._esperar_y_escribir((By.XPATH, "//input[@id='fecha_pub']"), fecha_publicacion)
 
-        # 3. Guardar cambios
-        # self._esperar_y_clic((By.XPATH, "//button[@id='btn_guardar']"))
+        # 2. Esperar a que el primer input esté disponible en el DOM
+        WebDriverWait(self.driver, TIEMPO_ESPERA).until(
+            EC.presence_of_element_located(INPUT_MENU_PERSONAS_NUEVO_REGISTRO)
+        )
+
+        # 3. Llenar campos de texto normales (inputs)
+        campos_texto = [
+            (INPUT_MENU_PERSONAS_NUEVO_REGISTRO, num_reg),
+            (INPUT_MENU_PERSONAS_NUEVO_UBIGEO, ubigeo),
+            (INPUT_MENU_PERSONAS_NUEVO_NOMBRE, nombre),
+            (INPUT_MENU_PERSONAS_NUEVO_APELLIDO, apellido),
+            (INPUT_MENU_PERSONAS_NUEVO_DOCUMENTO, documento),
+            (INPUT_MENU_PERSONAS_NUEVO_CONTACTO, contacto),
+            (INPUT_MENU_PERSONAS_NUEVO_PUBLICADO, fec_publicacion)
+        ]
+
+        for selector, valor in campos_texto:
+            elem = self.driver.find_element(*selector)
+            elem.clear()
+            elem.send_keys(str(valor))
+
+        # 4. Manejo exclusivo para el <select> id="id_card_type"
+        if tipo_documento:
+            select_elem = Select(
+                self.driver.find_element(*INPUT_MENU_PERSONAS_NUEVO_TIPO)
+            )
+            try:
+                # Intenta seleccionar por el texto visible (ej. "DNI" o "CE")
+                select_elem.select_by_visible_text(str(tipo_documento).strip())
+            except Exception:
+                # Respaldo: Intenta seleccionar por el valor del atributo (ej. "1" o "2")
+                select_elem.select_by_value(str(tipo_documento).strip())
+
+        # 5. Guardar formulario (descomentar según corresponda)
+        # self._esperar_y_clic((By.XPATH, XPATH_MENU_PERSONAS_NUEVO_BOTON))
 
     def clic_update(
                     self,
-                    documento: str = "",
+                    id_card: str = "",
+                    activar: bool = False,
                     **kwargs,
                     ) -> None:
+        # 1. Navegación hacia el menú/lista
         self._esperar_y_clic((By.XPATH, XPATH_MENU_PERSONAS_LUDOPLAY))
         self._esperar_y_clic((By.XPATH, XPATH_MENU_PERSONAS_LISTA_LUDOPLAY))
-        # Lógica para buscar el registro existente por documento y actualizar sus datos...
-        self._esperar_y_escribir((By.XPATH, "//input[@id='documento_buscar']"), documento)
-        # self._esperar_y_clic((By.XPATH, "//button[@id='btn_buscar']"))
+
+        # 2. Búsqueda por documento (id_card + ENTER)
+        input_doc = WebDriverWait(self.driver, TIEMPO_ESPERA).until(
+            EC.element_to_be_clickable(INPUT_MENU_PERSONAS_LISTA_DOCUMENTO)
+        )
+        input_doc.clear()
+        input_doc.send_keys(str(id_card) + Keys.ENTER)
+        
+        # 3. Entrar a la edición del registro
+        self._esperar_y_clic((By.XPATH, XPATH_MENU_PERSONAS_LISTA_SELECCIONAR))
+        self._esperar_y_clic((By.XPATH, XPATH_MENU_PERSONAS_LISTA_ACTUALIZAR))
+
+        # 4. Esperar a que el checkbox exista en el DOM
+        chk_input = WebDriverWait(self.driver, TIEMPO_ESPERA).until(
+            EC.presence_of_element_located(
+                CHECK_MENU_PERSONAS_LISTA_ACTIVAR_DESACTIVAR
+            )
+        )
+
+        # 5. Si el estado actual difiere del objetivo, hacer clic al label vía JS
+        if chk_input.is_selected() != activar:
+            self.driver.execute_script(
+                "document.getElementById('id_is_active').checked = true;"
+            )
+        time.sleep(20)
+        # 6. Guardar cambios
+        # self._esperar_y_clic((By.XPATH, XPATH_MENU_PERSONAS_LISTA_BOTON))
 
     def clic_update_recurrent(
                             self,
@@ -327,6 +424,7 @@ class Scraper_Ludoplay:
                             ) -> None:
         self._esperar_y_clic((By.XPATH, XPATH_MENU_PERSONAS_LUDOPLAY))
         self._esperar_y_clic((By.XPATH, XPATH_MENU_PERSONAS_LISTA_LUDOPLAY))
+        self._esperar_y_escribir((By.ID,INPUT_MENU_PERSONAS_NUEVO_DOCUMENTO), documento)
 
     def capturar_estado(self) -> tuple[str, str, str]:
             return (

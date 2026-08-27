@@ -1,4 +1,5 @@
 import logging
+from selenium.common.exceptions import WebDriverException
 from config import LOGS_DIR, CredencialesSettings
 from database.database_connector import fetch_sqlite_dataframe
 from parser import EstadoPagina, normalizar_ruc, parsear_estado_pagina
@@ -20,19 +21,18 @@ def configurar_logging() -> None:
     )
 
 def obtener_df_scraper(credenciales: CredencialesSettings):
-    """Ejecuta la automatización MINCETUR y retorna el dataframe con datos y fotos."""
     ruc = normalizar_ruc(credenciales.mincetur_ruc)
     with Scraper(headless=credenciales.mincetur_headless) as scraper:
         try:
             scraper.navegar()
-            scraper.clic_clave_sol()
+            '''scraper.clic_clave_sol()
             scraper.clic_formulario()
             scraper.llenar_formulario(
                 ruc,
                 credenciales.mincetur_usuario,
                 credenciales.mincetur_clave,
             )
-            scraper.clic_registro_ludopatia()
+            scraper.clic_registro_ludopatia()'''
             df_scraper = scraper.extraer_tabla_y_fotos_pdf()
             estado: EstadoPagina = parsear_estado_pagina(*scraper.capturar_estado())
         except Exception:
@@ -44,14 +44,22 @@ def obtener_df_scraper(credenciales: CredencialesSettings):
 def _procesar_registro_inhouse(tipo_operacion: str, registro: dict, scraper: Scraper_Ludoplay) -> None:
     logger.info("[%s] Iniciando scraping inhouse para: %s", tipo_operacion, registro)
     operaciones = {
-        "INSERT": scraper.clic_insert,
+        #"INSERT": scraper.clic_insert,
         "UPDATE": scraper.clic_update,
-        "UPDATE_RECURRENT": scraper.clic_update_recurrent,
+        #"UPDATE_RECURRENT": scraper.clic_update_recurrent,
     }
     metodo_accion = operaciones.get(tipo_operacion)
     if metodo_accion:
-        # Pasa los datos del diccionario como argumentos nombrados (documento=..., persona=..., etc.)
-        metodo_accion(**registro)
+        try:
+            metodo_accion(**registro)
+        except WebDriverException as e:
+            logger.error(
+                "Error de Selenium al ejecutar %s: %s",
+                tipo_operacion,
+                e.msg,
+                exc_info=True,
+            )
+            raise
     else:
         logger.warning("Tipo de operación no reconocido: %s", tipo_operacion)
 
