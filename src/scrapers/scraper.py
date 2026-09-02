@@ -3,7 +3,6 @@ import json
 from pathlib import Path
 import re
 import time
-
 import pandas as pd
 import pdfplumber
 import pymupdf as fitz
@@ -32,7 +31,7 @@ from utils.constants import (
 '''Validar, limpiar y estructurar datos que provienen del scraping o de entradas del usuario.
 Ofrece utilidades para garantizar un RUC válido y normalizar el contenido extraído de la web.'''
 
-def normalizar_ruc(ruc: str) -> str:
+def normalize_ruc(ruc: str) -> str:
     ruc_limpio = ruc.strip()
     if not ruc_limpio.isdigit() or len(ruc_limpio) != 11:
         raise ValueError(f"El RUC debe tener 11 dígitos numéricos, se recibió: {ruc!r}")
@@ -44,7 +43,7 @@ class EstadoPagina:
     url: str
     texto_visible: str
 
-def parsear_estado_pagina(titulo: str, url: str, texto_visible: str) -> EstadoPagina:
+def parse_page_status(titulo: str, url: str, texto_visible: str) -> EstadoPagina:
     return EstadoPagina(
         titulo=titulo.strip(),
         url=url.strip(),
@@ -103,47 +102,47 @@ class Scraper:
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.driver.quit()
 
-    def navegar(self) -> None:
+    def browse(self) -> None:
         self.driver.get(URL_EXTRANET)
 
-    def _esperar_y_clic(self, selector: tuple) -> None:
+    def _wait_click(self, selector: tuple) -> None:
         boton = WebDriverWait(self.driver, TIEMPO_ESPERA).until(
             EC.element_to_be_clickable(selector)
         )
         boton.click()
 
-    def clic_clave_sol(self) -> None:
-        self._esperar_y_clic((By.XPATH, XPATH_CLAVE_SOL))
+    def click_key(self) -> None:
+        self._wait_click((By.XPATH, XPATH_CLAVE_SOL))
 
-    def clic_formulario(self) -> None:
-        self._esperar_y_clic((By.XPATH, XPATH_FORMULARIO))
+    def click_form(self) -> None:
+        self._wait_click((By.XPATH, XPATH_FORMULARIO))
 
-    def llenar_formulario(self, ruc: str, usuario: str, clave: str) -> None:
+    def fill_form(self, ruc: str, usuario: str, clave: str) -> None:
         WebDriverWait(self.driver, TIEMPO_ESPERA).until(
             EC.presence_of_element_located(INPUT_RUC)
         )
         self.driver.find_element(*INPUT_RUC).send_keys(ruc)
         self.driver.find_element(*INPUT_USUARIO).send_keys(usuario)
         self.driver.find_element(*INPUT_CLAVE).send_keys(clave)
-        self._esperar_y_clic((By.XPATH, XPATH_BOTON_ENTRAR))
+        self._wait_click((By.XPATH, XPATH_BOTON_ENTRAR))
         print("Formulario CLAVE SOL rellenado con las credenciales del .env")
 
-    def clic_registro_ludopatia(self) -> None:
-        self._esperar_y_clic((By.XPATH, XPATH_REGISTRO_LUDOPATIA))
+    def click_registration(self) -> None:
+        self._wait_click((By.XPATH, XPATH_REGISTRO_LUDOPATIA))
         print("Ingresa a registro de ludopatia")
         
         ventanas = self.driver.window_handles
         self.driver.switch_to.window(ventanas[-1])
         
-        self._esperar_y_clic((By.XPATH, XPATH_REGISTRO_LUDOPATIA_ACEPTAR))
+        self._wait_click((By.XPATH, XPATH_REGISTRO_LUDOPATIA_ACEPTAR))
         print("ACEPTAR registros de ludopatia")
         
-        self._esperar_y_clic((By.XPATH, XPATH_REGISTRO_LUDOPATIA_BUSCAR))
+        self._wait_click((By.XPATH, XPATH_REGISTRO_LUDOPATIA_BUSCAR))
         print("BUSCAR registros de ludopatia")
         
         time.sleep(80) 
         
-        self._esperar_y_clic((By.XPATH, XPATH_REGISTRO_LUDOPATIA_EXPORTAR))
+        self._wait_click((By.XPATH, XPATH_REGISTRO_LUDOPATIA_EXPORTAR))
         print("EXPORTAR registros de ludopatia - Guardando PDF automáticamente...")
 
         time.sleep(20) 
@@ -166,7 +165,7 @@ class Scraper:
         else:
             print("Advertencia: El tiempo de descarga expiró o el archivo sigue procesándose.")
 
-    def extraer_tabla_y_fotos_pdf(self) -> pd.DataFrame:
+    def extract_table_photos_pdf(self) -> pd.DataFrame:
         # 1. Buscar automáticamente el PDF más reciente con pathlib
         archivos_pdf = [p for p in PATH_DOWNLOADS.glob("*.pdf") if p.is_file()]
         
@@ -284,7 +283,7 @@ class Scraper:
 
         return df_scraper
 
-    def capturar_estado(self) -> tuple[str, str, str]:
+    def capture_state(self) -> tuple[str, str, str]:
         return (
             self.driver.title,
             self.driver.current_url,

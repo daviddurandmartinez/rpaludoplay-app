@@ -15,7 +15,7 @@ STATIC_IMAGES_DIR = PROJECT_ROOT / "static" / "images"
 LOGS_DIR = PROJECT_ROOT / "logs"
 EXTENSION_FOTO = ".png"
 PATH_FOTOS_SALIDA = Path("/home/ddurand/fotos")
-PATH_DOWNLOADS = Path("/home/ddurand/Downloads/") #Ruta de descarga
+PATH_DOWNLOADS = Path("/home/ddurand/Downloads/")
 
 # ---------------------------------------------------------------------------------------
 # SCRAPER A MINCETUR

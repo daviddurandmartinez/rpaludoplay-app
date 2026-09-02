@@ -9,10 +9,10 @@ from settings import Setting
 from utils.constants import LOGS_DIR
 from utils.connection_bd import Async_session_local, fetch_sql_dataframe
 from utils.clear_path import clear_path
-from scrapers.scraper import Scraper,EstadoPagina, normalizar_ruc, parsear_estado_pagina
+from scrapers.scraper import Scraper,EstadoPagina, normalize_ruc, parse_page_status
 import pandas as pd
 import uvicorn
-from utils.sync_merger import construir_dataframes_sync
+from utils.sync_merger import build_dataframes_sync
 from datetime import datetime
 
 # ---------------------------------------------------------------------------
@@ -21,7 +21,7 @@ from datetime import datetime
 '''Este bloque se encarga de inicializar y estructurar el sistema de registros (logging) para toda la aplicación. 
 Permite rastrear qué está sucediendo en el código (eventos, advertencias o errores) en tiempo real.'''
 
-def configurar_logging() -> None:
+def configure_logging() -> None:
     LOGS_DIR.mkdir(parents=True, exist_ok=True)
     logging.basicConfig(
         level=logging.INFO,
@@ -32,7 +32,7 @@ def configurar_logging() -> None:
         ],
     )
 
-configurar_logging()
+configure_logging()
 logger = logging.getLogger(__name__) #Crea la instancia de log local asociada al nombre del archivo actual (__name__), lista para usar en el resto del script mediante logger.info("..."), logger.error("..."), etc.
 
 # ---------------------------------------------------------------------------
@@ -58,21 +58,21 @@ async def health_check():
 # Scraper helpers (Selenium)
 # ---------------------------------------------------------------------------
 
-def obtener_df_scraper(credenciales: Setting):
-    ruc = normalizar_ruc(credenciales.MINCETUR_RUC)
+def get_df_scraper(credenciales: Setting):
+    ruc = normalize_ruc(credenciales.MINCETUR_RUC)
     with Scraper(headless=credenciales.MINCETUR_HEADLESS) as scraper:
         try:
-            scraper.navegar()
-            scraper.clic_clave_sol()
-            scraper.clic_formulario()
-            scraper.llenar_formulario(
+            scraper.browse()
+            scraper.click_key()
+            scraper.click_form()
+            scraper.fill_form(
                 ruc,
                 credenciales.MINCETUR_USUARIO,
                 credenciales.MINCETUR_CLAVE,
             )
-            scraper.clic_registro_ludopatia()
-            df_scraper = scraper.extraer_tabla_y_fotos_pdf()
-            estado: EstadoPagina = parsear_estado_pagina(*scraper.capturar_estado())
+            scraper.click_registration()
+            df_scraper = scraper.extract_table_photos_pdf()
+            estado: EstadoPagina = parse_page_status(*scraper.capture_state())
         except Exception:
             logger.exception("Error durante la automatización MINCETUR")
             raise
@@ -116,7 +116,7 @@ async def run_full_sync(credenciales: Setting) -> None:
     # Stage 1: Scraper MINCETUR
     logger.info("=== Etapa 1/5: Scraper MINCETUR ===")
     try:
-        df_scraper = obtener_df_scraper(credenciales)
+        df_scraper = get_df_scraper(credenciales)
     except Exception as e:
         logger.error("Scraper falló: %s", e)
         return
@@ -136,7 +136,7 @@ async def run_full_sync(credenciales: Setting) -> None:
 
     # Stage 3: Merge
     logger.info("=== Etapa 3/5: Merge / Comparativo ===")
-    resultado = construir_dataframes_sync(df_desde_sql, df_scraper)
+    resultado = build_dataframes_sync(df_desde_sql, df_scraper)
     logger.info(
         "Resultado merge — INSERT: %d | UPDATE (desactivar): %d | RECURRENT (reactivar): %d",
         len(resultado.df_insert),

@@ -15,7 +15,7 @@ class ResultadoSync:
     df_update: pd.DataFrame
     df_update_recurrent: pd.DataFrame
 
-def _limpiar_texto(df: pd.DataFrame) -> pd.DataFrame:
+def _clear_text(df: pd.DataFrame) -> pd.DataFrame:
     """Elimina saltos de línea y espacios extras en todas las columnas de tipo string."""
     df_clean = df.copy()
     col_texto = df_clean.select_dtypes(include=["object", "string"]).columns
@@ -29,14 +29,14 @@ def _limpiar_texto(df: pd.DataFrame) -> pd.DataFrame:
         )
     return df_clean
 
-def _normalizar_llave(valores: pd.Series) -> pd.Series:
+def _normalize_key(valores: pd.Series) -> pd.Series:
     return valores.astype(str).str.strip()
 
 
-def construir_dataframes_sync(
-                                df_desde_sqlite: pd.DataFrame,
-                                df_scraper: pd.DataFrame,
-                            ) -> ResultadoSync:
+def build_dataframes_sync(
+                        df_desde_sqlite: pd.DataFrame,
+                        df_scraper: pd.DataFrame,
+                        ) -> ResultadoSync:
     """
     Genera los 3 dataframes de sincronización usando la llave id_card <-> id_card:
       - df_insert: en scraper y NO en base (nuevos en MINCETUR)
@@ -44,11 +44,11 @@ def construir_dataframes_sync(
       - df_update_recurrent: en ambos y is_active=0 en base (reaparecieron)
     """
     # 1. Limpieza de saltos de línea y espacios en blanco en todo el DataFrame
-    db = _limpiar_texto(df_desde_sqlite)
-    sc = _limpiar_texto(df_scraper)
+    db = _clear_text(df_desde_sqlite)
+    sc = _clear_text(df_scraper)
 
-    db["_key"] = _normalizar_llave(db[LLAVE_DB])
-    sc["_key"] = _normalizar_llave(sc[LLAVE_SCRAPER])
+    db["_key"] = _normalize_key(db[LLAVE_DB])
+    sc["_key"] = _normalize_key(sc[LLAVE_SCRAPER])
 
     #Esa instrucción elimina todas las filas que tengan una llave vacía ("") tanto en el DataFrame de la base de datos (db) como en el del scraper (sc).
     db = db[db["_key"].ne("")]
