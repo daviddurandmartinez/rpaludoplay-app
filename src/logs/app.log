@@ -1,0 +1,1706 @@
+2026-08-31 14:51:13,186 INFO watchfiles.main - 2 changes detected
+2026-08-31 14:51:13,538 INFO watchfiles.main - 1 change detected
+2026-08-31 14:55:48,400 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 14:55:48,400 ERROR __main__ - Scraper falló: 'Setting' object has no attribute 'mincetur_ruc'
+2026-08-31 14:57:37,046 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 15:01:09,857 WARNING urllib3.connectionpool - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59143): Failed to establish a new connection: [Errno 111] Connection refused")': /session/20ac9492c6bb7872854d6a88576b16d5
+2026-08-31 15:01:09,872 WARNING urllib3.connectionpool - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59143): Failed to establish a new connection: [Errno 111] Connection refused")': /session/20ac9492c6bb7872854d6a88576b16d5
+2026-08-31 15:01:09,874 WARNING urllib3.connectionpool - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59143): Failed to establish a new connection: [Errno 111] Connection refused")': /session/20ac9492c6bb7872854d6a88576b16d5
+2026-08-31 15:01:58,629 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 15:05:02,245 ERROR __main__ - Error durante la automatización MINCETUR
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 65, in obtener_df_scraper
+    df_scraper = scraper.extraer_tabla_y_fotos_pdf()
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/services/scraper.py", line 173, in extraer_tabla_y_fotos_pdf
+    raise FileNotFoundError(f"No se encontró ningún archivo PDF en {dir_downloads}")
+FileNotFoundError: No se encontró ningún archivo PDF en /home/ddurand/Downloads/
+2026-08-31 15:05:02,793 ERROR __main__ - Scraper falló: No se encontró ningún archivo PDF en /home/ddurand/Downloads/
+2026-08-31 15:09:59,563 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 15:10:05,155 ERROR __main__ - Error durante la automatización MINCETUR
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 58, in obtener_df_scraper
+    scraper.navegar()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/services/scraper.py", line 315, in navegar
+    self.driver.get(URL_LUDOPLAY)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 524, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 504, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=151.0.7922.108)
+Stacktrace:
+#0 0x56a935c4136a <unknown>
+#1 0x56a9355b4f49 <unknown>
+#2 0x56a9355abd9c <unknown>
+#3 0x56a93559ce81 <unknown>
+#4 0x56a93559ebf5 <unknown>
+#5 0x56a93559d37a <unknown>
+#6 0x56a93559c9f9 <unknown>
+#7 0x56a93559c616 <unknown>
+#8 0x56a93559a1fe <unknown>
+#9 0x56a93559aa40 <unknown>
+#10 0x56a9355b89fd <unknown>
+#11 0x56a935653dcb <unknown>
+#12 0x56a9356530c3 <unknown>
+#13 0x56a9355fdc92 <unknown>
+#14 0x56a9355feb11 <unknown>
+#15 0x56a935c068d0 <unknown>
+#16 0x56a935c04f3a <unknown>
+#17 0x56a935bef9b5 <unknown>
+#18 0x56a935c05c0a <unknown>
+#19 0x56a935bd7740 <unknown>
+#20 0x56a935c2c9a8 <unknown>
+#21 0x56a935c2cb45 <unknown>
+#22 0x56a935c3ff1e <unknown>
+#23 0x7f71c0aa407a <unknown>
+#24 0x7f71c0b3772c <unknown>
+
+2026-08-31 15:10:05,231 ERROR __main__ - Scraper falló: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=151.0.7922.108)
+Stacktrace:
+#0 0x56a935c4136a <unknown>
+#1 0x56a9355b4f49 <unknown>
+#2 0x56a9355abd9c <unknown>
+#3 0x56a93559ce81 <unknown>
+#4 0x56a93559ebf5 <unknown>
+#5 0x56a93559d37a <unknown>
+#6 0x56a93559c9f9 <unknown>
+#7 0x56a93559c616 <unknown>
+#8 0x56a93559a1fe <unknown>
+#9 0x56a93559aa40 <unknown>
+#10 0x56a9355b89fd <unknown>
+#11 0x56a935653dcb <unknown>
+#12 0x56a9356530c3 <unknown>
+#13 0x56a9355fdc92 <unknown>
+#14 0x56a9355feb11 <unknown>
+#15 0x56a935c068d0 <unknown>
+#16 0x56a935c04f3a <unknown>
+#17 0x56a935bef9b5 <unknown>
+#18 0x56a935c05c0a <unknown>
+#19 0x56a935bd7740 <unknown>
+#20 0x56a935c2c9a8 <unknown>
+#21 0x56a935c2cb45 <unknown>
+#22 0x56a935c3ff1e <unknown>
+#23 0x7f71c0aa407a <unknown>
+#24 0x7f71c0b3772c <unknown>
+
+2026-08-31 15:10:15,196 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 15:10:17,920 ERROR __main__ - Error durante la automatización MINCETUR
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 58, in obtener_df_scraper
+    scraper.navegar()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/services/scraper.py", line 315, in navegar
+    self.driver.get(URL_LUDOPLAY)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 524, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 504, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=151.0.7922.108)
+Stacktrace:
+#0 0x620ef8e9336a <unknown>
+#1 0x620ef8806f49 <unknown>
+#2 0x620ef87fdd9c <unknown>
+#3 0x620ef87eee81 <unknown>
+#4 0x620ef87f0bf5 <unknown>
+#5 0x620ef87ef37a <unknown>
+#6 0x620ef87ee9f9 <unknown>
+#7 0x620ef87ee616 <unknown>
+#8 0x620ef87ec1fe <unknown>
+#9 0x620ef87eca40 <unknown>
+#10 0x620ef880a9fd <unknown>
+#11 0x620ef88a5dcb <unknown>
+#12 0x620ef88a50c3 <unknown>
+#13 0x620ef884fc92 <unknown>
+#14 0x620ef8850b11 <unknown>
+#15 0x620ef8e588d0 <unknown>
+#16 0x620ef8e56f3a <unknown>
+#17 0x620ef8e419b5 <unknown>
+#18 0x620ef8e57c0a <unknown>
+#19 0x620ef8e29740 <unknown>
+#20 0x620ef8e7e9a8 <unknown>
+#21 0x620ef8e7eb45 <unknown>
+#22 0x620ef8e91f1e <unknown>
+#23 0x7529f26a407a <unknown>
+#24 0x7529f273772c <unknown>
+
+2026-08-31 15:10:17,993 ERROR __main__ - Scraper falló: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=151.0.7922.108)
+Stacktrace:
+#0 0x620ef8e9336a <unknown>
+#1 0x620ef8806f49 <unknown>
+#2 0x620ef87fdd9c <unknown>
+#3 0x620ef87eee81 <unknown>
+#4 0x620ef87f0bf5 <unknown>
+#5 0x620ef87ef37a <unknown>
+#6 0x620ef87ee9f9 <unknown>
+#7 0x620ef87ee616 <unknown>
+#8 0x620ef87ec1fe <unknown>
+#9 0x620ef87eca40 <unknown>
+#10 0x620ef880a9fd <unknown>
+#11 0x620ef88a5dcb <unknown>
+#12 0x620ef88a50c3 <unknown>
+#13 0x620ef884fc92 <unknown>
+#14 0x620ef8850b11 <unknown>
+#15 0x620ef8e588d0 <unknown>
+#16 0x620ef8e56f3a <unknown>
+#17 0x620ef8e419b5 <unknown>
+#18 0x620ef8e57c0a <unknown>
+#19 0x620ef8e29740 <unknown>
+#20 0x620ef8e7e9a8 <unknown>
+#21 0x620ef8e7eb45 <unknown>
+#22 0x620ef8e91f1e <unknown>
+#23 0x7529f26a407a <unknown>
+#24 0x7529f273772c <unknown>
+
+2026-08-31 15:10:29,441 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 15:10:32,309 ERROR __main__ - Error durante la automatización MINCETUR
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 58, in obtener_df_scraper
+    scraper.navegar()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/services/scraper.py", line 315, in navegar
+    self.driver.get(URL_LUDOPLAY)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 524, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 504, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=151.0.7922.108)
+Stacktrace:
+#0 0x5eb104d1a36a <unknown>
+#1 0x5eb10468df49 <unknown>
+#2 0x5eb104684d9c <unknown>
+#3 0x5eb104675e81 <unknown>
+#4 0x5eb104677bf5 <unknown>
+#5 0x5eb10467637a <unknown>
+#6 0x5eb1046759f9 <unknown>
+#7 0x5eb104675616 <unknown>
+#8 0x5eb1046731fe <unknown>
+#9 0x5eb104673a40 <unknown>
+#10 0x5eb1046919fd <unknown>
+#11 0x5eb10472cdcb <unknown>
+#12 0x5eb10472c0c3 <unknown>
+#13 0x5eb1046d6c92 <unknown>
+#14 0x5eb1046d7b11 <unknown>
+#15 0x5eb104cdf8d0 <unknown>
+#16 0x5eb104cddf3a <unknown>
+#17 0x5eb104cc89b5 <unknown>
+#18 0x5eb104cdec0a <unknown>
+#19 0x5eb104cb0740 <unknown>
+#20 0x5eb104d059a8 <unknown>
+#21 0x5eb104d05b45 <unknown>
+#22 0x5eb104d18f1e <unknown>
+#23 0x788b9c4a407a <unknown>
+#24 0x788b9c53772c <unknown>
+
+2026-08-31 15:10:32,393 ERROR __main__ - Scraper falló: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=151.0.7922.108)
+Stacktrace:
+#0 0x5eb104d1a36a <unknown>
+#1 0x5eb10468df49 <unknown>
+#2 0x5eb104684d9c <unknown>
+#3 0x5eb104675e81 <unknown>
+#4 0x5eb104677bf5 <unknown>
+#5 0x5eb10467637a <unknown>
+#6 0x5eb1046759f9 <unknown>
+#7 0x5eb104675616 <unknown>
+#8 0x5eb1046731fe <unknown>
+#9 0x5eb104673a40 <unknown>
+#10 0x5eb1046919fd <unknown>
+#11 0x5eb10472cdcb <unknown>
+#12 0x5eb10472c0c3 <unknown>
+#13 0x5eb1046d6c92 <unknown>
+#14 0x5eb1046d7b11 <unknown>
+#15 0x5eb104cdf8d0 <unknown>
+#16 0x5eb104cddf3a <unknown>
+#17 0x5eb104cc89b5 <unknown>
+#18 0x5eb104cdec0a <unknown>
+#19 0x5eb104cb0740 <unknown>
+#20 0x5eb104d059a8 <unknown>
+#21 0x5eb104d05b45 <unknown>
+#22 0x5eb104d18f1e <unknown>
+#23 0x788b9c4a407a <unknown>
+#24 0x788b9c53772c <unknown>
+
+2026-08-31 15:21:27,910 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 15:21:36,947 ERROR __main__ - Error durante la automatización MINCETUR
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 58, in obtener_df_scraper
+    scraper.navegar()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/services/scraper.py", line 315, in navegar
+    self.driver.get(URL_LUDOPLAY)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 524, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 504, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=151.0.7922.108)
+Stacktrace:
+#0 0x588dbf47f36a <unknown>
+#1 0x588dbedf2f49 <unknown>
+#2 0x588dbede9d9c <unknown>
+#3 0x588dbeddae81 <unknown>
+#4 0x588dbeddcbf5 <unknown>
+#5 0x588dbeddb37a <unknown>
+#6 0x588dbedda9f9 <unknown>
+#7 0x588dbedda616 <unknown>
+#8 0x588dbedd81fe <unknown>
+#9 0x588dbedd8a40 <unknown>
+#10 0x588dbedf69fd <unknown>
+#11 0x588dbee91dcb <unknown>
+#12 0x588dbee910c3 <unknown>
+#13 0x588dbee3bc92 <unknown>
+#14 0x588dbee3cb11 <unknown>
+#15 0x588dbf4448d0 <unknown>
+#16 0x588dbf442f3a <unknown>
+#17 0x588dbf42d9b5 <unknown>
+#18 0x588dbf443c0a <unknown>
+#19 0x588dbf415740 <unknown>
+#20 0x588dbf46a9a8 <unknown>
+#21 0x588dbf46ab45 <unknown>
+#22 0x588dbf47df1e <unknown>
+#23 0x7451588a407a <unknown>
+#24 0x74515893772c <unknown>
+
+2026-08-31 15:21:37,035 ERROR __main__ - Scraper falló: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=151.0.7922.108)
+Stacktrace:
+#0 0x588dbf47f36a <unknown>
+#1 0x588dbedf2f49 <unknown>
+#2 0x588dbede9d9c <unknown>
+#3 0x588dbeddae81 <unknown>
+#4 0x588dbeddcbf5 <unknown>
+#5 0x588dbeddb37a <unknown>
+#6 0x588dbedda9f9 <unknown>
+#7 0x588dbedda616 <unknown>
+#8 0x588dbedd81fe <unknown>
+#9 0x588dbedd8a40 <unknown>
+#10 0x588dbedf69fd <unknown>
+#11 0x588dbee91dcb <unknown>
+#12 0x588dbee910c3 <unknown>
+#13 0x588dbee3bc92 <unknown>
+#14 0x588dbee3cb11 <unknown>
+#15 0x588dbf4448d0 <unknown>
+#16 0x588dbf442f3a <unknown>
+#17 0x588dbf42d9b5 <unknown>
+#18 0x588dbf443c0a <unknown>
+#19 0x588dbf415740 <unknown>
+#20 0x588dbf46a9a8 <unknown>
+#21 0x588dbf46ab45 <unknown>
+#22 0x588dbf47df1e <unknown>
+#23 0x7451588a407a <unknown>
+#24 0x74515893772c <unknown>
+
+2026-08-31 15:22:53,785 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 15:22:57,304 ERROR __main__ - Error durante la automatización MINCETUR
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 58, in obtener_df_scraper
+    scraper.navegar()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/services/scraper.py", line 315, in navegar
+    self.driver.get(URL_LUDOPLAY)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 524, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 504, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=151.0.7922.108)
+Stacktrace:
+#0 0x61413172436a <unknown>
+#1 0x614131097f49 <unknown>
+#2 0x61413108ed9c <unknown>
+#3 0x61413107fe81 <unknown>
+#4 0x614131081bf5 <unknown>
+#5 0x61413108037a <unknown>
+#6 0x61413107f9f9 <unknown>
+#7 0x61413107f616 <unknown>
+#8 0x61413107d1fe <unknown>
+#9 0x61413107da40 <unknown>
+#10 0x61413109b9fd <unknown>
+#11 0x614131136dcb <unknown>
+#12 0x6141311360c3 <unknown>
+#13 0x6141310e0c92 <unknown>
+#14 0x6141310e1b11 <unknown>
+#15 0x6141316e98d0 <unknown>
+#16 0x6141316e7f3a <unknown>
+#17 0x6141316d29b5 <unknown>
+#18 0x6141316e8c0a <unknown>
+#19 0x6141316ba740 <unknown>
+#20 0x61413170f9a8 <unknown>
+#21 0x61413170fb45 <unknown>
+#22 0x614131722f1e <unknown>
+#23 0x739e700a407a <unknown>
+#24 0x739e7013772c <unknown>
+
+2026-08-31 15:22:57,425 ERROR __main__ - Scraper falló: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=151.0.7922.108)
+Stacktrace:
+#0 0x61413172436a <unknown>
+#1 0x614131097f49 <unknown>
+#2 0x61413108ed9c <unknown>
+#3 0x61413107fe81 <unknown>
+#4 0x614131081bf5 <unknown>
+#5 0x61413108037a <unknown>
+#6 0x61413107f9f9 <unknown>
+#7 0x61413107f616 <unknown>
+#8 0x61413107d1fe <unknown>
+#9 0x61413107da40 <unknown>
+#10 0x61413109b9fd <unknown>
+#11 0x614131136dcb <unknown>
+#12 0x6141311360c3 <unknown>
+#13 0x6141310e0c92 <unknown>
+#14 0x6141310e1b11 <unknown>
+#15 0x6141316e98d0 <unknown>
+#16 0x6141316e7f3a <unknown>
+#17 0x6141316d29b5 <unknown>
+#18 0x6141316e8c0a <unknown>
+#19 0x6141316ba740 <unknown>
+#20 0x61413170f9a8 <unknown>
+#21 0x61413170fb45 <unknown>
+#22 0x614131722f1e <unknown>
+#23 0x739e700a407a <unknown>
+#24 0x739e7013772c <unknown>
+
+2026-08-31 15:25:05,504 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 15:28:48,030 ERROR __main__ - Error durante la automatización MINCETUR
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 67, in obtener_df_scraper
+    df_scraper = scraper.extraer_tabla_y_fotos_pdf()
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/services/scraper.py", line 151, in extraer_tabla_y_fotos_pdf
+    raise FileNotFoundError(f"No se encontró ningún archivo PDF en {dir_downloads}")
+FileNotFoundError: No se encontró ningún archivo PDF en /home/ddurand/Downloads/
+2026-08-31 15:28:57,640 ERROR __main__ - Scraper falló: No se encontró ningún archivo PDF en /home/ddurand/Downloads/
+2026-08-31 15:46:17,276 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 15:50:11,202 INFO __main__ - Scraper OK — Título: Sistema consulta de Ludopatía | URL: https://extranet.mincetur.gob.pe/ludopatia/index.aspx
+2026-08-31 15:50:11,204 INFO __main__ - Scraper devolvió 4800 registros
+2026-08-31 15:50:11,204 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-08-31 15:50:26,385 ERROR __main__ - No se pudo obtener datos desde la base de datos Ludoplay.
+2026-08-31 15:59:47,832 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 16:01:36,796 INFO __main__ - Scraper OK — Título: Extranet Mincetur | URL: https://extranet.mincetur.gob.pe/extranet2/Home/Inicio
+2026-08-31 16:01:36,796 INFO __main__ - Scraper devolvió 4800 registros
+2026-08-31 16:01:36,797 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-08-31 16:01:36,892 ERROR __main__ - No se pudo obtener datos desde la base de datos Ludoplay.
+2026-08-31 16:26:03,206 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 16:27:51,120 INFO __main__ - Scraper OK — Título: Extranet Mincetur | URL: https://extranet.mincetur.gob.pe/extranet2/Home/Inicio
+2026-08-31 16:27:51,122 INFO __main__ - Scraper devolvió 4800 registros
+2026-08-31 16:32:55,383 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 16:36:13,669 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 16:36:49,728 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 16:37:53,611 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 16:38:18,857 ERROR __main__ - Scraper falló: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-31 16:41:30,991 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 16:42:33,442 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 16:49:06,700 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 16:53:45,225 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 16:55:41,218 INFO __main__ - Scraper OK — Título: Extranet Mincetur | URL: https://extranet.mincetur.gob.pe/extranet2/Home/Inicio
+2026-08-31 16:55:41,220 INFO __main__ - Scraper devolvió 4800 registros
+2026-08-31 17:16:47,990 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-08-31 17:16:48,112 ERROR __main__ - No se pudo obtener datos desde la base de datos Ludoplay.
+2026-08-31 17:21:47,681 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-08-31 17:21:47,724 ERROR __main__ - No se pudo obtener datos desde la base de datos Ludoplay.
+2026-08-31 17:24:03,997 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-08-31 17:24:04,051 ERROR __main__ - No se pudo obtener datos desde la base de datos Ludoplay.
+2026-08-31 17:25:10,451 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-08-31 17:25:10,515 ERROR __main__ - No se pudo obtener datos desde la base de datos Ludoplay.
+2026-08-31 17:32:24,096 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-08-31 17:32:24,167 ERROR __main__ - No se pudo obtener datos desde la base de datos Ludoplay.
+2026-08-31 17:34:31,892 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-08-31 17:34:31,945 ERROR __main__ - No se pudo obtener datos desde la base de datos Ludoplay.
+2026-08-31 17:35:20,509 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-08-31 17:35:20,566 ERROR __main__ - No se pudo obtener datos desde la base de datos Ludoplay.
+2026-08-31 17:36:13,929 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-08-31 17:36:13,976 ERROR __main__ - No se pudo obtener datos desde la base de datos Ludoplay.
+2026-08-31 17:38:01,027 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-08-31 17:38:01,121 ERROR __main__ - No se pudo obtener datos desde la base de datos Ludoplay.
+2026-08-31 17:42:26,357 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-08-31 17:42:27,905 INFO __main__ - BD Ludoplay devolvió 5353 registros
+2026-08-31 17:42:55,875 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-08-31 17:42:57,423 INFO __main__ - BD Ludoplay devolvió 5353 registros
+2026-08-31 17:48:39,413 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-08-31 17:50:46,434 INFO __main__ - Scraper OK — Título: Extranet Mincetur | URL: https://extranet.mincetur.gob.pe/extranet2/Home/Inicio
+2026-08-31 17:50:46,435 INFO __main__ - Scraper devolvió 4800 registros
+2026-08-31 17:50:46,436 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-08-31 17:50:49,305 INFO __main__ - BD Ludoplay devolvió 5353 registros
+2026-08-31 17:50:49,306 INFO __main__ - === Etapa 3/4: Merge / Comparativo ===
+2026-08-31 17:50:49,413 INFO services.sync_merger - Merge completado: insert=0 | update=0 | recurrent=0
+2026-08-31 17:50:49,414 INFO __main__ - Resultado merge — INSERT: 0 | UPDATE (desactivar): 0 | RECURRENT (reactivar): 0
+2026-08-31 17:50:49,414 INFO __main__ - === Etapa 4/4: Sincronización directa a BD ===
+2026-08-31 17:50:49,416 INFO __main__ - === Sincronización completada ===
+2026-08-31 17:50:49,416 INFO __main__ - Resultado final — insertados: 0 | desactivados: 0 | reactivados: 0 | fotos: 0
+2026-09-01 12:26:46,132 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-09-01 12:28:21,950 INFO __main__ - Scraper OK — Título: Extranet Mincetur | URL: https://extranet.mincetur.gob.pe/extranet2/Home/Inicio
+2026-09-01 12:28:21,951 INFO __main__ - Scraper devolvió 4800 registros
+2026-09-01 12:28:21,951 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-09-01 12:28:24,552 INFO __main__ - BD Ludoplay devolvió 5342 registros
+2026-09-01 12:28:24,553 INFO __main__ - === Etapa 3/4: Merge / Comparativo ===
+2026-09-01 12:28:24,632 INFO services.sync_merger - Merge completado: insert=11 | update=0 | recurrent=0
+2026-09-01 12:28:24,634 INFO __main__ - Resultado merge — INSERT: 11 | UPDATE (desactivar): 0 | RECURRENT (reactivar): 0
+2026-09-01 13:06:58,204 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-09-01 13:08:43,990 INFO __main__ - Scraper OK — Título: Extranet Mincetur | URL: https://extranet.mincetur.gob.pe/extranet2/Home/Inicio
+2026-09-01 13:08:43,992 INFO __main__ - Scraper devolvió 4800 registros
+2026-09-01 13:08:43,992 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-09-01 13:08:46,327 INFO __main__ - BD Ludoplay devolvió 5342 registros
+2026-09-01 13:08:46,328 INFO __main__ - === Etapa 3/4: Merge / Comparativo ===
+2026-09-01 13:08:46,449 INFO services.sync_merger - Merge completado: insert=11 | update=0 | recurrent=0
+2026-09-01 13:08:46,451 INFO __main__ - Resultado merge — INSERT: 11 | UPDATE (desactivar): 0 | RECURRENT (reactivar): 0
+2026-09-01 13:08:46,452 INFO __main__ - === Etapa 4/4: Sincronización directa a BD ===
+2026-09-01 13:08:47,298 ERROR routes.players.service - Error durante sync_all
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 144, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 3319, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 448, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 1272, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/impl.py", line 178, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/impl.py", line 176, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 389, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 674, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 900, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/create.py", line 667, in connect
+    return dialect.connect(*cargs_tup, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/aioodbc.py", line 160, in connect
+    await_only(creator_fn(*arg, **kw)),
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/aioodbc/connection.py", line 277, in _connect
+    await conn._connect()
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/aioodbc/connection.py", line 81, in _connect
+    self._conn = await f
+                 ^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+pyodbc.InterfaceError: ('28000', "[28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Error de inicio de sesión del usuario 'sa'. (18456) (SQLDriverConnect)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/routes/players/service.py", line 115, in sync_all
+    partial = await self.insert_players(insert_request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/routes/players/service.py", line 29, in insert_players
+    existing = await self.repo.id_cards_exist(id_cards_incoming)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/entities/player/repository.py", line 40, in id_cards_exist
+    result = await self.async_session.execute(stmt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/ext/asyncio/session.py", line 448, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2373, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2261, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2113, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1191, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 3295, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, dialect, engine
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2450, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 144, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 3319, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 448, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 1272, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/impl.py", line 178, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/impl.py", line 176, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 389, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 674, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 900, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/pool/base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/create.py", line 667, in connect
+    return dialect.connect(*cargs_tup, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/aioodbc.py", line 160, in connect
+    await_only(creator_fn(*arg, **kw)),
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/aioodbc/connection.py", line 277, in _connect
+    await conn._connect()
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/aioodbc/connection.py", line 81, in _connect
+    self._conn = await f
+                 ^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+sqlalchemy.exc.InterfaceError: (pyodbc.InterfaceError) ('28000', "[28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Error de inicio de sesión del usuario 'sa'. (18456) (SQLDriverConnect)")
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2026-09-01 13:08:47,346 INFO __main__ - === Sincronización completada ===
+2026-09-01 13:08:47,346 INFO __main__ - Resultado final — insertados: 0 | desactivados: 0 | reactivados: 0 | fotos: 0
+2026-09-01 13:08:47,346 WARNING __main__ - Errores: ['(pyodbc.InterfaceError) (\'28000\', "[28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Error de inicio de sesión del usuario \'sa\'. (18456) (SQLDriverConnect)")\n(Background on this error at: https://sqlalche.me/e/20/rvf5)']
+2026-09-01 13:51:29,862 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-09-01 13:53:24,546 INFO __main__ - Scraper OK — Título: Extranet Mincetur | URL: https://extranet.mincetur.gob.pe/extranet2/Home/Inicio
+2026-09-01 13:53:24,548 INFO __main__ - Scraper devolvió 4800 registros
+2026-09-01 13:53:24,548 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-09-01 13:53:30,162 INFO __main__ - BD Ludoplay devolvió 5342 registros
+2026-09-01 13:53:30,163 INFO __main__ - === Etapa 3/4: Merge / Comparativo ===
+2026-09-01 13:53:30,268 INFO services.sync_merger - Merge completado: insert=11 | update=0 | recurrent=0
+2026-09-01 13:53:30,269 INFO __main__ - Resultado merge — INSERT: 11 | UPDATE (desactivar): 0 | RECURRENT (reactivar): 0
+2026-09-01 13:53:30,269 INFO __main__ - === Etapa 4/4: Sincronización directa a BD ===
+2026-09-01 13:53:30,546 ERROR routes.players.service - Error durante sync_all
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 230, in execute
+    self._adapt_connection._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 368, in _handle_exception
+    raise error.with_traceback(exc_info[2])
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 228, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 254, in _execute_async
+    self._rows = collections.deque(await self._cursor.fetchall())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/aioodbc/cursor.py", line 30, in _run_operation
+    result = await self._conn._execute(func, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+pyodbc.IntegrityError: ('23000', "[23000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Infracción de la restricción UNIQUE KEY 'UQ__players___357D4CF9D979F263'. No se puede insertar una clave duplicada en el objeto 'dbo.players_player'. El valor de la clave duplicada es (0). (2627) (SQLFetch)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/routes/players/service.py", line 115, in sync_all
+    partial = await self.insert_players(insert_request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/routes/players/service.py", line 56, in insert_players
+    await self.repo.bulk_create(players_to_create)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/entities/player/repository.py", line 21, in bulk_create
+    await self.async_session.flush()
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/ext/asyncio/session.py", line 786, in flush
+    await greenlet_spawn(self.sync_session.flush, objects=objects)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 203, in greenlet_spawn
+    result = context.switch(value)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 1144, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_insertmany_context(dialect, context)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2135, in _exec_insertmany_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e,
+        ^^
+    ...<4 lines>...
+        is_sub_exec=True,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 230, in execute
+    self._adapt_connection._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 368, in _handle_exception
+    raise error.with_traceback(exc_info[2])
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 228, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 254, in _execute_async
+    self._rows = collections.deque(await self._cursor.fetchall())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/aioodbc/cursor.py", line 30, in _run_operation
+    result = await self._conn._execute(func, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+sqlalchemy.exc.IntegrityError: (pyodbc.IntegrityError) ('23000', "[23000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Infracción de la restricción UNIQUE KEY 'UQ__players___357D4CF9D979F263'. No se puede insertar una clave duplicada en el objeto 'dbo.players_player'. El valor de la clave duplicada es (0). (2627) (SQLFetch)")
+[SQL: INSERT INTO players_player (code, first_name, last_name, card_type, id_card, ubigeo, published_at, contact, photo, created_at, updated_at, is_active) OUTPUT inserted.id, inserted.id AS id__1 SELECT p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11 FRO ... 456 characters truncated ...  10)) AS imp_sen(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, sen_counter) ORDER BY sen_counter]
+[parameters: (0, 'HECTOR JEFFESON', 'ALVARADO DE PAZ', 1, '75806383', 'ÁNCASH/HUARAZ/HUARAZ', datetime.datetime(2026, 8, 27, 0, 0), 'ALVARADO GUIMARAY, MILAN HECTOR 972314369', 'static/images/75806383.png', datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1, 0, 'WILLIAM ROBERT', 'PINEDO DOMINGUEZ', 1, '40028976', 'LIMA/LIMA/SAN MARTÍN DE PORRES', datetime.datetime(2026, 8, 28, 0, 0), 'PINEDO DOMINGUEZ, FREDDY ANDRES 991860443', 'static/images/40028976.png', datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1, 0, 'Juan Giomar', 'Chuquillanqui De La Cruz', 1, '75989176', 'JUNÍN/HUANCAYO/HUANCAYO', datetime.datetime(2026, 8, 27, 0, 0), 'DE LA CRUZ GUTIERREZ, OLGA MARLENI 948639315', 'static/images/75989176.png', datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1, 0, 'GUZMAN', 'ROJAS JIMENEZ', 1, '43409883', 'LIMA/LIMA/RÍMAC', datetime.datetime(2026, 8, 28, 0, 0), 'DASILVA GONZALES, ELITA 951318438', 'static/images/43409883.png', datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1, 0, 'LUIS HERNAN' ... 32 parameters truncated ... datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1, 0, 'Steinbeck Raid', 'Huaman Mejia', 1, '77081445', 'CAJAMARCA/CAJAMARCA/CAJAMARCA', datetime.datetime(2026, 8, 27, 0, 0), 'HUAMAN MEJIA, NEIL KENT 907941271', 'static/images/77081445.png', datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1, 0, 'Kevin Brannon', 'Perez Ortiz', 1, '73329149', 'LAMBAYEQUE/CHICLAYO/JOSÉ LEONARDO ORTIZ', datetime.datetime(2026, 8, 27, 0, 0), 'Perez Ortiz, Arianna Mishell 933000890', 'static/images/73329149.png', datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1, 0, 'JHON JERSON', 'GUEVARA CABRERA', 1, '77807784', 'LIMA/LIMA/COMAS', datetime.datetime(2026, 8, 27, 0, 0), 'GUEVARA CABRERA, JESSICA DEL CARMEN 917861516', 'static/images/77807784.png', datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1, 0, 'JAVIER ANTONIO', 'ASTUPIÑAN TANTARUNA', 1, '80106228', 'LIMA/LIMA/LOS OLIVOS', datetime.datetime(2026, 8, 27, 0, 0), 'ASTUPIÑAN TANTARUNA, FELIPE 916658461', 'static/images/80106228.png', datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-01 13:53:30,574 INFO __main__ - === Sincronización completada ===
+2026-09-01 13:53:30,574 INFO __main__ - Resultado final — insertados: 0 | desactivados: 0 | reactivados: 0 | fotos: 0
+2026-09-01 13:53:30,574 WARNING __main__ - Errores: ['(pyodbc.IntegrityError) (\'23000\', "[23000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Infracción de la restricción UNIQUE KEY \'UQ__players___357D4CF9D979F263\'. No se puede insertar una clave duplicada en el objeto \'dbo.players_player\'. El valor de la clave duplicada es (0). (2627) (SQLFetch)")\n[SQL: INSERT INTO players_player (code, first_name, last_name, card_type, id_card, ubigeo, published_at, contact, photo, created_at, updated_at, is_active) OUTPUT inserted.id, inserted.id AS id__1 SELECT p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11 FRO ... 456 characters truncated ...  10)) AS imp_sen(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, sen_counter) ORDER BY sen_counter]\n[parameters: (0, \'HECTOR JEFFESON\', \'ALVARADO DE PAZ\', 1, \'75806383\', \'ÁNCASH/HUARAZ/HUARAZ\', datetime.datetime(2026, 8, 27, 0, 0), \'ALVARADO GUIMARAY, MILAN HECTOR 972314369\', \'static/images/75806383.png\', datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1, 0, \'WILLIAM ROBERT\', \'PINEDO DOMINGUEZ\', 1, \'40028976\', \'LIMA/LIMA/SAN MARTÍN DE PORRES\', datetime.datetime(2026, 8, 28, 0, 0), \'PINEDO DOMINGUEZ, FREDDY ANDRES 991860443\', \'static/images/40028976.png\', datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1, 0, \'Juan Giomar\', \'Chuquillanqui De La Cruz\', 1, \'75989176\', \'JUNÍN/HUANCAYO/HUANCAYO\', datetime.datetime(2026, 8, 27, 0, 0), \'DE LA CRUZ GUTIERREZ, OLGA MARLENI 948639315\', \'static/images/75989176.png\', datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1, 0, \'GUZMAN\', \'ROJAS JIMENEZ\', 1, \'43409883\', \'LIMA/LIMA/RÍMAC\', datetime.datetime(2026, 8, 28, 0, 0), \'DASILVA GONZALES, ELITA 951318438\', \'static/images/43409883.png\', datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1, 0, \'LUIS HERNAN\' ... 32 parameters truncated ... datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1, 0, \'Steinbeck Raid\', \'Huaman Mejia\', 1, \'77081445\', \'CAJAMARCA/CAJAMARCA/CAJAMARCA\', datetime.datetime(2026, 8, 27, 0, 0), \'HUAMAN MEJIA, NEIL KENT 907941271\', \'static/images/77081445.png\', datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1, 0, \'Kevin Brannon\', \'Perez Ortiz\', 1, \'73329149\', \'LAMBAYEQUE/CHICLAYO/JOSÉ LEONARDO ORTIZ\', datetime.datetime(2026, 8, 27, 0, 0), \'Perez Ortiz, Arianna Mishell 933000890\', \'static/images/73329149.png\', datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1, 0, \'JHON JERSON\', \'GUEVARA CABRERA\', 1, \'77807784\', \'LIMA/LIMA/COMAS\', datetime.datetime(2026, 8, 27, 0, 0), \'GUEVARA CABRERA, JESSICA DEL CARMEN 917861516\', \'static/images/77807784.png\', datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1, 0, \'JAVIER ANTONIO\', \'ASTUPIÑAN TANTARUNA\', 1, \'80106228\', \'LIMA/LIMA/LOS OLIVOS\', datetime.datetime(2026, 8, 27, 0, 0), \'ASTUPIÑAN TANTARUNA, FELIPE 916658461\', \'static/images/80106228.png\', datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 18, 53, 30, 341402, tzinfo=datetime.timezone.utc), 1)]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)']
+2026-09-01 14:47:15,193 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-09-01 14:48:43,224 INFO __main__ - Scraper OK — Título: Extranet Mincetur | URL: https://extranet.mincetur.gob.pe/extranet2/Home/Inicio
+2026-09-01 14:48:43,226 INFO __main__ - Scraper devolvió 4800 registros
+2026-09-01 14:48:43,226 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-09-01 14:48:44,812 INFO __main__ - BD Ludoplay devolvió 5342 registros
+2026-09-01 14:48:44,812 INFO __main__ - === Etapa 3/4: Merge / Comparativo ===
+2026-09-01 14:48:44,911 INFO services.sync_merger - Merge completado: insert=11 | update=0 | recurrent=0
+2026-09-01 14:48:44,913 INFO __main__ - Resultado merge — INSERT: 11 | UPDATE (desactivar): 0 | RECURRENT (reactivar): 0
+2026-09-01 14:48:44,924 INFO __main__ - === Etapa 4/4: Sincronización directa a BD ===
+2026-09-01 14:48:45,126 ERROR routes.players.service - Error durante sync_all
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 230, in execute
+    self._adapt_connection._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 368, in _handle_exception
+    raise error.with_traceback(exc_info[2])
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 228, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 254, in _execute_async
+    self._rows = collections.deque(await self._cursor.fetchall())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/aioodbc/cursor.py", line 30, in _run_operation
+    result = await self._conn._execute(func, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+pyodbc.IntegrityError: ('23000', "[23000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Infracción de la restricción UNIQUE KEY 'UQ__players___357D4CF9D979F263'. No se puede insertar una clave duplicada en el objeto 'dbo.players_player'. El valor de la clave duplicada es (0). (2627) (SQLFetch)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/routes/players/service.py", line 115, in sync_all
+    partial = await self.insert_players(insert_request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/routes/players/service.py", line 56, in insert_players
+    await self.repo.bulk_create(players_to_create)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/entities/player/repository.py", line 21, in bulk_create
+    await self.async_session.flush()
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/ext/asyncio/session.py", line 786, in flush
+    await greenlet_spawn(self.sync_session.flush, objects=objects)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 203, in greenlet_spawn
+    result = context.switch(value)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 1144, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_insertmany_context(dialect, context)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2135, in _exec_insertmany_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e,
+        ^^
+    ...<4 lines>...
+        is_sub_exec=True,
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2127, in _exec_insertmany_context
+    dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~^
+        cursor,
+        ^^^^^^^
+    ...<2 lines>...
+        context,
+        ^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 230, in execute
+    self._adapt_connection._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 368, in _handle_exception
+    raise error.with_traceback(exc_info[2])
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 228, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 254, in _execute_async
+    self._rows = collections.deque(await self._cursor.fetchall())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/aioodbc/cursor.py", line 30, in _run_operation
+    result = await self._conn._execute(func, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+sqlalchemy.exc.IntegrityError: (pyodbc.IntegrityError) ('23000', "[23000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Infracción de la restricción UNIQUE KEY 'UQ__players___357D4CF9D979F263'. No se puede insertar una clave duplicada en el objeto 'dbo.players_player'. El valor de la clave duplicada es (0). (2627) (SQLFetch)")
+[SQL: INSERT INTO players_player (code, first_name, last_name, card_type, id_card, ubigeo, published_at, contact, photo, created_at, updated_at, is_active) OUTPUT inserted.id, inserted.id AS id__1 SELECT p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11 FRO ... 456 characters truncated ...  10)) AS imp_sen(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, sen_counter) ORDER BY sen_counter]
+[parameters: (0, 'HECTOR JEFFESON', 'ALVARADO DE PAZ', 1, '75806383', 'ÁNCASH/HUARAZ/HUARAZ', datetime.datetime(2026, 8, 27, 0, 0), 'ALVARADO GUIMARAY, MILAN HECTOR 972314369', 'static/images/75806383.png', datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1, 0, 'WILLIAM ROBERT', 'PINEDO DOMINGUEZ', 1, '40028976', 'LIMA/LIMA/SAN MARTÍN DE PORRES', datetime.datetime(2026, 8, 28, 0, 0), 'PINEDO DOMINGUEZ, FREDDY ANDRES 991860443', 'static/images/40028976.png', datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1, 0, 'Juan Giomar', 'Chuquillanqui De La Cruz', 1, '75989176', 'JUNÍN/HUANCAYO/HUANCAYO', datetime.datetime(2026, 8, 27, 0, 0), 'DE LA CRUZ GUTIERREZ, OLGA MARLENI 948639315', 'static/images/75989176.png', datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1, 0, 'GUZMAN', 'ROJAS JIMENEZ', 1, '43409883', 'LIMA/LIMA/RÍMAC', datetime.datetime(2026, 8, 28, 0, 0), 'DASILVA GONZALES, ELITA 951318438', 'static/images/43409883.png', datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1, 0, 'LUIS HERNAN' ... 32 parameters truncated ... datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1, 0, 'Steinbeck Raid', 'Huaman Mejia', 1, '77081445', 'CAJAMARCA/CAJAMARCA/CAJAMARCA', datetime.datetime(2026, 8, 27, 0, 0), 'HUAMAN MEJIA, NEIL KENT 907941271', 'static/images/77081445.png', datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1, 0, 'Kevin Brannon', 'Perez Ortiz', 1, '73329149', 'LAMBAYEQUE/CHICLAYO/JOSÉ LEONARDO ORTIZ', datetime.datetime(2026, 8, 27, 0, 0), 'Perez Ortiz, Arianna Mishell 933000890', 'static/images/73329149.png', datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1, 0, 'JHON JERSON', 'GUEVARA CABRERA', 1, '77807784', 'LIMA/LIMA/COMAS', datetime.datetime(2026, 8, 27, 0, 0), 'GUEVARA CABRERA, JESSICA DEL CARMEN 917861516', 'static/images/77807784.png', datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1, 0, 'JAVIER ANTONIO', 'ASTUPIÑAN TANTARUNA', 1, '80106228', 'LIMA/LIMA/LOS OLIVOS', datetime.datetime(2026, 8, 27, 0, 0), 'ASTUPIÑAN TANTARUNA, FELIPE 916658461', 'static/images/80106228.png', datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-01 14:48:45,146 INFO __main__ - === Sincronización completada ===
+2026-09-01 14:48:45,146 INFO __main__ - Resultado final — insertados: 0 | desactivados: 0 | reactivados: 0 | fotos: 0
+2026-09-01 14:48:45,146 WARNING __main__ - Errores: ['(pyodbc.IntegrityError) (\'23000\', "[23000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Infracción de la restricción UNIQUE KEY \'UQ__players___357D4CF9D979F263\'. No se puede insertar una clave duplicada en el objeto \'dbo.players_player\'. El valor de la clave duplicada es (0). (2627) (SQLFetch)")\n[SQL: INSERT INTO players_player (code, first_name, last_name, card_type, id_card, ubigeo, published_at, contact, photo, created_at, updated_at, is_active) OUTPUT inserted.id, inserted.id AS id__1 SELECT p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11 FRO ... 456 characters truncated ...  10)) AS imp_sen(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, sen_counter) ORDER BY sen_counter]\n[parameters: (0, \'HECTOR JEFFESON\', \'ALVARADO DE PAZ\', 1, \'75806383\', \'ÁNCASH/HUARAZ/HUARAZ\', datetime.datetime(2026, 8, 27, 0, 0), \'ALVARADO GUIMARAY, MILAN HECTOR 972314369\', \'static/images/75806383.png\', datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1, 0, \'WILLIAM ROBERT\', \'PINEDO DOMINGUEZ\', 1, \'40028976\', \'LIMA/LIMA/SAN MARTÍN DE PORRES\', datetime.datetime(2026, 8, 28, 0, 0), \'PINEDO DOMINGUEZ, FREDDY ANDRES 991860443\', \'static/images/40028976.png\', datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1, 0, \'Juan Giomar\', \'Chuquillanqui De La Cruz\', 1, \'75989176\', \'JUNÍN/HUANCAYO/HUANCAYO\', datetime.datetime(2026, 8, 27, 0, 0), \'DE LA CRUZ GUTIERREZ, OLGA MARLENI 948639315\', \'static/images/75989176.png\', datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1, 0, \'GUZMAN\', \'ROJAS JIMENEZ\', 1, \'43409883\', \'LIMA/LIMA/RÍMAC\', datetime.datetime(2026, 8, 28, 0, 0), \'DASILVA GONZALES, ELITA 951318438\', \'static/images/43409883.png\', datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1, 0, \'LUIS HERNAN\' ... 32 parameters truncated ... datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1, 0, \'Steinbeck Raid\', \'Huaman Mejia\', 1, \'77081445\', \'CAJAMARCA/CAJAMARCA/CAJAMARCA\', datetime.datetime(2026, 8, 27, 0, 0), \'HUAMAN MEJIA, NEIL KENT 907941271\', \'static/images/77081445.png\', datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1, 0, \'Kevin Brannon\', \'Perez Ortiz\', 1, \'73329149\', \'LAMBAYEQUE/CHICLAYO/JOSÉ LEONARDO ORTIZ\', datetime.datetime(2026, 8, 27, 0, 0), \'Perez Ortiz, Arianna Mishell 933000890\', \'static/images/73329149.png\', datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1, 0, \'JHON JERSON\', \'GUEVARA CABRERA\', 1, \'77807784\', \'LIMA/LIMA/COMAS\', datetime.datetime(2026, 8, 27, 0, 0), \'GUEVARA CABRERA, JESSICA DEL CARMEN 917861516\', \'static/images/77807784.png\', datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1, 0, \'JAVIER ANTONIO\', \'ASTUPIÑAN TANTARUNA\', 1, \'80106228\', \'LIMA/LIMA/LOS OLIVOS\', datetime.datetime(2026, 8, 27, 0, 0), \'ASTUPIÑAN TANTARUNA, FELIPE 916658461\', \'static/images/80106228.png\', datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), datetime.datetime(2026, 9, 1, 19, 48, 44, 963143, tzinfo=datetime.timezone.utc), 1)]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)']
+2026-09-01 15:41:20,251 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-09-01 15:42:53,943 INFO __main__ - Scraper OK — Título: Extranet Mincetur | URL: https://extranet.mincetur.gob.pe/extranet2/Home/Inicio
+2026-09-01 15:42:53,945 INFO __main__ - Scraper devolvió 4800 registros
+2026-09-01 15:42:53,945 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-09-01 15:43:44,406 INFO __main__ - BD Ludoplay devolvió 5342 registros
+2026-09-01 15:43:44,406 INFO __main__ - === Etapa 3/4: Merge / Comparativo ===
+2026-09-01 15:43:44,478 INFO services.sync_merger - Merge completado: insert=11 | update=0 | recurrent=0
+2026-09-01 15:43:44,479 INFO __main__ - Resultado merge — INSERT: 11 | UPDATE (desactivar): 0 | RECURRENT (reactivar): 0
+2026-09-01 15:43:44,489 INFO __main__ - === Etapa 4/4: Sincronización directa a BD ===
+2026-09-01 15:45:10,720 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-09-01 15:46:40,041 INFO __main__ - Scraper OK — Título: Extranet Mincetur | URL: https://extranet.mincetur.gob.pe/extranet2/Home/Inicio
+2026-09-01 15:46:40,043 INFO __main__ - Scraper devolvió 4800 registros
+2026-09-01 15:46:40,043 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-09-01 15:47:27,960 INFO __main__ - BD Ludoplay devolvió 5342 registros
+2026-09-01 15:47:27,961 INFO __main__ - === Etapa 3/4: Merge / Comparativo ===
+2026-09-01 15:47:28,050 INFO services.sync_merger - Merge completado: insert=11 | update=0 | recurrent=0
+2026-09-01 15:47:28,051 INFO __main__ - Resultado merge — INSERT: 11 | UPDATE (desactivar): 0 | RECURRENT (reactivar): 0
+2026-09-01 15:47:28,059 INFO __main__ - === Etapa 4/4: Sincronización directa a BD ===
+2026-09-01 15:51:49,147 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-09-01 15:53:33,514 INFO __main__ - Scraper OK — Título: Extranet Mincetur | URL: https://extranet.mincetur.gob.pe/extranet2/Home/Inicio
+2026-09-01 15:53:33,515 INFO __main__ - Scraper devolvió 4800 registros
+2026-09-01 15:53:33,515 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-09-01 15:53:36,004 INFO __main__ - BD Ludoplay devolvió 5342 registros
+2026-09-01 15:53:36,005 INFO __main__ - === Etapa 3/4: Merge / Comparativo ===
+2026-09-01 15:53:36,225 INFO services.sync_merger - Merge completado: insert=11 | update=0 | recurrent=0
+2026-09-01 15:53:36,229 INFO __main__ - Resultado merge — INSERT: 11 | UPDATE (desactivar): 0 | RECURRENT (reactivar): 0
+2026-09-01 15:53:36,246 INFO __main__ - === Etapa 4/4: Sincronización directa a BD ===
+2026-09-01 15:53:37,116 WARNING routes.players.service - Foto no encontrada para documento 75806383
+2026-09-01 15:53:37,117 WARNING routes.players.service - Foto no encontrada para documento 40028976
+2026-09-01 15:53:37,117 WARNING routes.players.service - Foto no encontrada para documento 75989176
+2026-09-01 15:53:37,117 WARNING routes.players.service - Foto no encontrada para documento 43409883
+2026-09-01 15:53:37,118 WARNING routes.players.service - Foto no encontrada para documento 73271522
+2026-09-01 15:53:37,118 WARNING routes.players.service - Foto no encontrada para documento 73614049
+2026-09-01 15:53:37,118 WARNING routes.players.service - Foto no encontrada para documento 74379482
+2026-09-01 15:53:37,118 WARNING routes.players.service - Foto no encontrada para documento 77081445
+2026-09-01 15:53:37,118 WARNING routes.players.service - Foto no encontrada para documento 73329149
+2026-09-01 15:53:37,119 WARNING routes.players.service - Foto no encontrada para documento 77807784
+2026-09-01 15:53:37,119 WARNING routes.players.service - Foto no encontrada para documento 80106228
+2026-09-01 15:53:37,126 INFO routes.players.service - INSERT completado: 11 registros, 0 fotos
+2026-09-01 15:53:37,127 INFO __main__ - === Sincronización completada ===
+2026-09-01 15:53:37,128 INFO __main__ - Resultado final — insertados: 11 | desactivados: 0 | reactivados: 0 | fotos: 0
+2026-09-01 17:14:59,617 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-09-01 17:16:50,236 INFO __main__ - Scraper OK — Título: Extranet Mincetur | URL: https://extranet.mincetur.gob.pe/extranet2/Home/Inicio
+2026-09-01 17:16:50,239 INFO __main__ - Scraper devolvió 4800 registros
+2026-09-01 17:16:50,240 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-09-01 17:16:56,803 INFO __main__ - BD Ludoplay devolvió 5342 registros
+2026-09-01 17:16:56,804 INFO __main__ - === Etapa 3/4: Merge / Comparativo ===
+2026-09-01 17:16:56,915 INFO services.sync_merger - Merge completado: insert=11 | update=0 | recurrent=0
+2026-09-01 17:16:56,917 INFO __main__ - Resultado merge — INSERT: 11 | UPDATE (desactivar): 0 | RECURRENT (reactivar): 0
+2026-09-01 17:16:56,917 INFO __main__ - === Etapa 4/4: Sincronización directa a BD ===
+2026-09-01 17:16:57,274 INFO routes.players.service - INSERT completado: 11 registros
+2026-09-01 17:16:57,283 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75806383.png -> /home/ddurand/fotos/75806383.png
+2026-09-01 17:16:57,501 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/40028976.png -> /home/ddurand/fotos/40028976.png
+2026-09-01 17:16:57,508 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75989176.png -> /home/ddurand/fotos/75989176.png
+2026-09-01 17:16:57,516 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43409883.png -> /home/ddurand/fotos/43409883.png
+2026-09-01 17:16:57,526 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73271522.png -> /home/ddurand/fotos/73271522.png
+2026-09-01 17:16:57,534 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73614049.png -> /home/ddurand/fotos/73614049.png
+2026-09-01 17:16:57,546 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74379482.png -> /home/ddurand/fotos/74379482.png
+2026-09-01 17:16:57,554 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77081445.png -> /home/ddurand/fotos/77081445.png
+2026-09-01 17:16:57,567 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73329149.png -> /home/ddurand/fotos/73329149.png
+2026-09-01 17:16:57,577 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77807784.png -> /home/ddurand/fotos/77807784.png
+2026-09-01 17:16:57,590 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/80106228.png -> /home/ddurand/fotos/80106228.png
+2026-09-01 17:16:57,604 INFO routes.players.service - Fotos copiadas y rutas actualizadas en BD: 11
+2026-09-01 17:16:57,605 INFO __main__ - === Sincronización completada ===
+2026-09-01 17:16:57,605 INFO __main__ - Resultado final — insertados: 11 | desactivados: 0 | reactivados: 0 | fotos: 11
+2026-09-01 17:22:28,245 INFO watchfiles.main - 2 changes detected
+2026-09-01 17:22:28,596 INFO watchfiles.main - 1 change detected
+2026-09-01 17:24:30,067 INFO watchfiles.main - 2 changes detected
+2026-09-01 17:24:30,419 INFO watchfiles.main - 1 change detected
+2026-09-01 17:27:29,245 INFO watchfiles.main - 1 change detected
+2026-09-01 17:27:29,789 INFO watchfiles.main - 1 change detected
+2026-09-01 17:27:30,541 INFO watchfiles.main - 2 changes detected
+2026-09-01 17:27:58,542 INFO watchfiles.main - 1 change detected
+2026-09-01 17:27:59,078 INFO watchfiles.main - 1 change detected
+2026-09-01 17:27:59,432 INFO watchfiles.main - 1 change detected
+2026-09-01 17:27:59,783 INFO watchfiles.main - 2 changes detected
+2026-09-01 17:34:55,807 INFO watchfiles.main - 2 changes detected
+2026-09-01 17:34:56,159 INFO watchfiles.main - 1 change detected
+2026-09-01 17:34:56,510 INFO watchfiles.main - 1 change detected
+2026-09-01 17:57:34,500 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-09-01 18:16:01,772 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-09-01 18:19:40,470 INFO __main__ - Scraper OK — Título: Sistema consulta de Ludopatía | URL: https://extranet.mincetur.gob.pe/ludopatia/index.aspx
+2026-09-01 18:19:40,472 INFO __main__ - Scraper devolvió 4828 registros
+2026-09-01 18:19:40,472 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-09-01 18:19:43,840 INFO __main__ - BD Ludoplay devolvió 5342 registros
+2026-09-01 18:19:43,841 INFO __main__ - === Etapa 3/4: Merge / Comparativo ===
+2026-09-01 18:19:43,949 INFO utils.sync_merger - Merge completado: insert=41 | update=4 | recurrent=2
+2026-09-01 18:19:43,952 INFO __main__ - Resultado merge — INSERT: 41 | UPDATE (desactivar): 4 | RECURRENT (reactivar): 2
+2026-09-01 18:19:43,952 INFO __main__ - === Etapa 4/4: Sincronización directa a BD ===
+2026-09-01 18:19:44,057 ERROR routes.players.service - Error durante sync_all
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 230, in execute
+    self._adapt_connection._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 368, in _handle_exception
+    raise error.with_traceback(exc_info[2])
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 228, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 251, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/aioodbc/cursor.py", line 132, in execute
+    await self._run_operation(self._impl.execute, sql, *params)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/aioodbc/cursor.py", line 30, in _run_operation
+    result = await self._conn._execute(func, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Sintaxis incorrecta cerca de '1'. (102) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/routes/players/service.py", line 109, in sync_all
+    partial = await self.deactivate_players(deactivate_request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/routes/players/service.py", line 76, in deactivate_players
+    result.deactivated = await self.repo.deactivate_by_id_cards(request.id_cards)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/entities/player/repository.py", line 52, in deactivate_by_id_cards
+    result = await self.async_session.execute(stmt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/ext/asyncio/session.py", line 448, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 203, in greenlet_spawn
+    result = context.switch(value)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2373, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2271, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/bulk_persistence.py", line 1676, in orm_execute_statement
+    return super().orm_execute_statement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        session,
+        ^^^^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 230, in execute
+    self._adapt_connection._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 368, in _handle_exception
+    raise error.with_traceback(exc_info[2])
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 228, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 251, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/aioodbc/cursor.py", line 132, in execute
+    await self._run_operation(self._impl.execute, sql, *params)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/aioodbc/cursor.py", line 30, in _run_operation
+    result = await self._conn._execute(func, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+sqlalchemy.exc.ProgrammingError: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Sintaxis incorrecta cerca de '1'. (102) (SQLExecDirectW)")
+[SQL: UPDATE players_player SET is_active=? WHERE players_player.id_card IN (?, ?, ?, ?) AND players_player.is_active IS 1]
+[parameters: (0, '75360837', '40282099', '46690157', '16647404')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-09-01 18:19:44,092 INFO __main__ - === Sincronización completada ===
+2026-09-01 18:19:44,092 INFO __main__ - Resultado final — insertados: 0 | desactivados: 0 | reactivados: 0 | fotos: 0
+2026-09-01 18:19:44,092 WARNING __main__ - Errores: ['(pyodbc.ProgrammingError) (\'42000\', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Sintaxis incorrecta cerca de \'1\'. (102) (SQLExecDirectW)")\n[SQL: UPDATE players_player SET is_active=? WHERE players_player.id_card IN (?, ?, ?, ?) AND players_player.is_active IS 1]\n[parameters: (0, \'75360837\', \'40282099\', \'46690157\', \'16647404\')]\n(Background on this error at: https://sqlalche.me/e/20/f405)']
+2026-09-01 18:30:41,970 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-09-01 18:32:27,400 INFO __main__ - Scraper OK — Título: Extranet Mincetur | URL: https://extranet.mincetur.gob.pe/extranet2/Home/Inicio
+2026-09-01 18:32:27,401 INFO __main__ - Scraper devolvió 4828 registros
+2026-09-01 18:32:27,401 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-09-01 18:32:30,176 INFO __main__ - BD Ludoplay devolvió 5342 registros
+2026-09-01 18:32:30,177 INFO __main__ - === Etapa 3/4: Merge / Comparativo ===
+2026-09-01 18:32:30,338 INFO utils.sync_merger - Merge completado: insert=41 | update=4 | recurrent=2
+2026-09-01 18:32:30,340 INFO __main__ - Resultado merge — INSERT: 41 | UPDATE (desactivar): 4 | RECURRENT (reactivar): 2
+2026-09-01 18:38:05,721 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-09-01 18:39:45,331 INFO __main__ - Scraper OK — Título: Extranet Mincetur | URL: https://extranet.mincetur.gob.pe/extranet2/Home/Inicio
+2026-09-01 18:39:45,331 INFO __main__ - Scraper devolvió 4828 registros
+2026-09-01 18:39:45,332 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-09-01 18:39:47,439 INFO __main__ - BD Ludoplay devolvió 5342 registros
+2026-09-01 18:39:47,439 INFO __main__ - === Etapa 3/4: Merge / Comparativo ===
+2026-09-01 18:39:47,536 INFO utils.sync_merger - Merge completado: insert=41 | update=4 | recurrent=2
+2026-09-01 18:39:47,538 INFO __main__ - Resultado merge — INSERT: 41 | UPDATE (desactivar): 4 | RECURRENT (reactivar): 2
+2026-09-01 18:39:47,538 INFO __main__ - === Etapa 4/4: Sincronización directa a BD ===
+2026-09-01 18:39:47,583 ERROR routes.players.service - Error durante sync_all
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 230, in execute
+    self._adapt_connection._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 368, in _handle_exception
+    raise error.with_traceback(exc_info[2])
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 228, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 251, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/aioodbc/cursor.py", line 132, in execute
+    await self._run_operation(self._impl.execute, sql, *params)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/aioodbc/cursor.py", line 30, in _run_operation
+    result = await self._conn._execute(func, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Sintaxis incorrecta cerca de '1'. (102) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/routes/players/service.py", line 109, in sync_all
+    partial = await self.deactivate_players(deactivate_request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/routes/players/service.py", line 76, in deactivate_players
+    result.deactivated = await self.repo.deactivate_by_id_cards(request.id_cards)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/entities/player/repository.py", line 52, in deactivate_by_id_cards
+    result = await self.async_session.execute(stmt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/ext/asyncio/session.py", line 448, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 203, in greenlet_spawn
+    result = context.switch(value)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2373, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2271, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/bulk_persistence.py", line 1676, in orm_execute_statement
+    return super().orm_execute_statement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        session,
+        ^^^^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 230, in execute
+    self._adapt_connection._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 368, in _handle_exception
+    raise error.with_traceback(exc_info[2])
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 228, in execute
+    return self.await_(self._execute_async(operation, parameters))
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/sqlalchemy/connectors/asyncio.py", line 251, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/aioodbc/cursor.py", line 132, in execute
+    await self._run_operation(self._impl.execute, sql, *params)
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/venv/lib/python3.14/site-packages/aioodbc/cursor.py", line 30, in _run_operation
+    result = await self._conn._execute(func, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+sqlalchemy.exc.ProgrammingError: (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Sintaxis incorrecta cerca de '1'. (102) (SQLExecDirectW)")
+[SQL: UPDATE players_player SET is_active=? WHERE players_player.id_card IN (?, ?, ?, ?) AND players_player.is_active IS 1]
+[parameters: (0, '75360837', '40282099', '46690157', '16647404')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-09-01 18:39:47,614 INFO __main__ - === Sincronización completada ===
+2026-09-01 18:39:47,614 INFO __main__ - Resultado final — insertados: 0 | desactivados: 0 | reactivados: 0 | fotos: 0
+2026-09-01 18:39:47,614 WARNING __main__ - Errores: ['(pyodbc.ProgrammingError) (\'42000\', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Sintaxis incorrecta cerca de \'1\'. (102) (SQLExecDirectW)")\n[SQL: UPDATE players_player SET is_active=? WHERE players_player.id_card IN (?, ?, ?, ?) AND players_player.is_active IS 1]\n[parameters: (0, \'75360837\', \'40282099\', \'46690157\', \'16647404\')]\n(Background on this error at: https://sqlalche.me/e/20/f405)']
+2026-09-01 18:45:05,547 INFO __main__ - === Etapa 1/4: Scraper MINCETUR ===
+2026-09-01 18:46:44,126 INFO __main__ - Scraper OK — Título: Extranet Mincetur | URL: https://extranet.mincetur.gob.pe/extranet2/Home/Inicio
+2026-09-01 18:46:44,127 INFO __main__ - Scraper devolvió 4828 registros
+2026-09-01 18:46:44,127 INFO __main__ - === Etapa 2/4: Consulta base de datos Ludoplay ===
+2026-09-01 18:46:45,616 INFO __main__ - BD Ludoplay devolvió 5342 registros
+2026-09-01 18:46:45,616 INFO __main__ - === Etapa 3/4: Merge / Comparativo ===
+2026-09-01 18:46:45,719 INFO utils.sync_merger - Merge completado: insert=41 | update=4 | recurrent=2
+2026-09-01 18:46:45,721 INFO __main__ - Resultado merge — INSERT: 41 | UPDATE (desactivar): 4 | RECURRENT (reactivar): 2
+2026-09-01 18:46:45,722 INFO __main__ - === Etapa 4/4: Sincronización directa a BD ===
+2026-09-01 18:46:45,842 INFO routes.players.service - DEACTIVATE completado: 4 registros
+2026-09-01 18:46:45,876 INFO routes.players.service - REACTIVATE completado: 2 registros
+2026-09-01 18:46:46,031 INFO routes.players.service - INSERT completado: 41 registros
+2026-09-01 18:46:46,034 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74394224.png -> /home/ddurand/fotos/74394224.png
+2026-09-01 18:46:46,046 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43191341.png -> /home/ddurand/fotos/43191341.png
+2026-09-01 18:46:46,051 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74209347.png -> /home/ddurand/fotos/74209347.png
+2026-09-01 18:46:46,056 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77470135.png -> /home/ddurand/fotos/77470135.png
+2026-09-01 18:46:46,061 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/48504573.png -> /home/ddurand/fotos/48504573.png
+2026-09-01 18:46:46,066 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43660821.png -> /home/ddurand/fotos/43660821.png
+2026-09-01 18:46:46,076 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/46738379.png -> /home/ddurand/fotos/46738379.png
+2026-09-01 18:46:46,084 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45267043.png -> /home/ddurand/fotos/45267043.png
+2026-09-01 18:46:46,094 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74279371.png -> /home/ddurand/fotos/74279371.png
+2026-09-01 18:46:46,100 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45700075.png -> /home/ddurand/fotos/45700075.png
+2026-09-01 18:46:46,104 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75658045.png -> /home/ddurand/fotos/75658045.png
+2026-09-01 18:46:46,113 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73077184.png -> /home/ddurand/fotos/73077184.png
+2026-09-01 18:46:46,122 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07535521.png -> /home/ddurand/fotos/07535521.png
+2026-09-01 18:46:46,131 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71091975.png -> /home/ddurand/fotos/71091975.png
+2026-09-01 18:46:46,146 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/18167199.png -> /home/ddurand/fotos/18167199.png
+2026-09-01 18:46:46,159 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72695186.png -> /home/ddurand/fotos/72695186.png
+2026-09-01 18:46:46,181 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/48242212.png -> /home/ddurand/fotos/48242212.png
+2026-09-01 18:46:46,199 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75806383.png -> /home/ddurand/fotos/75806383.png
+2026-09-01 18:46:46,212 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72926301.png -> /home/ddurand/fotos/72926301.png
+2026-09-01 18:46:46,220 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73097567.png -> /home/ddurand/fotos/73097567.png
+2026-09-01 18:46:46,228 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/40028976.png -> /home/ddurand/fotos/40028976.png
+2026-09-01 18:46:46,236 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75989176.png -> /home/ddurand/fotos/75989176.png
+2026-09-01 18:46:46,244 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43409883.png -> /home/ddurand/fotos/43409883.png
+2026-09-01 18:46:46,254 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73271522.png -> /home/ddurand/fotos/73271522.png
+2026-09-01 18:46:46,263 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73614049.png -> /home/ddurand/fotos/73614049.png
+2026-09-01 18:46:46,272 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74379482.png -> /home/ddurand/fotos/74379482.png
+2026-09-01 18:46:46,280 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45382724.png -> /home/ddurand/fotos/45382724.png
+2026-09-01 18:46:46,292 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72692698.png -> /home/ddurand/fotos/72692698.png
+2026-09-01 18:46:46,301 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47182479.png -> /home/ddurand/fotos/47182479.png
+2026-09-01 18:46:46,310 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08234844.png -> /home/ddurand/fotos/08234844.png
+2026-09-01 18:46:46,326 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75888950.png -> /home/ddurand/fotos/75888950.png
+2026-09-01 18:46:46,335 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/42466955.png -> /home/ddurand/fotos/42466955.png
+2026-09-01 18:46:46,345 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/70689650.png -> /home/ddurand/fotos/70689650.png
+2026-09-01 18:46:46,352 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/40805441.png -> /home/ddurand/fotos/40805441.png
+2026-09-01 18:46:46,366 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009927943.png -> /home/ddurand/fotos/009927943.png
+2026-09-01 18:46:46,379 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77081445.png -> /home/ddurand/fotos/77081445.png
+2026-09-01 18:46:46,391 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73329149.png -> /home/ddurand/fotos/73329149.png
+2026-09-01 18:46:46,403 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77807784.png -> /home/ddurand/fotos/77807784.png
+2026-09-01 18:46:46,414 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77498558.png -> /home/ddurand/fotos/77498558.png
+2026-09-01 18:46:46,424 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45716982.png -> /home/ddurand/fotos/45716982.png
+2026-09-01 18:46:46,441 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/80106228.png -> /home/ddurand/fotos/80106228.png
+2026-09-01 18:46:46,460 INFO routes.players.service - Fotos copiadas y rutas actualizadas en BD: 41
+2026-09-01 18:46:46,462 INFO __main__ - === Sincronización completada ===
+2026-09-01 18:46:46,462 INFO __main__ - Resultado final — insertados: 41 | desactivados: 4 | reactivados: 2 | fotos: 41
+2026-09-01 19:12:34,463 INFO __main__ - === Etapa 1/5: Scraper MINCETUR ===
+2026-09-01 19:12:37,262 ERROR __main__ - Error durante la automatización MINCETUR
+Traceback (most recent call last):
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/main.py", line 74, in obtener_df_scraper
+    df_scraper = scraper.extraer_tabla_y_fotos_pdf()
+  File "/home/ddurand/proyectos/personal/rpaludoplay-app/src/scrapers/scraper.py", line 174, in extraer_tabla_y_fotos_pdf
+    raise FileNotFoundError(f"No se encontró ningún archivo PDF en {PATH_DOWNLOADS}")
+FileNotFoundError: No se encontró ningún archivo PDF en /home/ddurand/Downloads
+2026-09-01 19:12:37,325 ERROR __main__ - Scraper falló: No se encontró ningún archivo PDF en /home/ddurand/Downloads
+2026-09-01 19:13:01,943 INFO __main__ - === Etapa 1/5: Scraper MINCETUR ===
+2026-09-01 19:16:06,049 INFO __main__ - Scraper OK — Título: Sistema consulta de Ludopatía | URL: https://extranet.mincetur.gob.pe/ludopatia/index.aspx
+2026-09-01 19:16:06,050 INFO __main__ - Scraper devolvió 4828 registros
+2026-09-01 19:16:06,050 INFO __main__ - === Etapa 2/5: Consulta base de datos Ludoplay ===
+2026-09-01 19:16:08,419 INFO __main__ - BD Ludoplay devolvió 5342 registros
+2026-09-01 19:16:08,419 INFO __main__ - === Etapa 3/5: Merge / Comparativo ===
+2026-09-01 19:16:08,510 INFO utils.sync_merger - Merge completado: insert=41 | update=0 | recurrent=0
+2026-09-01 19:16:08,511 INFO __main__ - Resultado merge — INSERT: 41 | UPDATE (desactivar): 0 | RECURRENT (reactivar): 0
+2026-09-01 19:16:08,511 INFO __main__ - === Etapa 4/5: Sincronización directa a BD ===
+2026-09-01 19:16:08,719 INFO routes.players.service - INSERT completado: 41 registros
+2026-09-01 19:16:08,722 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74394224.png -> /home/ddurand/fotos/74394224.png
+2026-09-01 19:16:08,736 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43191341.png -> /home/ddurand/fotos/43191341.png
+2026-09-01 19:16:08,741 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74209347.png -> /home/ddurand/fotos/74209347.png
+2026-09-01 19:16:08,746 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77470135.png -> /home/ddurand/fotos/77470135.png
+2026-09-01 19:16:08,749 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/48504573.png -> /home/ddurand/fotos/48504573.png
+2026-09-01 19:16:08,754 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43660821.png -> /home/ddurand/fotos/43660821.png
+2026-09-01 19:16:08,757 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/46738379.png -> /home/ddurand/fotos/46738379.png
+2026-09-01 19:16:08,765 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45267043.png -> /home/ddurand/fotos/45267043.png
+2026-09-01 19:16:08,770 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74279371.png -> /home/ddurand/fotos/74279371.png
+2026-09-01 19:16:08,779 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45700075.png -> /home/ddurand/fotos/45700075.png
+2026-09-01 19:16:08,792 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75658045.png -> /home/ddurand/fotos/75658045.png
+2026-09-01 19:16:08,806 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73077184.png -> /home/ddurand/fotos/73077184.png
+2026-09-01 19:16:08,824 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07535521.png -> /home/ddurand/fotos/07535521.png
+2026-09-01 19:16:08,836 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71091975.png -> /home/ddurand/fotos/71091975.png
+2026-09-01 19:16:08,850 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/18167199.png -> /home/ddurand/fotos/18167199.png
+2026-09-01 19:16:08,859 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72695186.png -> /home/ddurand/fotos/72695186.png
+2026-09-01 19:16:08,865 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/48242212.png -> /home/ddurand/fotos/48242212.png
+2026-09-01 19:16:08,873 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75806383.png -> /home/ddurand/fotos/75806383.png
+2026-09-01 19:16:08,881 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72926301.png -> /home/ddurand/fotos/72926301.png
+2026-09-01 19:16:08,886 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73097567.png -> /home/ddurand/fotos/73097567.png
+2026-09-01 19:16:08,891 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/40028976.png -> /home/ddurand/fotos/40028976.png
+2026-09-01 19:16:08,895 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75989176.png -> /home/ddurand/fotos/75989176.png
+2026-09-01 19:16:08,900 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43409883.png -> /home/ddurand/fotos/43409883.png
+2026-09-01 19:16:08,907 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73271522.png -> /home/ddurand/fotos/73271522.png
+2026-09-01 19:16:08,910 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73614049.png -> /home/ddurand/fotos/73614049.png
+2026-09-01 19:16:08,914 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74379482.png -> /home/ddurand/fotos/74379482.png
+2026-09-01 19:16:08,918 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45382724.png -> /home/ddurand/fotos/45382724.png
+2026-09-01 19:16:08,923 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72692698.png -> /home/ddurand/fotos/72692698.png
+2026-09-01 19:16:08,928 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47182479.png -> /home/ddurand/fotos/47182479.png
+2026-09-01 19:16:08,937 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08234844.png -> /home/ddurand/fotos/08234844.png
+2026-09-01 19:16:08,944 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75888950.png -> /home/ddurand/fotos/75888950.png
+2026-09-01 19:16:08,950 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/42466955.png -> /home/ddurand/fotos/42466955.png
+2026-09-01 19:16:08,960 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/70689650.png -> /home/ddurand/fotos/70689650.png
+2026-09-01 19:16:08,969 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/40805441.png -> /home/ddurand/fotos/40805441.png
+2026-09-01 19:16:08,974 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009927943.png -> /home/ddurand/fotos/009927943.png
+2026-09-01 19:16:08,985 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77081445.png -> /home/ddurand/fotos/77081445.png
+2026-09-01 19:16:08,995 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73329149.png -> /home/ddurand/fotos/73329149.png
+2026-09-01 19:16:09,009 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77807784.png -> /home/ddurand/fotos/77807784.png
+2026-09-01 19:16:09,020 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77498558.png -> /home/ddurand/fotos/77498558.png
+2026-09-01 19:16:09,029 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45716982.png -> /home/ddurand/fotos/45716982.png
+2026-09-01 19:16:09,044 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/80106228.png -> /home/ddurand/fotos/80106228.png
+2026-09-01 19:16:09,052 INFO routes.players.service - Fotos copiadas y rutas actualizadas en BD: 41
+2026-09-01 19:16:09,053 INFO __main__ - === Sincronización completada ===
+2026-09-01 19:16:09,053 INFO __main__ - Resultado final — insertados: 41 | desactivados: 0 | reactivados: 0 | fotos: 41
+2026-09-01 19:16:09,053 INFO __main__ - === Etapa 5/5: Clear Path ===
+2026-09-01 19:17:51,719 INFO __main__ - === Etapa 1/5: Scraper MINCETUR ===
+2026-09-01 19:21:06,274 INFO __main__ - Scraper OK — Título: Sistema consulta de Ludopatía | URL: https://extranet.mincetur.gob.pe/ludopatia/index.aspx
+2026-09-01 19:21:06,276 INFO __main__ - Scraper devolvió 4828 registros
+2026-09-01 19:21:06,276 INFO __main__ - === Etapa 2/5: Consulta base de datos Ludoplay ===
+2026-09-01 19:21:08,607 INFO __main__ - BD Ludoplay devolvió 5383 registros
+2026-09-01 19:21:08,607 INFO __main__ - === Etapa 3/5: Merge / Comparativo ===
+2026-09-01 19:21:08,715 INFO utils.sync_merger - Merge completado: insert=0 | update=0 | recurrent=0
+2026-09-01 19:21:08,716 INFO __main__ - Resultado merge — INSERT: 0 | UPDATE (desactivar): 0 | RECURRENT (reactivar): 0
+2026-09-01 19:21:08,717 INFO __main__ - === Etapa 4/5: Sincronización directa a BD ===
+2026-09-01 19:21:08,718 INFO __main__ - === Sincronización completada ===
+2026-09-01 19:21:08,718 INFO __main__ - Resultado final — insertados: 0 | desactivados: 0 | reactivados: 0 | fotos: 0
+2026-09-01 19:21:08,718 INFO __main__ - === Etapa 5/5: Clear Path ===
+2026-09-01 19:24:28,270 INFO __main__ - === Etapa 1/5: Scraper MINCETUR ===
+2026-09-01 19:27:38,218 INFO __main__ - Scraper OK — Título: Sistema consulta de Ludopatía | URL: https://extranet.mincetur.gob.pe/ludopatia/index.aspx
+2026-09-01 19:27:38,220 INFO __main__ - Scraper devolvió 4828 registros
+2026-09-01 19:27:38,220 INFO __main__ - === Etapa 2/5: Consulta base de datos Ludoplay ===
+2026-09-01 19:27:39,997 INFO __main__ - BD Ludoplay devolvió 5342 registros
+2026-09-01 19:27:39,997 INFO __main__ - === Etapa 3/5: Merge / Comparativo ===
+2026-09-01 19:27:40,072 INFO utils.sync_merger - Merge completado: insert=41 | update=0 | recurrent=0
+2026-09-01 19:27:40,074 INFO __main__ - Resultado merge — INSERT: 41 | UPDATE (desactivar): 0 | RECURRENT (reactivar): 0
+2026-09-01 19:27:40,074 INFO __main__ - === Etapa 4/5: Sincronización directa a BD ===
+2026-09-01 19:27:40,220 INFO routes.players.service - INSERT completado: 41 registros
+2026-09-01 19:27:40,222 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74394224.png -> /home/ddurand/fotos/74394224.png
+2026-09-01 19:27:40,252 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43191341.png -> /home/ddurand/fotos/43191341.png
+2026-09-01 19:27:40,256 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74209347.png -> /home/ddurand/fotos/74209347.png
+2026-09-01 19:27:40,267 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77470135.png -> /home/ddurand/fotos/77470135.png
+2026-09-01 19:27:40,270 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/48504573.png -> /home/ddurand/fotos/48504573.png
+2026-09-01 19:27:40,274 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43660821.png -> /home/ddurand/fotos/43660821.png
+2026-09-01 19:27:40,277 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/46738379.png -> /home/ddurand/fotos/46738379.png
+2026-09-01 19:27:40,286 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45267043.png -> /home/ddurand/fotos/45267043.png
+2026-09-01 19:27:40,293 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74279371.png -> /home/ddurand/fotos/74279371.png
+2026-09-01 19:27:40,299 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45700075.png -> /home/ddurand/fotos/45700075.png
+2026-09-01 19:27:40,305 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75658045.png -> /home/ddurand/fotos/75658045.png
+2026-09-01 19:27:40,309 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73077184.png -> /home/ddurand/fotos/73077184.png
+2026-09-01 19:27:40,315 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07535521.png -> /home/ddurand/fotos/07535521.png
+2026-09-01 19:27:40,322 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71091975.png -> /home/ddurand/fotos/71091975.png
+2026-09-01 19:27:40,329 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/18167199.png -> /home/ddurand/fotos/18167199.png
+2026-09-01 19:27:40,338 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72695186.png -> /home/ddurand/fotos/72695186.png
+2026-09-01 19:27:40,347 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/48242212.png -> /home/ddurand/fotos/48242212.png
+2026-09-01 19:27:40,355 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75806383.png -> /home/ddurand/fotos/75806383.png
+2026-09-01 19:27:40,362 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72926301.png -> /home/ddurand/fotos/72926301.png
+2026-09-01 19:27:40,369 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73097567.png -> /home/ddurand/fotos/73097567.png
+2026-09-01 19:27:40,376 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/40028976.png -> /home/ddurand/fotos/40028976.png
+2026-09-01 19:27:40,391 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75989176.png -> /home/ddurand/fotos/75989176.png
+2026-09-01 19:27:40,396 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43409883.png -> /home/ddurand/fotos/43409883.png
+2026-09-01 19:27:40,404 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73271522.png -> /home/ddurand/fotos/73271522.png
+2026-09-01 19:27:40,419 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73614049.png -> /home/ddurand/fotos/73614049.png
+2026-09-01 19:27:40,426 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74379482.png -> /home/ddurand/fotos/74379482.png
+2026-09-01 19:27:40,431 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45382724.png -> /home/ddurand/fotos/45382724.png
+2026-09-01 19:27:40,437 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72692698.png -> /home/ddurand/fotos/72692698.png
+2026-09-01 19:27:40,444 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47182479.png -> /home/ddurand/fotos/47182479.png
+2026-09-01 19:27:40,450 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08234844.png -> /home/ddurand/fotos/08234844.png
+2026-09-01 19:27:40,460 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75888950.png -> /home/ddurand/fotos/75888950.png
+2026-09-01 19:27:40,468 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/42466955.png -> /home/ddurand/fotos/42466955.png
+2026-09-01 19:27:40,473 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/70689650.png -> /home/ddurand/fotos/70689650.png
+2026-09-01 19:27:40,477 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/40805441.png -> /home/ddurand/fotos/40805441.png
+2026-09-01 19:27:40,480 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009927943.png -> /home/ddurand/fotos/009927943.png
+2026-09-01 19:27:40,484 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77081445.png -> /home/ddurand/fotos/77081445.png
+2026-09-01 19:27:40,489 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73329149.png -> /home/ddurand/fotos/73329149.png
+2026-09-01 19:27:40,492 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77807784.png -> /home/ddurand/fotos/77807784.png
+2026-09-01 19:27:40,497 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77498558.png -> /home/ddurand/fotos/77498558.png
+2026-09-01 19:27:40,501 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45716982.png -> /home/ddurand/fotos/45716982.png
+2026-09-01 19:27:40,504 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/80106228.png -> /home/ddurand/fotos/80106228.png
+2026-09-01 19:27:40,508 INFO routes.players.service - Fotos copiadas y rutas actualizadas en BD: 41
+2026-09-01 19:27:40,509 INFO __main__ - === Sincronización completada ===
+2026-09-01 19:27:40,509 INFO __main__ - Resultado final — insertados: 41 | desactivados: 0 | reactivados: 0 | fotos: 41
+2026-09-01 19:27:40,509 INFO __main__ - === Etapa 5/5: Clear Path ===
+2026-09-01 19:29:31,813 INFO __main__ - === Etapa 1/5: Scraper MINCETUR ===
+2026-09-01 19:32:45,476 INFO __main__ - Scraper OK — Título: Sistema consulta de Ludopatía | URL: https://extranet.mincetur.gob.pe/ludopatia/index.aspx
+2026-09-01 19:32:45,477 INFO __main__ - Scraper devolvió 4828 registros
+2026-09-01 19:32:45,477 INFO __main__ - === Etapa 2/5: Consulta base de datos Ludoplay ===
+2026-09-01 19:32:46,839 INFO __main__ - BD Ludoplay devolvió 5342 registros
+2026-09-01 19:32:46,839 INFO __main__ - === Etapa 3/5: Merge / Comparativo ===
+2026-09-01 19:32:46,913 INFO utils.sync_merger - Merge completado: insert=41 | update=0 | recurrent=0
+2026-09-01 19:32:46,915 INFO __main__ - Resultado merge — INSERT: 41 | UPDATE (desactivar): 0 | RECURRENT (reactivar): 0
+2026-09-01 19:32:46,915 INFO __main__ - === Etapa 4/5: Sincronización directa a BD ===
+2026-09-01 19:32:47,035 INFO routes.players.service - INSERT completado: 41 registros
+2026-09-01 19:32:47,036 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74394224.png -> /home/ddurand/fotos/74394224.png
+2026-09-01 19:32:47,047 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43191341.png -> /home/ddurand/fotos/43191341.png
+2026-09-01 19:32:47,051 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74209347.png -> /home/ddurand/fotos/74209347.png
+2026-09-01 19:32:47,054 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77470135.png -> /home/ddurand/fotos/77470135.png
+2026-09-01 19:32:47,057 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/48504573.png -> /home/ddurand/fotos/48504573.png
+2026-09-01 19:32:47,060 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43660821.png -> /home/ddurand/fotos/43660821.png
+2026-09-01 19:32:47,064 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/46738379.png -> /home/ddurand/fotos/46738379.png
+2026-09-01 19:32:47,069 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45267043.png -> /home/ddurand/fotos/45267043.png
+2026-09-01 19:32:47,074 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74279371.png -> /home/ddurand/fotos/74279371.png
+2026-09-01 19:32:47,077 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45700075.png -> /home/ddurand/fotos/45700075.png
+2026-09-01 19:32:47,080 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75658045.png -> /home/ddurand/fotos/75658045.png
+2026-09-01 19:32:47,084 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73077184.png -> /home/ddurand/fotos/73077184.png
+2026-09-01 19:32:47,086 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07535521.png -> /home/ddurand/fotos/07535521.png
+2026-09-01 19:32:47,089 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71091975.png -> /home/ddurand/fotos/71091975.png
+2026-09-01 19:32:47,092 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/18167199.png -> /home/ddurand/fotos/18167199.png
+2026-09-01 19:32:47,095 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72695186.png -> /home/ddurand/fotos/72695186.png
+2026-09-01 19:32:47,099 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/48242212.png -> /home/ddurand/fotos/48242212.png
+2026-09-01 19:32:47,102 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75806383.png -> /home/ddurand/fotos/75806383.png
+2026-09-01 19:32:47,105 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72926301.png -> /home/ddurand/fotos/72926301.png
+2026-09-01 19:32:47,108 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73097567.png -> /home/ddurand/fotos/73097567.png
+2026-09-01 19:32:47,111 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/40028976.png -> /home/ddurand/fotos/40028976.png
+2026-09-01 19:32:47,115 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75989176.png -> /home/ddurand/fotos/75989176.png
+2026-09-01 19:32:47,119 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43409883.png -> /home/ddurand/fotos/43409883.png
+2026-09-01 19:32:47,121 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73271522.png -> /home/ddurand/fotos/73271522.png
+2026-09-01 19:32:47,124 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73614049.png -> /home/ddurand/fotos/73614049.png
+2026-09-01 19:32:47,127 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74379482.png -> /home/ddurand/fotos/74379482.png
+2026-09-01 19:32:47,131 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45382724.png -> /home/ddurand/fotos/45382724.png
+2026-09-01 19:32:47,135 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72692698.png -> /home/ddurand/fotos/72692698.png
+2026-09-01 19:32:47,138 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47182479.png -> /home/ddurand/fotos/47182479.png
+2026-09-01 19:32:47,141 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08234844.png -> /home/ddurand/fotos/08234844.png
+2026-09-01 19:32:47,144 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75888950.png -> /home/ddurand/fotos/75888950.png
+2026-09-01 19:32:47,148 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/42466955.png -> /home/ddurand/fotos/42466955.png
+2026-09-01 19:32:47,152 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/70689650.png -> /home/ddurand/fotos/70689650.png
+2026-09-01 19:32:47,157 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/40805441.png -> /home/ddurand/fotos/40805441.png
+2026-09-01 19:32:47,164 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009927943.png -> /home/ddurand/fotos/009927943.png
+2026-09-01 19:32:47,169 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77081445.png -> /home/ddurand/fotos/77081445.png
+2026-09-01 19:32:47,177 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73329149.png -> /home/ddurand/fotos/73329149.png
+2026-09-01 19:32:47,182 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77807784.png -> /home/ddurand/fotos/77807784.png
+2026-09-01 19:32:47,186 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77498558.png -> /home/ddurand/fotos/77498558.png
+2026-09-01 19:32:47,191 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45716982.png -> /home/ddurand/fotos/45716982.png
+2026-09-01 19:32:47,195 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/80106228.png -> /home/ddurand/fotos/80106228.png
+2026-09-01 19:32:47,202 INFO routes.players.service - Fotos copiadas y rutas actualizadas en BD: 41
+2026-09-01 19:32:47,202 INFO __main__ - === Sincronización completada ===
+2026-09-01 19:32:47,203 INFO __main__ - Resultado final — insertados: 41 | desactivados: 0 | reactivados: 0 | fotos: 41
+2026-09-01 19:32:47,203 INFO __main__ - === Etapa 5/5: Clear Path ===

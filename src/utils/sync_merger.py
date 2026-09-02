@@ -1,12 +1,12 @@
 import logging
 from dataclasses import dataclass
-from config import STATIC_IMAGES_DIR,EXTENSION_FOTO,CODIGOS_EXCLUIDOS
+from utils.constants import CODIGOS_EXCLUIDOS
 import pandas as pd
 
 logger = logging.getLogger(__name__)
 
 LLAVE_DB = "id_card"
-LLAVE_SCRAPER = "documento"
+LLAVE_SCRAPER = "id_card"
 
 @dataclass
 class ResultadoSync:
@@ -38,7 +38,7 @@ def construir_dataframes_sync(
                                 df_scraper: pd.DataFrame,
                             ) -> ResultadoSync:
     """
-    Genera los 3 dataframes de sincronización usando la llave documento <-> id_card:
+    Genera los 3 dataframes de sincronización usando la llave id_card <-> id_card:
       - df_insert: en scraper y NO en base (nuevos en MINCETUR)
       - df_update: en base con is_active=1 y NO en scraper (salieron del registro oficial)
       - df_update_recurrent: en ambos y is_active=0 en base (reaparecieron)
@@ -57,13 +57,13 @@ def construir_dataframes_sync(
     #Comprueba si la tabla de la base de datos incluye una columna de fecha/hora de actualización.
     if "updated_at" in db.columns:
         db = db.sort_values("updated_at", ascending=False)
-    #Busca registros que compartan el mismo documento/ID (_key).
-    #Gracias al keep="first", se queda con la primera fila que encuentra (que es la más reciente por el ordenamiento previo) y elimina las versiones antiguas de ese mismo documento.    
+    #Busca registros que compartan el mismo id_card/ID (_key).
+    #Gracias al keep="first", se queda con la primera fila que encuentra (que es la más reciente por el ordenamiento previo) y elimina las versiones antiguas de ese mismo id_card.    
     db = db.drop_duplicates(subset="_key", keep="first")
-    #Si el scraper por error extrajo varias veces a la misma persona con el mismo documento, se queda solo con el primer registro hallado y descarta las repeticiones.
+    #Si el scraper por error extrajo varias veces a la misma persona con el mismo id_card, se queda solo con el primer registro hallado y descarta las repeticiones.
     sc = sc.drop_duplicates(subset="_key", keep="first")
 
-    #Extrae los documentos/IDs de cada DataFrame y los convierte en conjuntos (set) de Python.¿Por qué un set? En Python, buscar un elemento en un set 
+    #Extrae los id_card/IDs de cada DataFrame y los convierte en conjuntos (set) de Python.¿Por qué un set? En Python, buscar un elemento en un set 
     #toma tiempo constante $O(1)$, mientras que en una lista o Series toma $O(n)$. Esto optimiza la velocidad de filtrado cuando hay miles de filas.
     claves_sc = set(sc["_key"])
     claves_db = set(db["_key"])
@@ -72,7 +72,7 @@ def construir_dataframes_sync(
     # df_insert (Registros a insertar)
     # -------------------------------------------------------------------------
     df_insert = (
-        #Compara cada registro del scraper contra las llaves de la base de datos. Devuelve True si el documento ya existe en la base de datos y False si es nuevo.
+        #Compara cada registro del scraper contra las llaves de la base de datos. Devuelve True si el id_card ya existe en la base de datos y False si es nuevo.
         sc[~sc["_key"].isin(claves_db)] # "~" Transforma los False (los que no están en la DB) en True. Esto selecciona únicamente a las personas que el scraper encontró pero que la base de datos nunca ha visto.
         .drop(columns=["_key"]) #Elimina la columna auxiliar _key que se creó al inicio para normalizar los textos, devolviendo el DataFrame con su estructura original.
         .reset_index(drop=True) #Reorganiza los índices del nuevo DataFrame de 0 a N-1 para eliminar los saltos de índice que quedaron tras el filtrado.
@@ -98,7 +98,7 @@ def construir_dataframes_sync(
     # df_update_recurrent (Registros a reactivar)
     # -------------------------------------------------------------------------
     # Mapeamos tanto el estado (is_active) como el código (code) desde la DB
-    estado_db = db.set_index("_key")["is_active"] #Crea una serie de consulta rápida donde el índice es el número de documento y el valor es su estado actual (0 o 1).
+    estado_db = db.set_index("_key")["is_active"] #Crea una serie de consulta rápida donde el índice es el número de id_card y el valor es su estado actual (0 o 1).
     codigo_db = db.set_index("_key")["code"]
     en_ambos = sc[sc["_key"].isin(claves_db)].copy() #Filtra las filas del scraper que SÍ existen en la base de datos.
     en_ambos["_is_active"] = en_ambos["_key"].map(estado_db) #Utiliza el .map() para "traer" el estado que tenía esa persona en la DB y colocarlo al lado del registro del scraper.

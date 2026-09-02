@@ -1,13 +1,25 @@
+import argparse
+import asyncio
 import logging
-from selenium.common.exceptions import WebDriverException
-from config import LOGS_DIR, CredencialesSettings
-from database.database_connector import fetch_sqlite_dataframe
-from parser import EstadoPagina, normalizar_ruc, parsear_estado_pagina
-from photo_manager import mover_fotos
-from scraper import Scraper,Scraper_Ludoplay
-from sync_merger import construir_dataframes_sync
+from fastapi import FastAPI
+from routes.players import players_router
+from routes.players.schemas import PlayerBulkAction, PlayerInsert, PlayerInsertRequest
+from routes.players.service import PlayerSyncService
+from settings import Setting
+from utils.constants import LOGS_DIR
+from utils.connection_bd import Async_session_local, fetch_sql_dataframe
+from utils.clear_path import clear_path
+from scrapers.scraper import Scraper,EstadoPagina, normalizar_ruc, parsear_estado_pagina
+import pandas as pd
+import uvicorn
+from utils.sync_merger import construir_dataframes_sync
+from datetime import datetime
 
-logger = logging.getLogger(__name__)
+# ---------------------------------------------------------------------------
+# Logging
+# ---------------------------------------------------------------------------
+'''Este bloque se encarga de inicializar y estructurar el sistema de registros (logging) para toda la aplicación. 
+Permite rastrear qué está sucediendo en el código (eventos, advertencias o errores) en tiempo real.'''
 
 def configurar_logging() -> None:
     LOGS_DIR.mkdir(parents=True, exist_ok=True)
@@ -16,131 +28,171 @@ def configurar_logging() -> None:
         format="%(asctime)s %(levelname)s %(name)s - %(message)s",
         handlers=[
             logging.FileHandler(LOGS_DIR / "app.log", encoding="utf-8"),
-            logging.StreamHandler(),
+            logging.StreamHandler(), #Muestra los mismos eventos en la consola/pantalla en tiempo real.
         ],
     )
 
-def obtener_df_scraper(credenciales: CredencialesSettings):
-    ruc = normalizar_ruc(credenciales.mincetur_ruc)
-    with Scraper(headless=credenciales.mincetur_headless) as scraper:
+configurar_logging()
+logger = logging.getLogger(__name__) #Crea la instancia de log local asociada al nombre del archivo actual (__name__), lista para usar en el resto del script mediante logger.info("..."), logger.error("..."), etc.
+
+# ---------------------------------------------------------------------------
+# FastAPI Application
+# ---------------------------------------------------------------------------
+
+'''Este bloque de código define y configura la aplicación web principal con FastAPI. En concreto, realiza tres acciones clave:
+Instancia la API (app = FastAPI(...))
+Registra las rutas principales (app.include_router(players_router))
+Crea un endpoint de diagnóstico (@app.get("/health"))'''
+
+app = FastAPI(
+    title="Ludoplay Sync API",
+    description="API para sincronizar registros de MINCETUR con la base de datos Ludoplay.",
+    version="1.0.0",
+)
+app.include_router(players_router)
+@app.get("/health", tags=["health"])
+async def health_check():
+    return {"status": "ok"}
+
+# ---------------------------------------------------------------------------
+# Scraper helpers (Selenium)
+# ---------------------------------------------------------------------------
+
+def obtener_df_scraper(credenciales: Setting):
+    ruc = normalizar_ruc(credenciales.MINCETUR_RUC)
+    with Scraper(headless=credenciales.MINCETUR_HEADLESS) as scraper:
         try:
             scraper.navegar()
-            '''scraper.clic_clave_sol()
+            scraper.clic_clave_sol()
             scraper.clic_formulario()
             scraper.llenar_formulario(
                 ruc,
-                credenciales.mincetur_usuario,
-                credenciales.mincetur_clave,
+                credenciales.MINCETUR_USUARIO,
+                credenciales.MINCETUR_CLAVE,
             )
-            scraper.clic_registro_ludopatia()'''
+            scraper.clic_registro_ludopatia()
             df_scraper = scraper.extraer_tabla_y_fotos_pdf()
             estado: EstadoPagina = parsear_estado_pagina(*scraper.capturar_estado())
         except Exception:
             logger.exception("Error durante la automatización MINCETUR")
             raise
-    print(f"Título: {estado.titulo} | URL: {estado.url}")
+    logger.info("Scraper OK — Título: %s | URL: %s", estado.titulo, estado.url)
     return df_scraper
 
-def _procesar_registro_inhouse(tipo_operacion: str, registro: dict, scraper: Scraper_Ludoplay) -> None:
-    logger.info("[%s] Iniciando scraping inhouse para: %s", tipo_operacion, registro)
-    operaciones = {
-        #"INSERT": scraper.clic_insert,
-        "UPDATE": scraper.clic_update,
-        #"UPDATE_RECURRENT": scraper.clic_update_recurrent,
-    }
-    metodo_accion = operaciones.get(tipo_operacion)
-    if metodo_accion:
-        try:
-            metodo_accion(**registro)
-        except WebDriverException as e:
-            logger.error(
-                "Error de Selenium al ejecutar %s: %s",
-                tipo_operacion,
-                e.msg,
-                exc_info=True,
-            )
-            raise
-    else:
-        logger.warning("Tipo de operación no reconocido: %s", tipo_operacion)
+# ---------------------------------------------------------------------------
+# DataFrame → Pydantic conversion
+# ---------------------------------------------------------------------------
 
-def procesar_sincronizacion(resultado, credenciales: CredencialesSettings) -> None:
-    """Abre una única sesión de Ludoplay y procesa las operaciones pendientes."""
-    with Scraper_Ludoplay(headless=credenciales.ludopplay_headless) as scraper:
-        try:
-            scraper.navegar()
-            scraper.llenar_formulario(
-                credenciales.ludoplay_usuario,
-                credenciales.ludoplay_clave,
-            )
-        except Exception:
-            logger.exception("Error al autenticar en LUDOPLAY")
-            raise
+def _df_insert_to_request(df) -> PlayerInsertRequest:
+    players: list[PlayerInsert] = []
+    for _, row in df.iterrows():
+        players.append(PlayerInsert(
+            code=int(row.get("code", 0)) if pd.notna(row.get("code")) else 0,
+            first_name=str(row.get("first_name", "")).strip(),
+            last_name=str(row.get("last_name", "")).strip(),
+            card_type=int(row.get("card_type", 1)) if pd.notna(row.get("card_type")) else 1,
+            id_card=str(row.get("id_card", "")).strip(),
+            ubigeo=str(row.get("ubigeo", "")).strip(),
+            published_at=datetime.strptime(str(row.get("published_at", "")).strip(), "%d/%m/%Y"),
+            contact=str(row.get("contact", "")).strip(),
+            photo=str(row.get("photo", "")).strip() or None
+        ))
+    return PlayerInsertRequest(players=players)
 
-        # 1. Procesamiento de Nuevos Registros (INSERT)
-        if not resultado.df_insert.empty:
-            logger.info("Procesando %d registros para INSERT...", len(resultado.df_insert))
-            resumen_fotos = mover_fotos(resultado.df_insert)
-            logger.info("Fotos movidas exitosamente: %s", resumen_fotos)
-            
-            for registro in resultado.df_insert.to_dict(orient="records"):
-                _procesar_registro_inhouse("INSERT", registro, scraper)
-            logger.info("Tareas adicionales de INSERT finalizadas.")
-        else:
-            logger.info("No hay registros para insertar (df_insert vacío).")
+def _df_to_bulk_action(df, id_card_col: str = "id_card") -> PlayerBulkAction | None:
+    if df is None or df.empty:
+        return None
+    id_cards = [str(v).strip() for v in df[id_card_col].tolist() if str(v).strip()]
+    return PlayerBulkAction(id_cards=id_cards) if id_cards else None
 
-        # 2. Procesamiento de Actualizaciones (UPDATE)
-        if not resultado.df_update.empty:
-            logger.info("Registros detectados en df_update (%d).", len(resultado.df_update))
-            
-            for registro in resultado.df_update.to_dict(orient="records"):
-                _procesar_registro_inhouse("UPDATE", registro, scraper)
-            logger.info("Tareas adicionales de UPDATE finalizadas.")
-        else:
-            logger.info("No hay registros para actualizar (df_update vacío).")
+# ---------------------------------------------------------------------------
+# Full sync pipeline (CLI)
+# ---------------------------------------------------------------------------
 
-        # 3. Procesamiento de Actualizaciones Recurrentes (UPDATE RECURRENT)
-        if not resultado.df_update_recurrent.empty:
-            logger.info("Registros detectados en df_update_recurrent (%d).", len(resultado.df_update_recurrent))
-            
-            for registro in resultado.df_update_recurrent.to_dict(orient="records"):
-                _procesar_registro_inhouse("UPDATE_RECURRENT", registro, scraper)
-            logger.info("Tareas adicionales de UPDATE RECURRENT finalizadas.")
-        else:
-            logger.info("No hay registros recurrentes para actualizar (df_update_recurrent vacío).")
-
-def main() -> None:
-    configurar_logging()
-    logger.info("Iniciando sincronización Ludoplay")
-    credenciales = CredencialesSettings()
-
-    if not all([credenciales.mincetur_ruc, credenciales.mincetur_usuario, credenciales.mincetur_clave]):
-        raise SystemExit("Faltan credenciales en .env: define MINCETUR_RUC, MINCETUR_USUARIO y MINCETUR_CLAVE")
-
-    # 1. Scraper Mincetur
+async def run_full_sync(credenciales: Setting) -> None:
+    """Execute the full synchronization pipeline:
+       Scraper MINCETUR → DB query → Merge → DB sync.
+    """
+    # Stage 1: Scraper MINCETUR
+    logger.info("=== Etapa 1/5: Scraper MINCETUR ===")
     try:
         df_scraper = obtener_df_scraper(credenciales)
     except Exception as e:
-        logger.error("Proceso abortado al obtener datos del scraper: %s", e)
+        logger.error("Scraper falló: %s", e)
         return
+
     if df_scraper.empty:
-        logger.warning("El scraper no devolvió registros; no hay nada que sincronizar.")
+        logger.warning("El scraper no devolvió registros. Nada que sincronizar.")
         return
+    logger.info("Scraper devolvió %d registros", len(df_scraper))
 
-    # 2. Obtener datos de BD y fusionar
-    df_desde_sqlite = fetch_sqlite_dataframe()
-    if df_desde_sqlite is None or df_desde_sqlite.empty:
-        logger.error("No se pudo obtener el dataframe desde la base de datos.")
+    # Stage 2: Query ludoplay DB
+    logger.info("=== Etapa 2/5: Consulta base de datos Ludoplay ===")
+    df_desde_sql = await fetch_sql_dataframe()
+    if df_desde_sql is None or df_desde_sql.empty:
+        logger.error("No se pudo obtener datos desde la base de datos Ludoplay.")
         return
-    resultado = construir_dataframes_sync(df_desde_sqlite, df_scraper)
+    logger.info("BD Ludoplay devolvió %d registros", len(df_desde_sql))
 
-    # 3. Ejecutar sincronización en Ludoplay
-    try:
-        procesar_sincronizacion(resultado, credenciales)
-    except Exception as e:
-        logger.error("Error durante la sincronización en Ludoplay: %s", e)
-        return
+    # Stage 3: Merge
+    logger.info("=== Etapa 3/5: Merge / Comparativo ===")
+    resultado = construir_dataframes_sync(df_desde_sql, df_scraper)
+    logger.info(
+        "Resultado merge — INSERT: %d | UPDATE (desactivar): %d | RECURRENT (reactivar): %d",
+        len(resultado.df_insert),
+        len(resultado.df_update),
+        len(resultado.df_update_recurrent),
+    )
 
-    logger.info("Sincronización finalizada")
+    # Stage 4: DB sync via service
+    logger.info("=== Etapa 4/5: Sincronización directa a BD ===")
+    async with Async_session_local() as session:
+        svc = PlayerSyncService(session)
+        insert_req = _df_insert_to_request(resultado.df_insert) if not resultado.df_insert.empty else None
+        deactivate_req = _df_to_bulk_action(resultado.df_update, "id_card")
+        reactivate_req = _df_to_bulk_action(resultado.df_update_recurrent, "id_card")
+        result = await svc.sync_all(insert_req, deactivate_req, reactivate_req)
+
+    logger.info("=== Sincronización completada ===")
+    logger.info(
+        "Resultado final — insertados: %d | desactivados: %d | reactivados: %d | fotos: %d",
+        result.inserted, result.deactivated, result.reactivated, result.photos_moved,
+    )
+    if result.errors:
+        logger.warning("Errores: %s", result.errors)
+
+    logger.info("=== Etapa 5/5: Clear Path ===")
+    clear_path()
+
+# ---------------------------------------------------------------------------
+# Interfaces de línea de comandos (CLI)
+# ---------------------------------------------------------------------------
+def main():
+    parser = argparse.ArgumentParser(
+        description="Ludoplay Sync — Scraper MINCETUR + Sincronización a BD"
+    )
+    parser.add_argument(
+        "--sync",
+        action="store_true",
+        help="Ejecuta el pipeline completo: scraper → merge → sync a BD",
+    )
+    parser.add_argument(
+        "--server",
+        action="store_true",
+        help="Levanta el servidor FastAPI (uvicorn)",
+    )
+    args = parser.parse_args()
+
+    if args.sync:
+        credenciales = Setting()
+        if not all([credenciales.MINCETUR_RUC, credenciales.MINCETUR_USUARIO, credenciales.MINCETUR_CLAVE]):
+            raise SystemExit("Faltan credenciales MINCETUR en .env")
+        asyncio.run(run_full_sync(credenciales))
+
+    elif args.server:
+        uvicorn.run("main:app", reload=True)
+    else:
+        parser.print_help()
 
 if __name__ == "__main__":
     main()
