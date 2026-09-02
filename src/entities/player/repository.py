@@ -3,6 +3,8 @@ from sqlalchemy import select, update
 from entities import RepositoryBase
 from .model import Player
 
+'''Qué hace: Hereda de RepositoryBase y añade todas las consultas SQL específicas de Player. Es la única clase que "habla" directamente con la base de datos.'''
+'''Analogía: Es el administrador de archivos de la empresa. Solo saca y mete papeles (datos) del archivador (DB). No decide qué hacer con ellos — solo ejecuta lo que le dicen.'''
 class PlayerRepository(RepositoryBase[Player]):
 
     # -------------------------------------------------------------------

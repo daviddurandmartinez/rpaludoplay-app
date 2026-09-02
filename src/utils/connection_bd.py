@@ -10,7 +10,6 @@ from sqlalchemy.ext.asyncio import (
     create_async_engine,
 )
 from sqlalchemy.orm import DeclarativeBase
-from sqlalchemy_utils import create_database, database_exists
 from settings import setting
 from utils.constants import TARGET_TABLE
 

@@ -1,12 +1,15 @@
 import logging
 import shutil
-from datetime import datetime, timezone
+from datetime import datetime
+from zoneinfo import ZoneInfo  # Módulo nativo desde Python 3.9
 from pathlib import Path
 from sqlalchemy.ext.asyncio import AsyncSession
 from entities.player.model import Player
 from entities.player.repository import PlayerRepository
 from routes.players.schemas import PlayerInsertRequest, PlayerBulkAction, SyncResult
 from utils.constants import STATIC_IMAGES_DIR, EXTENSION_FOTO, PATH_FOTOS_SALIDA
+
+'''Qué hace: Contiene toda la lógica de negocio. No habla con HTTP, no habla con la DB directamente — usa el repository.'''
 
 logger = logging.getLogger(__name__)
 
@@ -24,13 +27,16 @@ class PlayerSyncService:
 
         if not request.players:
             return result
-
+        # PASO 1: Extraer todos los IDs que llegan
         id_cards_incoming = [p.id_card for p in request.players]
+        # PASO 2: Consultar cuáles ya existen en la DB
         existing = await self.repo.id_cards_exist(id_cards_incoming)
 
-        now = datetime.now(timezone.utc)
+        # Captura de hora local usando la zona horaria de Perú
+        now = datetime.now(ZoneInfo("America/Lima"))
         players_to_create: list[Player] = []
 
+        # PASO 3: Filtrar duplicados y construir objetos Player
         for p in request.players:
             if p.id_card in existing:
                 result.errors.append(f"id_card {p.id_card} ya existe, ignorado")
@@ -52,13 +58,16 @@ class PlayerSyncService:
             )
             players_to_create.append(player)
 
+        # PASO 4: Insertar en lote
         if players_to_create:
             await self.repo.bulk_create(players_to_create)
             result.inserted = len(players_to_create)
 
+        # PASO 5: Confirmar cambios
         await self.repo.commit()
         logger.info("INSERT completado: %d registros", result.inserted)
 
+        # PASO 6: Copiar fotos
         if players_to_create:
             result.photos_moved = await self._copy_photos(players_to_create)
 
@@ -77,6 +86,8 @@ class PlayerSyncService:
         await self.repo.commit()
         logger.info("DEACTIVATE completado: %d registros", result.deactivated)
         return result
+
+    '''Una sola llamada al repository + commit. El repository se encarga de solo desactivar los que están activos.'''
 
     # -------------------------------------------------------------------
     # REACTIVATE (is_active = True)
@@ -128,6 +139,14 @@ class PlayerSyncService:
 
         return result
 
+    '''
+    Orden de ejecución (importante):
+    1. Desactivar primero — libera IDs que podrían ser reasignados
+    2. Reactivar segundo — restaura registros que reaparecieron
+    3. Insertar al final — agrega los nuevos
+    Si falla en cualquier paso: se ejecuta rollback() y se revierten todos los cambios de la transacción.
+    '''
+
     # -------------------------------------------------------------------
     # PHOTO HANDLING
     # -------------------------------------------------------------------
@@ -173,6 +192,14 @@ class PlayerSyncService:
 
         return copied
 
+    '''
+    Flujo:
+    1. Para cada jugador nuevo, busca su foto en static/images/{dni}.png
+    2. Si no la encuentra como .png, busca cualquier extensión ({dni}.*)
+    3. La copia al directorio de salida
+    4. Actualiza la ruta en la DB
+    '''
+
     def save_uploaded_photo(self, id_card: str, filename: str, content: bytes) -> Path:
         """Guarda un archivo subido en static/images/{id_card}.{ext}."""
         STATIC_IMAGES_DIR.mkdir(parents=True, exist_ok=True)
@@ -188,3 +215,5 @@ class PlayerSyncService:
             raise
 
         return dest
+
+    '''Sincrónico (no async) porque es solo escritura de archivo. Guarda los bytes directamente en disco.'''

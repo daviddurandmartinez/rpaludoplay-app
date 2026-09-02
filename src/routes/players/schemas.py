@@ -2,8 +2,10 @@ from datetime import datetime
 from pydantic import BaseModel, Field
 from typing import Optional
 
+'''Define los schemas Pydantic que actúan como contratos de entrada y salida de la API.'''
+'''Analogía: Son los formularios de solicitud que el cliente debe llenar. Si no los llena bien (validación Pydantic), la API rechaza la petición antes de llegar al service.'''
 # ---------------------------------------------------------------------------
-# REQUEST — INSERT
+# REQUEST — INSERT (Schemas de entrada )
 # ---------------------------------------------------------------------------
 class PlayerInsert(BaseModel):
     code: int
@@ -31,7 +33,7 @@ class PlayerBulkAction(BaseModel):
     id_cards: list[str] = Field(..., min_length=1)
 
 # ---------------------------------------------------------------------------
-# RESPONSE
+# RESPONSE (Schemas de salida)
 # ---------------------------------------------------------------------------
 class SyncResult(BaseModel):
     inserted: int = 0

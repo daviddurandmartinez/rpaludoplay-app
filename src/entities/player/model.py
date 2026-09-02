@@ -4,6 +4,8 @@ from sqlalchemy import DateTime, Integer, String, Boolean
 from sqlalchemy.orm import Mapped, mapped_column
 from utils.connection_bd import Model
 
+'''Qué hace: Define la estructura exacta de la tabla players_player en SQL Server. Cada atributo = una columna.'''
+'''Analogía: Es el plano arquitectónico de la tabla. Define qué columnas tiene, qué tipo de dato admite y qué restricciones apply.'''
 class Player(Model):
     __tablename__ = "players_player"
 
