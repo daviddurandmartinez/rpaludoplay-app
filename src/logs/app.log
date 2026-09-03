@@ -1750,3 +1750,119 @@ FileNotFoundError: No se encontró ningún archivo PDF en /home/ddurand/Download
 2026-09-02 00:23:54,207 INFO __main__ - === Sincronización completada ===
 2026-09-02 00:23:54,207 INFO __main__ - Resultado final — insertados: 30 | desactivados: 4 | reactivados: 2 | fotos: 30
 2026-09-02 00:23:54,207 INFO __main__ - === Etapa 5/5: Clear Path ===
+2026-09-02 09:54:42,073 INFO __main__ - === Etapa 1/5: Scraper MINCETUR ===
+2026-09-02 09:58:58,510 INFO __main__ - Scraper OK — Título: Sistema consulta de Ludopatía | URL: https://extranet.mincetur.gob.pe/ludopatia/index.aspx
+2026-09-02 09:58:58,511 INFO __main__ - Scraper devolvió 4828 registros
+2026-09-02 09:58:58,511 INFO __main__ - === Etapa 2/5: Consulta base de datos Ludoplay ===
+2026-09-02 09:59:00,113 INFO __main__ - BD Ludoplay devolvió 5353 registros
+2026-09-02 09:59:00,113 INFO __main__ - === Etapa 3/5: Merge / Comparativo ===
+2026-09-02 09:59:00,228 INFO utils.sync_merger - Merge completado: insert=30 | update=4 | recurrent=2
+2026-09-02 09:59:00,229 INFO __main__ - Resultado merge — INSERT: 30 | UPDATE (desactivar): 4 | RECURRENT (reactivar): 2
+2026-09-02 09:59:00,230 INFO __main__ - === Etapa 4/5: Sincronización directa a BD ===
+2026-09-02 09:59:00,353 INFO routes.players.service - DEACTIVATE completado: 4 registros
+2026-09-02 09:59:00,379 INFO routes.players.service - REACTIVATE completado: 2 registros
+2026-09-02 09:59:00,494 INFO routes.players.service - INSERT completado: 30 registros
+2026-09-02 09:59:00,498 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74394224.png -> /home/ddurand/fotos/74394224.png
+2026-09-02 09:59:00,514 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43191341.png -> /home/ddurand/fotos/43191341.png
+2026-09-02 09:59:00,520 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74209347.png -> /home/ddurand/fotos/74209347.png
+2026-09-02 09:59:00,529 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77470135.png -> /home/ddurand/fotos/77470135.png
+2026-09-02 09:59:00,538 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/48504573.png -> /home/ddurand/fotos/48504573.png
+2026-09-02 09:59:00,548 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43660821.png -> /home/ddurand/fotos/43660821.png
+2026-09-02 09:59:00,560 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/46738379.png -> /home/ddurand/fotos/46738379.png
+2026-09-02 09:59:00,574 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45267043.png -> /home/ddurand/fotos/45267043.png
+2026-09-02 09:59:00,585 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74279371.png -> /home/ddurand/fotos/74279371.png
+2026-09-02 09:59:00,595 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45700075.png -> /home/ddurand/fotos/45700075.png
+2026-09-02 09:59:00,603 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75658045.png -> /home/ddurand/fotos/75658045.png
+2026-09-02 09:59:00,610 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73077184.png -> /home/ddurand/fotos/73077184.png
+2026-09-02 09:59:00,617 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07535521.png -> /home/ddurand/fotos/07535521.png
+2026-09-02 09:59:00,624 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71091975.png -> /home/ddurand/fotos/71091975.png
+2026-09-02 09:59:00,639 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/18167199.png -> /home/ddurand/fotos/18167199.png
+2026-09-02 09:59:00,659 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72695186.png -> /home/ddurand/fotos/72695186.png
+2026-09-02 09:59:00,670 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/48242212.png -> /home/ddurand/fotos/48242212.png
+2026-09-02 09:59:00,685 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72926301.png -> /home/ddurand/fotos/72926301.png
+2026-09-02 09:59:00,702 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73097567.png -> /home/ddurand/fotos/73097567.png
+2026-09-02 09:59:00,714 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45382724.png -> /home/ddurand/fotos/45382724.png
+2026-09-02 09:59:00,728 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72692698.png -> /home/ddurand/fotos/72692698.png
+2026-09-02 09:59:00,739 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47182479.png -> /home/ddurand/fotos/47182479.png
+2026-09-02 09:59:00,751 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08234844.png -> /home/ddurand/fotos/08234844.png
+2026-09-02 09:59:00,762 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75888950.png -> /home/ddurand/fotos/75888950.png
+2026-09-02 09:59:00,775 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/42466955.png -> /home/ddurand/fotos/42466955.png
+2026-09-02 09:59:00,785 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/70689650.png -> /home/ddurand/fotos/70689650.png
+2026-09-02 09:59:00,800 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/40805441.png -> /home/ddurand/fotos/40805441.png
+2026-09-02 09:59:00,814 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009927943.png -> /home/ddurand/fotos/009927943.png
+2026-09-02 09:59:00,829 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77498558.png -> /home/ddurand/fotos/77498558.png
+2026-09-02 09:59:00,842 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45716982.png -> /home/ddurand/fotos/45716982.png
+2026-09-02 09:59:00,858 INFO routes.players.service - Fotos copiadas y rutas actualizadas en BD: 30
+2026-09-02 09:59:00,859 INFO __main__ - === Sincronización completada ===
+2026-09-02 09:59:00,860 INFO __main__ - Resultado final — insertados: 30 | desactivados: 4 | reactivados: 2 | fotos: 30
+2026-09-02 09:59:00,860 INFO __main__ - === Etapa 5/5: Clear Path ===
+2026-09-02 10:11:20,262 INFO watchfiles.main - 2 changes detected
+2026-09-02 10:11:20,615 INFO watchfiles.main - 1 change detected
+2026-09-02 15:33:31,894 INFO __main__ - === Etapa 1/5: Scraper MINCETUR ===
+2026-09-02 15:33:49,964 ERROR __main__ - Scraper falló: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x638a5bf4179a <unknown>
+#1 0x638a5b8a4cc9 <unknown>
+#2 0x638a5b8e3cf7 <unknown>
+#3 0x638a5b8df68e <unknown>
+#4 0x638a5b92ef2e <unknown>
+#5 0x638a5b92e61c <unknown>
+#6 0x638a5b8ee07e <unknown>
+#7 0x638a5b8eee91 <unknown>
+#8 0x638a5bf05bb0 <unknown>
+#9 0x638a5bf0422a <unknown>
+#10 0x638a5beeefa5 <unknown>
+#11 0x638a5bf04eea <unknown>
+#12 0x638a5bed81c0 <unknown>
+#13 0x638a5bf2c698 <unknown>
+#14 0x638a5bf2c835 <unknown>
+#15 0x638a5bf40323 <unknown>
+#16 0x772ba5ea407a <unknown>
+#17 0x772ba5f3772c <unknown>
+
+2026-09-02 15:33:55,056 INFO __main__ - === Etapa 1/5: Scraper MINCETUR ===
+2026-09-02 15:37:24,361 INFO __main__ - Scraper OK — Título: Sistema consulta de Ludopatía | URL: https://extranet.mincetur.gob.pe/ludopatia/index.aspx
+2026-09-02 15:37:24,363 INFO __main__ - Scraper devolvió 4828 registros
+2026-09-02 15:37:24,364 INFO __main__ - === Etapa 2/5: Consulta base de datos Ludoplay ===
+2026-09-02 15:37:28,190 INFO __main__ - BD Ludoplay devolvió 5353 registros
+2026-09-02 15:37:28,190 INFO __main__ - === Etapa 3/5: Merge / Comparativo ===
+2026-09-02 15:37:28,272 INFO utils.sync_merger - Merge completado: insert=30 | update=4 | recurrent=2
+2026-09-02 15:37:28,274 INFO __main__ - Resultado merge — INSERT: 30 | UPDATE (desactivar): 4 | RECURRENT (reactivar): 2
+2026-09-02 15:37:28,274 INFO __main__ - === Etapa 4/5: Sincronización directa a BD ===
+2026-09-02 15:37:28,670 INFO routes.players.service - DEACTIVATE completado: 4 registros
+2026-09-02 15:37:28,714 INFO routes.players.service - REACTIVATE completado: 2 registros
+2026-09-02 15:37:28,901 INFO routes.players.service - INSERT completado: 30 registros
+2026-09-02 15:37:28,903 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74394224.png -> /home/ddurand/fotos/74394224.png
+2026-09-02 15:37:28,916 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43191341.png -> /home/ddurand/fotos/43191341.png
+2026-09-02 15:37:28,921 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74209347.png -> /home/ddurand/fotos/74209347.png
+2026-09-02 15:37:28,925 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77470135.png -> /home/ddurand/fotos/77470135.png
+2026-09-02 15:37:28,929 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/48504573.png -> /home/ddurand/fotos/48504573.png
+2026-09-02 15:37:28,932 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/43660821.png -> /home/ddurand/fotos/43660821.png
+2026-09-02 15:37:28,937 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/46738379.png -> /home/ddurand/fotos/46738379.png
+2026-09-02 15:37:28,942 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45267043.png -> /home/ddurand/fotos/45267043.png
+2026-09-02 15:37:28,947 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/74279371.png -> /home/ddurand/fotos/74279371.png
+2026-09-02 15:37:28,954 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45700075.png -> /home/ddurand/fotos/45700075.png
+2026-09-02 15:37:28,960 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75658045.png -> /home/ddurand/fotos/75658045.png
+2026-09-02 15:37:28,965 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73077184.png -> /home/ddurand/fotos/73077184.png
+2026-09-02 15:37:28,970 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/07535521.png -> /home/ddurand/fotos/07535521.png
+2026-09-02 15:37:28,975 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/71091975.png -> /home/ddurand/fotos/71091975.png
+2026-09-02 15:37:28,983 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/18167199.png -> /home/ddurand/fotos/18167199.png
+2026-09-02 15:37:28,989 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72695186.png -> /home/ddurand/fotos/72695186.png
+2026-09-02 15:37:28,995 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/48242212.png -> /home/ddurand/fotos/48242212.png
+2026-09-02 15:37:29,004 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72926301.png -> /home/ddurand/fotos/72926301.png
+2026-09-02 15:37:29,012 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/73097567.png -> /home/ddurand/fotos/73097567.png
+2026-09-02 15:37:29,017 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45382724.png -> /home/ddurand/fotos/45382724.png
+2026-09-02 15:37:29,025 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/72692698.png -> /home/ddurand/fotos/72692698.png
+2026-09-02 15:37:29,031 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/47182479.png -> /home/ddurand/fotos/47182479.png
+2026-09-02 15:37:29,037 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/08234844.png -> /home/ddurand/fotos/08234844.png
+2026-09-02 15:37:29,043 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/75888950.png -> /home/ddurand/fotos/75888950.png
+2026-09-02 15:37:29,049 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/42466955.png -> /home/ddurand/fotos/42466955.png
+2026-09-02 15:37:29,054 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/70689650.png -> /home/ddurand/fotos/70689650.png
+2026-09-02 15:37:29,057 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/40805441.png -> /home/ddurand/fotos/40805441.png
+2026-09-02 15:37:29,075 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/009927943.png -> /home/ddurand/fotos/009927943.png
+2026-09-02 15:37:29,089 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/77498558.png -> /home/ddurand/fotos/77498558.png
+2026-09-02 15:37:29,095 INFO routes.players.service - Foto copiada: /home/ddurand/proyectos/personal/rpaludoplay-app/src/static/images/45716982.png -> /home/ddurand/fotos/45716982.png
+2026-09-02 15:37:29,105 INFO routes.players.service - Fotos copiadas y rutas actualizadas en BD: 30
+2026-09-02 15:37:29,106 INFO __main__ - === Sincronización completada ===
+2026-09-02 15:37:29,106 INFO __main__ - Resultado final — insertados: 30 | desactivados: 4 | reactivados: 2 | fotos: 30
+2026-09-02 15:37:29,106 INFO __main__ - === Etapa 5/5: Clear Path ===

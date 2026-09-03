@@ -5,6 +5,7 @@
 **Ludoplay Sync App** resuelve un problema operativo crítico: la **sincronización automática de registros de jugadores desde el portal oficial de MINCETUR** (Ministerio de Comercio Exterior y Turismo del Perú) hacia la base de datos interna del sistema Ludoplay.
 
 **A nivel funcional:**
+
 - Accede al portal de la "Clave SOL" de MINCETUR mediante automatización web (Selenium)
 - Descarga un PDF que contiene el registro oficial de personas vinculadas a la actividad de juego
 - Extrae los datos del PDF (nombres, DNI, código de registro, ubigeo, fecha de publicación, foto)
@@ -59,19 +60,22 @@ rpaludoplay-app/
 
 ### Rol de cada capa
 
-| Capa | Archivos | Qué hace | Analogía |
-|------|----------|----------|----------|
-| **Scraper** | `scraper.py` | Ingresa al portal de MINCETUR, descarga el PDF y extrae los datos | El "recolector" que va al sitio oficial y trae la información cruda |
-| **Entidades** | `model.py`, `repository.py` | Define QUÉ datos se guardan y CÓMO se acceden | El "catálogo maestro" y el "archivista" |
-| **Rutas** | `controller.py`, `service.py`, `schemas.py` | Recibe peticiones externas, aplica reglas de negocio, responde | La "ventanilla de atención" |
-| **Utilidades** | `sync_merger.py`, `connection_bd.py`, `constants.py` | Compara datos nuevos vs existentes, conecta a la DB, define parámetros | El "motor de decisiones" y la "conexión telefónica" |
-| **Dependencias** | `async_bd.py` | Entrega una sesión de base de datos por cada petición | El "acta de acceso" que se entrega por uso |
+| Capa             | Archivos                                             | Qué hace                                                               | Analogía                                                            |
+| ---------------- | ---------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| **Scraper**      | `scraper.py`                                         | Ingresa al portal de MINCETUR, descarga el PDF y extrae los datos      | El "recolector" que va al sitio oficial y trae la información cruda |
+| **Entidades**    | `model.py`, `repository.py`                          | Define QUÉ datos se guardan y CÓMO se acceden                          | El "catálogo maestro" y el "archivista"                             |
+| **Rutas**        | `controller.py`, `service.py`, `schemas.py`          | Recibe peticiones externas, aplica reglas de negocio, responde         | La "ventanilla de atención"                                         |
+| **Utilidades**   | `sync_merger.py`, `connection_bd.py`, `constants.py` | Compara datos nuevos vs existentes, conecta a la DB, define parámetros | El "motor de decisiones" y la "conexión telefónica"                 |
+| **Dependencias** | `async_bd.py`                                        | Entrega una sesión de base de datos por cada petición                  | El "acta de acceso" que se entrega por uso                          |
 
 ---
 
 ## 3. Flujo de Ejecución End-to-End
 
-### Escenario A: Sincronización automática (`python main.py --sync`)
+Tiene **dos formas de funcionar**:
+
+- **CLI** (`python main.py --sync`): ejecuta el pipeline completo automatizado (scraper → merge → sync)
+- **API** (`python main.py --server`): levanta una REST API en FastAPI para gestionar jugadores manualmente
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -141,58 +145,32 @@ rpaludoplay-app/
 
 ### Endpoints disponibles
 
-| Método | Ruta | Descripción |
-|--------|------|-------------|
-| `POST` | `/api/v1/players` | Insertar nuevos jugadores |
-| `PATCH` | `/api/v1/players/deactivate` | Desactivar por IDs |
-| `PATCH` | `/api/v1/players/reactivate` | Reactivar por IDs |
-| `POST` | `/api/v1/players/sync` | Sincronización completa |
-| `POST` | `/api/v1/players/{id}/photo` | Subir foto |
-| `GET` | `/health` | Verificar salud del API |
+| Método  | Ruta                         | Descripción               |
+| ------- | ---------------------------- | ------------------------- |
+| `POST`  | `/api/v1/players`            | Insertar nuevos jugadores |
+| `PATCH` | `/api/v1/players/deactivate` | Desactivar por IDs        |
+| `PATCH` | `/api/v1/players/reactivate` | Reactivar por IDs         |
+| `POST`  | `/api/v1/players/sync`       | Sincronización completa   |
+| `POST`  | `/api/v1/players/{id}/photo` | Subir foto                |
+| `GET`   | `/health`                    | Verificar salud del API   |
 
 ---
 
-## 4. Guion para la Reunión (5 Puntos Clave)
-
-### 1. "Automatizamos lo que antes se hacía manualmente"
-> El sistema accede automáticamente al portal oficial de MINCETUR, descarga la información de registro de jugadores y la sincroniza con nuestra base de datos. Esto elimina el trabajo manual de revisar el portal, descargar PDFs y actualizar registros uno por uno.
-
-### 2. "Garantizamos cumplimiento normativo en tiempo real"
-> Cada ejecución compara el registro oficial contra nuestra base de datos. Detecta automáticamente quiénes son nuevos, quiénes ya no están en el registro (para desactivar) y quiénes reaparecieron (para reactivar). Esto asegura que Ludoplay solo opere con jugadores autorizados por la normativa.
-
-### 3. "La arquitectura es modular y extensible"
-> El proyecto está organizado en capas claras: extracción de datos (scraper), lógica de negocio (service), acceso a datos (repository) y API (controller). Cada capa tiene una responsabilidad definida, lo que facilita mantener, probar y escalar el sistema sin afectar a las demás.
-
-### 4. "Operamos en dos modos: automatizado y bajo demanda"
-> El sistema funciona tanto como proceso batch automatizado (sincronización completa desde MINCETUR) como servidor API REST (para que otros sistemas o usuarios realicen operaciones puntuales sobre los registros). Esto nos da flexibilidad operativa.
-
-### 5. "El sistema está en fase funcional, con oportunidades de mejora"
-> Ya funciona el ciclo completo: extracción → comparación → persistencia. Las áreas de mejora identificadas son: no tiene tests automatizados, no tiene contenedores Docker para despliegue, y no tiene migraciones de base de datos (usamos ORM directo). Esto es natural en una fase de prototipo funcional, y el camino a producción es claro: añadir tests, containerizar y configurar CI/CD.
+##
 
 ---
 
-## 5. Stack Tecnológico
+## 4. Stack Tecnológico
 
-| Componente | Tecnología | Versión |
-|------------|------------|---------|
-| Framework web | FastAPI | ≥ 0.115 |
-| ORM | SQLAlchemy 2.0 (async) | ≥ 2.0.45 |
-| Base de datos | SQL Server (vía aioodbc/ODBC Driver 18) | — |
-| Scraping | Selenium + Chromium | ≥ 4.25 |
-| Extracción de PDF | pdfplumber + PyMuPDF | ≥ 0.11 / ≥ 1.24 |
-| Datos tabulares | pandas | ≥ 2.2 |
-| Configuración | pydantic-settings + python-dotenv | ≥ 2.10 |
-| Servidor ASGI | uvicorn | ≥ 0.30 |
+| Componente        | Tecnología                              | Versión         |
+| ----------------- | --------------------------------------- | --------------- |
+| Framework web     | FastAPI                                 | ≥ 0.115         |
+| ORM               | SQLAlchemy 2.0 (async)                  | ≥ 2.0.45        |
+| Base de datos     | SQL Server (vía aioodbc/ODBC Driver 18) | —               |
+| Scraping          | Selenium + Chromium                     | ≥ 4.25          |
+| Extracción de PDF | pdfplumber + PyMuPDF                    | ≥ 0.11 / ≥ 1.24 |
+| Datos tabulares   | pandas                                  | ≥ 2.2           |
+| Configuración     | pydantic-settings + python-dotenv       | ≥ 2.10          |
+| Servidor ASGI     | uvicorn                                 | ≥ 0.30          |
 
----
-
-## 6. Estado Actual del Proyecto
-
-| Aspecto | Estado |
-|---------|--------|
-| Ciclo funcional completo | ✅ Funcional (sync + API) |
-| Tests automatizados | ❌ No implementados |
-| Contenedorización (Docker) | ❌ No implementado |
-| Migraciones de DB (Alembic) | ❌ No implementado |
-| CI/CD | ❌ No implementado |
-| Documentación técnica | ✅ Básica (readme.md) |
+-
